@@ -6,13 +6,15 @@ const ALL_OPEN_SIZES = [2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7];
 const ALL_STACKS     = [50, 75, 100];
 
 const HERO_POS_BY_MODE = {
-  open:   ["UTG","HJ","CO","BU","SB"],
-  raise:  ["HJ","CO","BU","SB","BB"],
-  "3bet": ["UTG","HJ","CO","BU","SB"],
-  sqz:    ["UTG","HJ","CO","BU","SB","BB"],
-  c4b:    ["CO","BU","SB","BB"],
-  limp:   ["SB","BB"],
+  open:      ["UTG","HJ","CO","BU","SB"],
+  raise:     ["HJ","CO","BU","SB","BB"],
+  "3bet":    ["UTG","HJ","CO","BU","SB"],
+  sqz:       ["UTG","HJ","CO","BU","SB","BB"],
+  c4b:       ["CO","BU","SB","BB"],
+  limp:      ["SB","BB"],
+  openlimp:  ["UTG","HJ","CO","BU","SB","BB"],
 };
+const OPENLIMP_VILLAINS = ["UTG","HJ","CO","BU"];
 const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
 
 const OPEN_ALLOWED_VILLAINS = {
@@ -58,7 +60,7 @@ const els = {
 let manifest = [];
 // index[facing][stack][hero][villain_or__][openSizeStr][betSizeStr_or__] = chart
 let index = {};
-let selected = { mode:null, stack:100, hero:null, villain:null, villain2:null, openSize:null, threebetSize:null, betSize:null };
+let selected = { mode:null, stack:100, hero:null, villain:null, villain2:null, openSize:null, threebetSize:null, betSize:null, limpSeq:null };
 
 function showError(msg){ els.status.textContent=msg; els.miniHeader.classList.add("visible"); }
 function clearError(){ els.miniHeader.classList.remove("visible"); }
@@ -83,6 +85,15 @@ function buildIndex(){
     } else {
       const v=(f==="sqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
       const os=sk(ch.open_size);
+      if (f==="openlimp"){
+        const sq=ch.seq_key||"_";
+        if (!index[f])              index[f]={};
+        if (!index[f][st])          index[f][st]={};
+        if (!index[f][st][h])       index[f][st][h]={};
+        if (!index[f][st][h][v])    index[f][st][h][v]={};
+        index[f][st][h][v][sq]=ch;
+        continue;
+      }
       const bs=(f==="limp"&&h==="SB")?sk(ch.iso_size):sk(ch.threebet_size);
       if (!index[f])             index[f]={};
       if (!index[f][st])         index[f][st]={};
@@ -120,8 +131,7 @@ function c4bSizes(stack,hero,v1,v2,openSize,threebetSize){
   return Object.keys(((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{})[sk(threebetSize)]||{}).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 function limpOpenSizes(stack,hero){
-  const v=hero==="BB"?"SB":"BB";
-  return Object.keys((((index["limp"]||{})[String(stack)]||{})[hero]||{})[v]||{}).map(Number).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
+  return Object.keys(((index["limp"]||{})[String(stack)]||{})[hero]||{}).map(Number).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
 }
 function limpIsoSizes(stack,openSize){
   const sub=(((index["limp"]||{})[String(stack)]||{})["SB"]||{})["BB"]||{};
@@ -140,11 +150,15 @@ function allBetSizesEver(){
 }
 
 function pickChart(){
-  const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize}=selected;
+  const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize,limpSeq}=selected;
   if (!mode||!stack||!hero) return null;
   if (mode==="c4b"){
     if (!villain||!villain2) return null;
     return ((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(villain,villain2)]||{})[sk(openSize)]||{})[sk(threebetSize)]?.[sk(betSize)]||null;
+  }
+  if (mode==="openlimp"){
+    if (!villain||!limpSeq) return null;
+    return ((((index["openlimp"]||{})[String(stack)]||{})[hero]||{})[villain]||{})[limpSeq]||null;
   }
   if (mode==="limp"){
     if (hero==="BB") return ((((index["limp"]||{})[String(stack)]||{})["BB"]||{})["SB"]||{})[sk(openSize)]?.["_"]||null;
@@ -171,10 +185,10 @@ function mkBtn(label,onClick,extraClass=""){
 
 function renderMode(){
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"Facing limp"}]){
+  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"Facing limp"},{key:"openlimp",label:"Open limp"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key; selected.villain=null; selected.villain2=null;
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
+      selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     });
     setBtnState(btn,{sel:selected.mode===m.key,dis:false});
@@ -187,7 +201,7 @@ function renderStack(){
   for (const s of ALL_STACKS){
     const btn=mkBtn(String(s),()=>{
       selected.stack=s; selected.villain=null; selected.villain2=null;
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
+      selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     },"size");
     const dis = selected.mode ? !hasStack(selected.mode,s) : false;
@@ -201,11 +215,14 @@ function renderHero(){
   for (const p of HERO_ALL){
     const btn=mkBtn(p,()=>{
       selected.hero=p; selected.villain=null; selected.villain2=null;
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
+      selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     },"hero");
     let dis=false;
-    if (selected.mode==="limp"){
+    if (selected.mode==="openlimp"){
+      if (selected.villain) dis=POS_ORDER[p]<=POS_ORDER[selected.villain];
+      else dis=false;
+    } else if (selected.mode==="limp"){
       dis=!["SB","BB"].includes(p);
     } else if (selected.mode==="sqz"||selected.mode==="c4b"){
       if (p===selected.villain||p===selected.villain2) dis=true;
@@ -223,6 +240,18 @@ function renderHero(){
 
 function renderVillain(){
   els.villainGroup.innerHTML="";
+  if (selected.mode==="openlimp"){
+    els.villainGroup.style.display="";
+    for (const p of OPENLIMP_VILLAINS){
+      const btn=mkBtn(p,()=>{
+        selected.villain=p; selected.hero=null; selected.limpSeq=null;
+        syncHash(); refreshAll();
+      },"villain");
+      setBtnState(btn,{sel:selected.villain===p,dis:false});
+      els.villainGroup.appendChild(btn);
+    }
+    return;
+  }
   if (selected.mode==="limp"){ els.villainGroup.style.display="none"; return; }
   els.villainGroup.style.display="";
   if (selected.mode==="sqz"||selected.mode==="c4b"){
@@ -271,7 +300,15 @@ function renderVillain(){
 
 function renderSize(){
   els.sizeGroup.innerHTML="";
-  if (selected.mode==="limp"&&selected.hero&&selected.stack){
+  if (selected.mode==="openlimp"&&selected.villain&&selected.hero&&selected.stack){
+    const keys=Object.keys(((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]&&
+               Object.keys((((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
+    for (const sq of (keys||[])){
+      const btn=mkBtn(sq.replace(/-([0-9]+(?:[.][0-9]+)?bb)/g," $1").replace(/-/g," ").toLowerCase(),()=>{ selected.limpSeq=sq; syncHash(); refreshAll(); },"size");
+      setBtnState(btn,{sel:selected.limpSeq===sq,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
+  } else if (selected.mode==="limp"&&selected.hero&&selected.stack){
     for (const v of limpOpenSizes(selected.stack,selected.hero)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.openSize===v,dis:false});
@@ -357,6 +394,13 @@ function applyDefaultsC4b(){
     if (avail.length>0) selected.betSize=avail[0];
   }
 }
+function applyDefaultsOpenLimp(){
+  if (selected.mode!=="openlimp"||!selected.stack||!selected.hero||!selected.villain) return;
+  if (selected.limpSeq==null){
+    const keys=Object.keys((((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
+    if (keys.length>0) selected.limpSeq=keys[0];
+  }
+}
 function applyDefaultsLimp(){
   if (selected.mode!=="limp"||!selected.stack||!selected.hero) return;
   if (selected.openSize==null){
@@ -374,10 +418,10 @@ function renderChart(){
   if (chart) els.img.src=chart.file;
   else els.img.removeAttribute("src");
 }
-function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsLimp(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
+function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsLimp(); applyDefaultsOpenLimp(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
-  const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize}=selected;
+  const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize,limpSeq}=selected;
   const p=new URLSearchParams();
   if (mode)            p.set("mode",mode);
   if (stack)           p.set("stack",String(stack));
@@ -387,6 +431,7 @@ function syncHash(){
   if (openSize!=null)  p.set("os",String(openSize));
   if (threebetSize!=null) p.set("ts",String(threebetSize));
   if (betSize!=null)   p.set("bs",String(betSize));
+  if (limpSeq)         p.set("lq",limpSeq);
   const h=p.toString();
   if (h!==window.location.hash.replace(/^#/,"")) window.history.replaceState(null,"","#"+h);
 }
@@ -398,7 +443,7 @@ async function init(){
     const data=await res.json();
     manifest=data.charts||[];
     buildIndex();
-    selected={mode:null,stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null};
+    selected={mode:null,stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
     refreshAll();
   }catch(e){
     console.error(e);
