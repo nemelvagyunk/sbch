@@ -96,7 +96,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
         return entry("limp", "SB", "BB", _parse_size(iso_m.group(1)+"bb"), None,
                      iso_size=_parse_size(iso_m.group(2)+"bb"))
 
-    # 8. Open limp decision (limp folder) — BU-LIMP-SB-decision.png
+    # 8. Limp decision files (limp folder)
     if folder_name == "limp":
         dec_m = re.match(r"^(.+)-(UTG|HJ|CO|BU|SB|BB)-decision$", base, re.IGNORECASE)
         if dec_m:
@@ -104,7 +104,15 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
             hero = dec_m.group(2).upper()
             limper_m = re.match(r"^(UTG|HJ|CO|BU|SB|BB)-LIMP", seq, re.IGNORECASE)
             if limper_m:
-                return entry("openlimp", hero, limper_m.group(1).upper(), None, None, seq_key=seq)
+                first_limper = limper_m.group(1).upper()
+                if hero == first_limper:
+                    raises = re.findall(r"-(UTG|HJ|CO|BU|SB|BB)-RAISE", seq, re.IGNORECASE)
+                    if not raises:
+                        return None
+                    villain = raises[-1].upper()
+                    return entry("faceiso", hero, villain, None, None, seq_key=seq)
+                else:
+                    return entry("vsopenlimp", hero, first_limper, None, None, seq_key=seq)
 
     # Skip SB-LIMP and BB-vs-SB-LIMP in charts folders (belong in bvb folder only)
     if re.search(r"SB-LIMP|BB-vs-SB-LIMP", base, re.IGNORECASE):

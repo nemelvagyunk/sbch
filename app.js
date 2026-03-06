@@ -12,9 +12,11 @@ const HERO_POS_BY_MODE = {
   sqz:       ["UTG","HJ","CO","BU","SB","BB"],
   c4b:       ["CO","BU","SB","BB"],
   limp:      ["SB","BB"],
-  openlimp:  ["UTG","HJ","CO","BU","SB","BB"],
+  faceiso:    ["UTG","HJ","CO","BU"],
+  vsopenlimp: ["SB","BB","UTG","HJ","CO","BU"],
 };
-const OPENLIMP_VILLAINS = ["UTG","HJ","CO","BU"];
+const VSOPENLIMP_VILLAINS = ["UTG","HJ","CO","BU"];
+const FACEISO_VILLAINS    = ["SB","BB"];
 const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
 
 const OPEN_ALLOWED_VILLAINS = {
@@ -85,7 +87,7 @@ function buildIndex(){
     } else {
       const v=(f==="sqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
       const os=sk(ch.open_size);
-      if (f==="openlimp"){
+      if (f==="faceiso"||f==="vsopenlimp"){
         const sq=ch.seq_key||"_", vk=ch.villain||"_";
         if (!index[f])             index[f]={};
         if (!index[f][st])         index[f][st]={};
@@ -157,9 +159,9 @@ function pickChart(){
     if (!villain||!villain2) return null;
     return ((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(villain,villain2)]||{})[sk(openSize)]||{})[sk(threebetSize)]?.[sk(betSize)]||null;
   }
-  if (mode==="openlimp"){
+  if (mode==="faceiso"||mode==="vsopenlimp"){
     if (!villain||!limpSeq) return null;
-    return ((((index["openlimp"]||{})[String(stack)]||{})[hero]||{})[villain]||{})[limpSeq]||null;
+    return ((((index[mode]||{})[String(stack)]||{})[hero]||{})[villain]||{})[limpSeq]||null;
   }
   if (mode==="limp"){
     if (hero==="BB") return ((((index["limp"]||{})[String(stack)]||{})["BB"]||{})["SB"]||{})[sk(openSize)]?.["_"]||null;
@@ -186,7 +188,7 @@ function mkBtn(label,onClick,extraClass=""){
 
 function renderMode(){
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"Facing limp"},{key:"openlimp",label:"Open limp"}]){
+  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"Facing limp"},{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key; selected.villain=null; selected.villain2=null;
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
@@ -215,14 +217,17 @@ function renderHero(){
   els.heroGroup.innerHTML="";
   for (const p of HERO_ALL){
     const btn=mkBtn(p,()=>{
-      selected.hero=p; selected.villain=null; selected.villain2=null;
+      selected.hero=p;
+      if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp"){ selected.villain=null; selected.villain2=null; }
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     },"hero");
     let dis=false;
-    if (selected.mode==="openlimp"){
+    if (selected.mode==="vsopenlimp"){
       if (selected.villain) dis=POS_ORDER[p]<=POS_ORDER[selected.villain];
       else dis=false;
+    } else if (selected.mode==="faceiso"){
+      dis=!(HERO_POS_BY_MODE["faceiso"]||[]).includes(p);
     } else if (selected.mode==="limp"){
       dis=!["SB","BB"].includes(p);
     } else if (selected.mode==="sqz"||selected.mode==="c4b"){
@@ -241,9 +246,10 @@ function renderHero(){
 
 function renderVillain(){
   els.villainGroup.innerHTML="";
-  if (selected.mode==="openlimp"){
+  if (selected.mode==="vsopenlimp"||selected.mode==="faceiso"){
     els.villainGroup.style.display="";
-    for (const p of OPENLIMP_VILLAINS){
+    const vlist=selected.mode==="faceiso"?FACEISO_VILLAINS:VSOPENLIMP_VILLAINS;
+    for (const p of vlist){
       const btn=mkBtn(p,()=>{
         selected.villain=p; selected.hero=null; selected.limpSeq=null;
         syncHash(); refreshAll();
@@ -301,15 +307,15 @@ function renderVillain(){
 
 function renderSize(){
   els.sizeGroup.innerHTML="";
-  if (selected.mode==="openlimp"&&selected.villain&&selected.hero&&selected.stack){
-    const seqs=Object.keys((((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
+  if ((selected.mode==="faceiso"||selected.mode==="vsopenlimp")&&selected.villain&&selected.hero&&selected.stack){
+    const seqs=Object.keys((((index[selected.mode]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
     for (const sq of seqs){
       const label=sq.replace(/-([0-9]+(?:[.][0-9]+)?bb)/g," $1").replace(/-/g," ").toLowerCase();
       const btn=mkBtn(label,()=>{ selected.limpSeq=sq; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.limpSeq===sq,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode==="openlimp"){
+  } else if (selected.mode==="faceiso"||selected.mode==="vsopenlimp"){
     // villain or hero not yet selected — show nothing
   } else if (selected.mode==="limp"&&selected.hero&&selected.stack){
     for (const v of limpOpenSizes(selected.stack,selected.hero)){
@@ -336,7 +342,7 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode!=="openlimp") {
+  } else if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp") {
     const avail=new Set(availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain));
     const hasCtx=!!(selected.mode&&selected.stack&&selected.hero);
     for (const v of ALL_OPEN_SIZES){
@@ -398,9 +404,9 @@ function applyDefaultsC4b(){
   }
 }
 function applyDefaultsOpenLimp(){
-  if (selected.mode!=="openlimp"||!selected.stack||!selected.hero||!selected.villain) return;
+  if ((selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp")||!selected.stack||!selected.hero||!selected.villain) return;
   if (selected.limpSeq==null){
-    const keys=Object.keys((((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
+    const keys=Object.keys((((index[selected.mode]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
     if (keys.length>0) selected.limpSeq=keys[0];
   }
 }
