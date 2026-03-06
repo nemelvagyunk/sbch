@@ -218,6 +218,15 @@ function applyDefaults3bet(){
   }
 }
 
+function applyDefaultsOpen(){
+  if (selected.mode!=="open"||!selected.stack||!selected.hero) return;
+  if (selected.openSize==null){
+    const avail=availableOpenSizes("open",selected.stack,selected.hero,"_");
+    if (avail.includes(4)) selected.openSize=4;
+    else if (avail.length===1) selected.openSize=avail[0];
+  }
+}
+
 function applyDefaultsRaise(){
   if (selected.mode!=="raise"||!selected.stack||!selected.hero) return;
   if (selected.openSize==null){
@@ -234,7 +243,7 @@ function renderChart(){
   else els.img.removeAttribute("src");
 }
 
-function refreshAll(){ applyDefaultsRaise(); applyDefaults3bet(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
+function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
   const {mode,stack,hero,villain,openSize,betSize}=selected;
