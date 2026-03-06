@@ -1,0 +1,11 @@
+{
+  "name": "Poker Chart v2",
+  "short_name": "PokerChart2",
+  "display": "standalone",
+  "start_url": "./index.html",
+  "background_color": "#0b0f14",
+  "theme_color": "#0b0f14",
+  "icons": [
+    { "src": "charts/UTG-OPEN-2.5bb.png", "sizes": "any", "type": "image/png" }
+  ]
+}
