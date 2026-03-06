@@ -1,11 +1,11 @@
 {
-  "generated": "2026-03-06T15:49:18.519934Z",
+  "generated": "2026-03-06T18:48:00.920368Z",
   "charts": [
     {
       "file": "100/limp/BU-LIMP-SB-FOLD-BB-RAISE-12bb-BU-decision.png",
-      "facing": "openlimp",
+      "facing": "faceiso",
       "hero": "BU",
-      "villain": "BU",
+      "villain": "BB",
       "villain2": null,
       "stack": 100,
       "title": "BU-LIMP-SB-FOLD-BB-RAISE-12bb-BU-decision",
@@ -21,7 +21,7 @@
     },
     {
       "file": "100/limp/BU-LIMP-SB-FOLD-BB-decision.png",
-      "facing": "openlimp",
+      "facing": "vsopenlimp",
       "hero": "BB",
       "villain": "BU",
       "villain2": null,
@@ -39,9 +39,9 @@
     },
     {
       "file": "100/limp/BU-LIMP-SB-LIMP-BB-RAISE-12bb-BU-decision.png",
-      "facing": "openlimp",
+      "facing": "faceiso",
       "hero": "BU",
-      "villain": "BU",
+      "villain": "BB",
       "villain2": null,
       "stack": 100,
       "title": "BU-LIMP-SB-LIMP-BB-RAISE-12bb-BU-decision",
@@ -57,7 +57,7 @@
     },
     {
       "file": "100/limp/BU-LIMP-SB-LIMP-BB-decision.png",
-      "facing": "openlimp",
+      "facing": "vsopenlimp",
       "hero": "BB",
       "villain": "BU",
       "villain2": null,
@@ -75,9 +75,9 @@
     },
     {
       "file": "100/limp/BU-LIMP-SB-RAISE-12bb-BU-decision.png",
-      "facing": "openlimp",
+      "facing": "faceiso",
       "hero": "BU",
-      "villain": "BU",
+      "villain": "SB",
       "villain2": null,
       "stack": 100,
       "title": "BU-LIMP-SB-RAISE-12bb-BU-decision",
@@ -93,7 +93,7 @@
     },
     {
       "file": "100/limp/BU-LIMP-SB-decision.png",
-      "facing": "openlimp",
+      "facing": "vsopenlimp",
       "hero": "SB",
       "villain": "BU",
       "villain2": null,
