@@ -11,6 +11,7 @@ const HERO_POS_BY_MODE = {
   "3bet": ["UTG","HJ","CO","BU","SB"],
   sqz:    ["UTG","HJ","CO","BU","SB","BB"],
   c4b:    ["CO","BU","SB","BB"],
+  bvb:    ["BB","SB"],
 };
 const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
 
@@ -80,8 +81,10 @@ function buildIndex(){
       if (!index[f])     index[f]={};
       if (!index[f][st]) index[f][st]={};
     } else {
+      // bvb: key by iso_size for SB hero; open_size for BB hero
       const v=(f==="sqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
-      const os=sk(ch.open_size), bs=sk(ch.threebet_size);
+      const os=sk(ch.open_size);
+      const bs=(f==="bvb_iso")?sk(ch.iso_size):sk(ch.threebet_size);
       if (!index[f])             index[f]={};
       if (!index[f][st])         index[f][st]={};
       if (!index[f][st][h])      index[f][st][h]={};
@@ -117,6 +120,18 @@ function c4bThreebetSizes(stack,hero,v1,v2,openSize){
 function c4bSizes(stack,hero,v1,v2,openSize,threebetSize){
   return Object.keys(((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{})[sk(threebetSize)]||{}).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
+// BvB: BB hero -> facing bvb; SB hero -> facing bvb_iso
+function bvbFacing(hero){ return hero==="SB"?"bvb_iso":"bvb"; }
+function bvbVillain(hero){ return hero==="SB"?"BB":"SB"; }
+function bvbOpenSizes(stack,hero){
+  const f=bvbFacing(hero), v=bvbVillain(hero);
+  return Object.keys(((index[f]||{})[String(stack)]||{})[hero]||{}).map(Number).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
+}
+function bvbBetSizes(stack,hero,openSize){
+  const f=bvbFacing(hero), v=bvbVillain(hero);
+  const sub=((((index[f]||{})[String(stack)]||{})[hero]||{})[v]||{})[sk(openSize)]||{};
+  return Object.keys(sub).filter(k=>k!=="_").map(Number).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
+}
 
 function allBetSizesEver(){
   const all=new Set();
@@ -135,6 +150,11 @@ function pickChart(){
   if (mode==="c4b"){
     if (!villain||!villain2) return null;
     return ((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(villain,villain2)]||{})[sk(openSize)]||{})[sk(threebetSize)]?.[sk(betSize)]||null;
+  }
+  if (mode==="bvb"){
+    const f=bvbFacing(hero), v=bvbVillain(hero);
+    if (f==="bvb") return ((((index[f]||{})[String(stack)]||{})[hero]||{})[v]||{})[sk(openSize)]?.["_"]||null;
+    return ((((index[f]||{})[String(stack)]||{})[hero]||{})[v]||{})[sk(openSize)]?.[sk(betSize)]||null;
   }
   const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
   return ((((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{})[sk(openSize)]?.[sk(betSize)]||null;
@@ -157,7 +177,7 @@ function mkBtn(label,onClick,extraClass=""){
 
 function renderMode(){
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"}]){
+  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"bvb",label:"Facing limp"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key; selected.villain=null; selected.villain2=null;
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
@@ -191,7 +211,9 @@ function renderHero(){
       syncHash(); refreshAll();
     },"hero");
     let dis=false;
-    if (selected.mode==="sqz"||selected.mode==="c4b"){
+    if (selected.mode==="bvb"){
+      dis=!["BB","SB"].includes(p);
+    } else if (selected.mode==="sqz"||selected.mode==="c4b"){
       if (p===selected.villain||p===selected.villain2) dis=true;
       else if (selected.mode==="sqz"&&selected.villain&&selected.villain2)
         dis=POS_ORDER[p]<=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
@@ -207,6 +229,9 @@ function renderHero(){
 
 function renderVillain(){
   els.villainGroup.innerHTML="";
+  // BvB: villain auto, no selection needed
+  if (selected.mode==="bvb"){ els.villainGroup.style.display="none"; return; }
+  els.villainGroup.style.display="";
   if (selected.mode==="sqz"||selected.mode==="c4b"){
     for (const p of VILLAIN_ALL){
       const isSel=selected.villain===p||selected.villain2===p;
@@ -227,7 +252,6 @@ function renderVillain(){
         selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
         syncHash(); refreshAll();
       },"villain");
-      // disable if: already 2 selected and not one of them, or is hero, or (with hero selected) must be before hero
       const twoSel=!!(selected.villain&&selected.villain2);
       let dis=(!isSel&&twoSel)||(!!selected.hero&&p===selected.hero);
       if (!dis&&selected.hero) dis=POS_ORDER[p]>=POS_ORDER[selected.hero];
@@ -254,7 +278,33 @@ function renderVillain(){
 
 function renderSize(){
   els.sizeGroup.innerHTML="";
-  if (selected.mode==="c4b"){
+  if (selected.mode==="bvb"&&selected.hero){
+    if (selected.hero==="BB"){
+      // BB faces limp: show limp sizes
+      const avail=bvbOpenSizes(selected.stack,selected.hero);
+      for (const v of avail){
+        const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
+        setBtnState(btn,{sel:selected.openSize===v,dis:false});
+        els.sizeGroup.appendChild(btn);
+      }
+    } else {
+      // SB faces iso: first show limp size (openSize), then iso sizes (betSize)
+      const limpSizes=bvbOpenSizes(selected.stack,selected.hero);
+      for (const v of limpSizes){
+        const btn=mkBtn(sizeLabel(v)+"bb limp",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
+        setBtnState(btn,{sel:selected.openSize===v,dis:false});
+        els.sizeGroup.appendChild(btn);
+      }
+      if (selected.openSize!=null){
+        const isoSizes=bvbBetSizes(selected.stack,selected.hero,selected.openSize);
+        for (const v of isoSizes){
+          const btn=mkBtn(sizeLabel(v)+"bb iso",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
+          setBtnState(btn,{sel:selected.betSize===v,dis:false});
+          els.sizeGroup.appendChild(btn);
+        }
+      }
+    }
+  } else if (selected.mode==="c4b"){
     const avail=c4bSizes(selected.stack,selected.hero,selected.villain,selected.villain2,selected.openSize,selected.threebetSize);
     for (const v of avail){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
@@ -329,13 +379,24 @@ function applyDefaultsC4b(){
     if (avail.length>0) selected.betSize=avail[0];
   }
 }
+function applyDefaultsBvb(){
+  if (selected.mode!=="bvb"||!selected.stack||!selected.hero) return;
+  if (selected.openSize==null){
+    const avail=bvbOpenSizes(selected.stack,selected.hero);
+    if (avail.length>0) selected.openSize=avail[0];
+  }
+  if (selected.hero==="SB"&&selected.betSize==null&&selected.openSize!=null){
+    const avail=bvbBetSizes(selected.stack,selected.hero,selected.openSize);
+    if (avail.length>0) selected.betSize=avail[0];
+  }
+}
 function renderChart(){
   clearError();
   const chart=pickChart();
   if (chart) els.img.src=chart.file;
   else els.img.removeAttribute("src");
 }
-function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
+function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsBvb(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
   const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize}=selected;
