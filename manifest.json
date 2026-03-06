@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-06T11:44:12.010430Z",
+  "generated": "2026-03-06T12:04:09.401058Z",
   "charts": [
     {
       "file": "100/bvb/BB-vs-SB-OPEN-10bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -20,7 +20,7 @@
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-2.5bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -37,7 +37,7 @@
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-2bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -54,7 +54,7 @@
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-3bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -71,7 +71,7 @@
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-4bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -88,7 +88,7 @@
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-5bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -105,7 +105,7 @@
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -122,7 +122,7 @@
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-8bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -138,8 +138,25 @@
       "c4b_size_raw": null
     },
     {
+      "file": "100/bvb/SB-Complete-BB.png",
+      "facing": "limp",
+      "hero": "BB",
+      "villain": "SB",
+      "villain2": null,
+      "stack": 100,
+      "title": "SB-Complete-BB",
+      "open_size": 0.5,
+      "open_size_raw": "0.5bb",
+      "threebet_size": null,
+      "threebet_size_raw": null,
+      "iso_size": null,
+      "iso_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-10bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -156,7 +173,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-12bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -173,7 +190,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-2.5bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -190,7 +207,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-2bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -207,7 +224,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-3bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -224,7 +241,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-4bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -241,7 +258,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-5bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -258,7 +275,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -275,7 +292,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-7bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -292,7 +309,7 @@
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-8bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -359,25 +376,8 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts2bb/BB-vs-SB-LIMP-0.5bb.png",
-      "facing": "bvb",
-      "hero": "BB",
-      "villain": "SB",
-      "villain2": null,
-      "stack": 100,
-      "title": "BB-vs-SB-LIMP-0.5bb",
-      "open_size": 0.5,
-      "open_size_raw": "0.5bb",
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts2bb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -1108,7 +1108,7 @@
     },
     {
       "file": "100/charts2bb/SB-LIMP-0.5bb-vs-BB-ISO-3bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -1125,7 +1125,7 @@
     },
     {
       "file": "100/charts2bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -1566,25 +1566,8 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts2-5bb/BB-vs-SB-LIMP-0.5bb.png",
-      "facing": "bvb",
-      "hero": "BB",
-      "villain": "SB",
-      "villain2": null,
-      "stack": 100,
-      "title": "BB-vs-SB-LIMP-0.5bb",
-      "open_size": 0.5,
-      "open_size_raw": "0.5bb",
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts2-5bb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -2400,7 +2383,7 @@
     },
     {
       "file": "100/charts2-5bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -2841,25 +2824,8 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts3bb/BB-vs-SB-LIMP-0.5bb.png",
-      "facing": "bvb",
-      "hero": "BB",
-      "villain": "SB",
-      "villain2": null,
-      "stack": 100,
-      "title": "BB-vs-SB-LIMP-0.5bb",
-      "open_size": 0.5,
-      "open_size_raw": "0.5bb",
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts3bb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -3658,7 +3624,7 @@
     },
     {
       "file": "100/charts3bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -4150,25 +4116,8 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts3-5bb/BB-vs-SB-LIMP-0.5bb.png",
-      "facing": "bvb",
-      "hero": "BB",
-      "villain": "SB",
-      "villain2": null,
-      "stack": 100,
-      "title": "BB-vs-SB-LIMP-0.5bb",
-      "open_size": 0.5,
-      "open_size_raw": "0.5bb",
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts3-5bb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -5001,7 +4950,7 @@
     },
     {
       "file": "100/charts3-5bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -5714,25 +5663,8 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BB-vs-SB-LIMP-0.5bb.png",
-      "facing": "bvb",
-      "hero": "BB",
-      "villain": "SB",
-      "villain2": null,
-      "stack": 100,
-      "title": "BB-vs-SB-LIMP-0.5bb",
-      "open_size": 0.5,
-      "open_size_raw": "0.5bb",
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -7092,7 +7024,7 @@
     },
     {
       "file": "100/charts4bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -7941,25 +7873,8 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts5bb/BB-vs-SB-LIMP-0.5bb.png",
-      "facing": "bvb",
-      "hero": "BB",
-      "villain": "SB",
-      "villain2": null,
-      "stack": 100,
-      "title": "BB-vs-SB-LIMP-0.5bb",
-      "open_size": 0.5,
-      "open_size_raw": "0.5bb",
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts5bb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -8962,7 +8877,7 @@
     },
     {
       "file": "100/charts5bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
@@ -9539,25 +9454,8 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts6bb/BB-vs-SB-LIMP-0.5bb.png",
-      "facing": "bvb",
-      "hero": "BB",
-      "villain": "SB",
-      "villain2": null,
-      "stack": 100,
-      "title": "BB-vs-SB-LIMP-0.5bb",
-      "open_size": 0.5,
-      "open_size_raw": "0.5bb",
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts6bb/BB-vs-SB-OPEN-6bb.png",
-      "facing": "raise",
+      "facing": "limp",
       "hero": "BB",
       "villain": "SB",
       "villain2": null,
@@ -10356,7 +10254,7 @@
     },
     {
       "file": "100/charts6bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
-      "facing": "bvb_iso",
+      "facing": "limp",
       "hero": "SB",
       "villain": "BB",
       "villain2": null,
