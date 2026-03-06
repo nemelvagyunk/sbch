@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-06T09:41:12.652205Z",
+  "generated": "2026-03-06T09:52:53.802691Z",
   "charts": [
     {
       "file": "100/charts2bb/BB-vs-BU-OPEN-2bb.png",
@@ -4427,21 +4427,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BB-vs-BU-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "BU",
-      "villain2": "SB",
-      "stack": 100,
-      "title": "BB-vs-BU-OPEN-4bb-SB-CALL-SQZ-3.5bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 3.5,
-      "threebet_size_raw": "3.5bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BB-vs-BU-OPEN-4bb.png",
       "facing": "raise",
       "hero": "BB",
@@ -4472,21 +4457,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "CO",
-      "villain2": "BU",
-      "stack": 100,
-      "title": "BB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-SB-CALL-SQZ-28bb.png",
       "facing": "sqz",
       "hero": "BB",
@@ -4498,21 +4468,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
       "threebet_size_raw": "28.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "CO",
-      "villain2": "SB",
-      "stack": 100,
-      "title": "BB-vs-CO-OPEN-4bb-SB-CALL-SQZ-3.5bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 3.5,
-      "threebet_size_raw": "3.5bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
@@ -4547,21 +4502,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "HJ",
-      "villain2": "BU",
-      "stack": 100,
-      "title": "BB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-28bb.png",
       "facing": "sqz",
       "hero": "BB",
@@ -4577,21 +4517,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "HJ",
-      "villain2": "CO",
-      "stack": 100,
-      "title": "BB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-SB-CALL-SQZ-28bb.png",
       "facing": "sqz",
       "hero": "BB",
@@ -4603,21 +4528,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
       "threebet_size_raw": "28.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "HJ",
-      "villain2": "SB",
-      "stack": 100,
-      "title": "BB-vs-HJ-OPEN-4bb-SB-CALL-SQZ-3.5bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 3.5,
-      "threebet_size_raw": "3.5bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
@@ -4667,21 +4577,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "UTG",
-      "villain2": "BU",
-      "stack": 100,
-      "title": "BB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-28bb.png",
       "facing": "sqz",
       "hero": "BB",
@@ -4693,21 +4588,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
       "threebet_size_raw": "28.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "UTG",
-      "villain2": "CO",
-      "stack": 100,
-      "title": "BB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
@@ -4727,21 +4607,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "UTG",
-      "villain2": "HJ",
-      "stack": 100,
-      "title": "BB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-SB-CALL-SQZ-28bb.png",
       "facing": "sqz",
       "hero": "BB",
@@ -4753,21 +4618,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
       "threebet_size_raw": "28.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
-      "facing": "sqz",
-      "hero": "BB",
-      "villain": "UTG",
-      "villain2": "SB",
-      "stack": 100,
-      "title": "BB-vs-UTG-OPEN-4bb-SB-CALL-SQZ-3.5bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 3.5,
-      "threebet_size_raw": "3.5bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
@@ -5042,21 +4892,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BU",
-      "villain": "HJ",
-      "villain2": "CO",
-      "stack": 100,
-      "title": "BU-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb.png",
       "facing": "raise",
       "hero": "BU",
@@ -5087,21 +4922,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BU",
-      "villain": "UTG",
-      "villain2": "CO",
-      "stack": 100,
-      "title": "BU-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-22bb.png",
       "facing": "sqz",
       "hero": "BU",
@@ -5113,21 +4933,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
       "threebet_size_raw": "22.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "BU",
-      "villain": "UTG",
-      "villain2": "HJ",
-      "stack": 100,
-      "title": "BU-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
@@ -5432,21 +5237,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-3BET-11bb-C4B-33bb.png",
-      "facing": "c4b",
-      "hero": "CO",
-      "villain": "UTG",
-      "villain2": "HJ",
-      "stack": 100,
-      "title": "CO-vs-UTG-OPEN-4bb-HJ-3BET-11bb-C4B-33bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb",
-      "c4b_size": 33.0,
-      "c4b_size_raw": "33.0bb"
-    },
-    {
       "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-22bb.png",
       "facing": "sqz",
       "hero": "CO",
@@ -5458,21 +5248,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
       "threebet_size_raw": "22.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "CO",
-      "villain": "UTG",
-      "villain2": "HJ",
-      "stack": 100,
-      "title": "CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
@@ -5927,21 +5702,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/SB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "SB",
-      "villain": "CO",
-      "villain2": "BU",
-      "stack": 100,
-      "title": "SB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/SB-vs-CO-OPEN-4bb.png",
       "facing": "raise",
       "hero": "SB",
@@ -5972,21 +5732,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "SB",
-      "villain": "HJ",
-      "villain2": "BU",
-      "stack": 100,
-      "title": "SB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-26bb.png",
       "facing": "sqz",
       "hero": "SB",
@@ -5998,21 +5743,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
       "threebet_size_raw": "26.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "SB",
-      "villain": "HJ",
-      "villain2": "CO",
-      "stack": 100,
-      "title": "SB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
@@ -6047,21 +5777,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "SB",
-      "villain": "UTG",
-      "villain2": "BU",
-      "stack": 100,
-      "title": "SB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-26bb.png",
       "facing": "sqz",
       "hero": "SB",
@@ -6077,21 +5792,6 @@
       "c4b_size_raw": null
     },
     {
-      "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "SB",
-      "villain": "UTG",
-      "villain2": "CO",
-      "stack": 100,
-      "title": "SB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-26bb.png",
       "facing": "sqz",
       "hero": "SB",
@@ -6103,21 +5803,6 @@
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
       "threebet_size_raw": "26.0bb",
-      "c4b_size": null,
-      "c4b_size_raw": null
-    },
-    {
-      "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
-      "facing": "sqz",
-      "hero": "SB",
-      "villain": "UTG",
-      "villain2": "HJ",
-      "stack": 100,
-      "title": "SB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
-      "open_size": 4.0,
-      "open_size_raw": "4.0bb",
-      "threebet_size": 4.0,
-      "threebet_size_raw": "4.0bb",
       "c4b_size": null,
       "c4b_size_raw": null
     },
