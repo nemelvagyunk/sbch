@@ -29,12 +29,13 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
     base = m.group(1)
     file_path = f"{stack_folder}/{folder_name}/{filename}"
 
-    def entry(facing, hero, villain, open_size, bet_size):
+    def entry(facing, hero, villain, open_size, bet_size, villain2=None):
         return {
             "file": file_path,
             "facing": facing,
             "hero": hero,
             "villain": villain,
+            "villain2": villain2,
             "stack": stack,
             "title": base,
             "open_size": open_size,
@@ -61,7 +62,19 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
         bet_size  = _parse_size(f3b_m.group(4)+"bb")
         return entry("3bet", hero, villain, open_size, bet_size)
 
-    # 3. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
+    # 3. SQZ: CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-14bb.png
+    sqz_m = re.match(
+        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?-(UTG|HJ|CO|BU|SB|BB)-CALL-SQZ-([0-9]+(?:[.\-][0-9]+)?)bb$",
+        base, re.IGNORECASE)
+    if sqz_m:
+        hero      = sqz_m.group(1).upper()
+        villain   = sqz_m.group(2).upper()   # V1 openraiser
+        open_size = _parse_size(sqz_m.group(3)+"bb") if sqz_m.group(3) else folder_open_size
+        villain2  = sqz_m.group(4).upper()   # V2 caller
+        sqz_size  = _parse_size(sqz_m.group(5)+"bb")
+        return entry("sqz", hero, villain, open_size, sqz_size, villain2)
+
+    # 4. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
     fop_m = re.match(
         r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?$",
         base, re.IGNORECASE)
