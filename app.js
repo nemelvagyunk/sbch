@@ -10,7 +10,7 @@ const HERO_POS_BY_MODE = {
   raise:  ["HJ","CO","BU","SB","BB"],
   "3bet": ["UTG","HJ","CO","BU","SB"],
   sqz:    ["UTG","HJ","CO","BU","SB","BB"],
-  c4b:    ["UTG","HJ","CO","BU","SB","BB"],
+  c4b:    ["CO","BU","SB","BB"],
 };
 const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
 
@@ -109,16 +109,13 @@ function availableBetSizes(mode,stack,hero,villain,openSize,villain2){
   return Object.keys(sub).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 function c4bOpenSizes(stack,hero,v1,v2){
-  const sub=((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{};
-  return Object.keys(sub).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
+  return Object.keys(((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{}).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 function c4bThreebetSizes(stack,hero,v1,v2,openSize){
-  const sub=(((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{};
-  return Object.keys(sub).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
+  return Object.keys((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{}).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 function c4bSizes(stack,hero,v1,v2,openSize,threebetSize){
-  const sub=((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{})[sk(threebetSize)]||{};
-  return Object.keys(sub).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
+  return Object.keys(((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{})[sk(threebetSize)]||{}).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 
 function allBetSizesEver(){
@@ -137,8 +134,7 @@ function pickChart(){
   if (!mode||!stack||!hero) return null;
   if (mode==="c4b"){
     if (!villain||!villain2) return null;
-    const sub=((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(villain,villain2)]||{};
-    return ((sub[sk(openSize)]||{})[sk(threebetSize)]||{})[sk(betSize)]||null;
+    return ((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(villain,villain2)]||{})[sk(openSize)]||{})[sk(threebetSize)]?.[sk(betSize)]||null;
   }
   const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
   return ((((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{})[sk(openSize)]?.[sk(betSize)]||null;
@@ -197,10 +193,9 @@ function renderHero(){
     let dis=false;
     if (selected.mode==="sqz"||selected.mode==="c4b"){
       if (p===selected.villain||p===selected.villain2) dis=true;
-      else if (selected.mode==="sqz"&&selected.villain&&selected.villain2){
-        const maxV=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
-        dis=POS_ORDER[p]<=maxV;
-      }
+      else if (selected.mode==="sqz"&&selected.villain&&selected.villain2)
+        dis=POS_ORDER[p]<=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
+      else dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p);
     } else if (selected.mode&&selected.stack)
       dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p)||!heroHasAnyChart(selected.mode,selected.stack,p);
     else if (selected.mode)
@@ -225,14 +220,18 @@ function renderVillain(){
           selected.villain=a; selected.villain2=b;
         }
         if (selected.hero&&(selected.hero===selected.villain||selected.hero===selected.villain2)) selected.hero=null;
-        if (selected.mode==="sqz"&&selected.hero&&selected.villain&&selected.villain2){
-          if (POS_ORDER[selected.hero]<=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2])) selected.hero=null;
+        if (selected.hero&&selected.villain&&selected.villain2){
+          const maxV=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
+          if (POS_ORDER[selected.hero]<=maxV) selected.hero=null;
         }
         selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
         syncHash(); refreshAll();
       },"villain");
+      // disable if: already 2 selected and not one of them, or is hero, or (with hero selected) must be before hero
       const twoSel=!!(selected.villain&&selected.villain2);
-      setBtnState(btn,{sel:isSel,dis:(!isSel&&twoSel)||(!!selected.hero&&p===selected.hero)});
+      let dis=(!isSel&&twoSel)||(!!selected.hero&&p===selected.hero);
+      if (!dis&&selected.hero) dis=POS_ORDER[p]>=POS_ORDER[selected.hero];
+      setBtnState(btn,{sel:isSel,dis});
       els.villainGroup.appendChild(btn);
     }
     return;
@@ -284,16 +283,14 @@ function applyDefaultsOpen(){
   if (selected.mode!=="open"||!selected.stack||!selected.hero) return;
   if (selected.openSize==null){
     const avail=availableOpenSizes("open",selected.stack,selected.hero,"_");
-    if (avail.includes(4)) selected.openSize=4;
-    else if (avail.length===1) selected.openSize=avail[0];
+    if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
   }
 }
 function applyDefaultsRaise(){
   if (selected.mode!=="raise"||!selected.stack||!selected.hero) return;
   if (selected.openSize==null){
     const avail=availableOpenSizes("raise",selected.stack,selected.hero,selected.villain);
-    if (avail.includes(4)) selected.openSize=4;
-    else if (avail.length===1) selected.openSize=avail[0];
+    if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
   }
 }
 function applyDefaults3bet(){
