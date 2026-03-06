@@ -86,12 +86,12 @@ function buildIndex(){
       const v=(f==="sqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
       const os=sk(ch.open_size);
       if (f==="openlimp"){
-        const sq=ch.seq_key||"_";
+        const sq=ch.seq_key||"_", vk=ch.villain||"_";
         if (!index[f])              index[f]={};
         if (!index[f][st])          index[f][st]={};
         if (!index[f][st][h])       index[f][st][h]={};
-        if (!index[f][st][h][v])    index[f][st][h][v]={};
-        index[f][st][h][v][sq]=ch;
+        if (!index[f][st][h][vk])   index[f][st][h][vk]={};
+        index[f][st][h][vk][sq]=ch;
         continue;
       }
       const bs=(f==="limp"&&h==="SB")?sk(ch.iso_size):sk(ch.threebet_size);
@@ -301,10 +301,10 @@ function renderVillain(){
 function renderSize(){
   els.sizeGroup.innerHTML="";
   if (selected.mode==="openlimp"&&selected.villain&&selected.hero&&selected.stack){
-    const keys=Object.keys(((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]&&
-               Object.keys((((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
-    for (const sq of (keys||[])){
-      const btn=mkBtn(sq.replace(/-([0-9]+(?:[.][0-9]+)?bb)/g," $1").replace(/-/g," ").toLowerCase(),()=>{ selected.limpSeq=sq; syncHash(); refreshAll(); },"size");
+    const seqs=Object.keys((((index["openlimp"]||{})[String(selected.stack)]||{})[selected.hero]||{})[selected.villain]||{}).filter(k=>k!=="_").sort();
+    for (const sq of seqs){
+      const label=sq.replace(/-([0-9]+(?:[.][0-9]+)?bb)/g," $1").replace(/-/g," ").toLowerCase();
+      const btn=mkBtn(label,()=>{ selected.limpSeq=sq; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.limpSeq===sq,dis:false});
       els.sizeGroup.appendChild(btn);
     }
