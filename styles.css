@@ -10,7 +10,7 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
 .row+.row{margin-top:6px;}
 .group{display:flex;gap:4px;flex-wrap:nowrap;min-width:0;}
 .group>button{flex:1 1 0;min-width:0;}
-#modeGroup{flex:0 0 auto;}#modeGroup .btn{padding:0 16px;min-width:90px;}
+#modeGroup{flex:0 0 auto;}#modeGroup .btn{padding:0 14px;min-width:108px;}
 #openSizeGroup{flex:0 0 auto;}
 #heroGroup{flex:1 1 auto;padding:4px;border-radius:3px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.18);}
 #villainGroup{flex:1 1 auto;padding:4px;border-radius:3px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.18);}
