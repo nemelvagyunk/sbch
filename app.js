@@ -87,20 +87,20 @@ function buildIndex(){
       const os=sk(ch.open_size);
       if (f==="openlimp"){
         const sq=ch.seq_key||"_", vk=ch.villain||"_";
-        if (!index[f])              index[f]={};
-        if (!index[f][st])          index[f][st]={};
-        if (!index[f][st][h])       index[f][st][h]={};
-        if (!index[f][st][h][vk])   index[f][st][h][vk]={};
+        if (!index[f])             index[f]={};
+        if (!index[f][st])         index[f][st]={};
+        if (!index[f][st][h])      index[f][st][h]={};
+        if (!index[f][st][h][vk])  index[f][st][h][vk]={};
         index[f][st][h][vk][sq]=ch;
-        continue;
+      } else {
+        const bs=(f==="limp"&&h==="SB")?sk(ch.iso_size):sk(ch.threebet_size);
+        if (!index[f])             index[f]={};
+        if (!index[f][st])         index[f][st]={};
+        if (!index[f][st][h])      index[f][st][h]={};
+        if (!index[f][st][h][v])   index[f][st][h][v]={};
+        if (!index[f][st][h][v][os]) index[f][st][h][v][os]={};
+        index[f][st][h][v][os][bs]=ch;
       }
-      const bs=(f==="limp"&&h==="SB")?sk(ch.iso_size):sk(ch.threebet_size);
-      if (!index[f])             index[f]={};
-      if (!index[f][st])         index[f][st]={};
-      if (!index[f][st][h])      index[f][st][h]={};
-      if (!index[f][st][h][v])   index[f][st][h][v]={};
-      if (!index[f][st][h][v][os]) index[f][st][h][v][os]={};
-      index[f][st][h][v][os][bs]=ch;
     }
   }
 }
@@ -308,6 +308,8 @@ function renderSize(){
       setBtnState(btn,{sel:selected.limpSeq===sq,dis:false});
       els.sizeGroup.appendChild(btn);
     }
+  } else if (selected.mode==="openlimp"){
+    // villain or hero not yet selected — show nothing
   } else if (selected.mode==="limp"&&selected.hero&&selected.stack){
     for (const v of limpOpenSizes(selected.stack,selected.hero)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
@@ -333,7 +335,7 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else {
+  } else if (selected.mode!=="openlimp") {
     const avail=new Set(availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain));
     const hasCtx=!!(selected.mode&&selected.stack&&selected.hero);
     for (const v of ALL_OPEN_SIZES){
