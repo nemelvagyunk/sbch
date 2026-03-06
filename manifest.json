@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-06T12:10:50.677362Z",
+  "generated": "2026-03-06T15:14:09.932610Z",
   "charts": [
     {
       "file": "100/bvb/BB-vs-SB-OPEN-10bb.png",
@@ -16,7 +16,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-2.5bb.png",
@@ -33,7 +34,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-2bb.png",
@@ -50,7 +52,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-3bb.png",
@@ -67,7 +70,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-4bb.png",
@@ -84,7 +88,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-5bb.png",
@@ -101,7 +106,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-6bb.png",
@@ -118,7 +124,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/BB-vs-SB-OPEN-8bb.png",
@@ -135,7 +142,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-Complete-BB.png",
@@ -152,7 +160,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-10bb.png",
@@ -169,7 +178,8 @@
       "iso_size": 10.0,
       "iso_size_raw": "10.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-12bb.png",
@@ -186,7 +196,8 @@
       "iso_size": 12.0,
       "iso_size_raw": "12.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-2.5bb.png",
@@ -203,7 +214,8 @@
       "iso_size": 2.5,
       "iso_size_raw": "2.5bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-2bb.png",
@@ -220,7 +232,8 @@
       "iso_size": 2.0,
       "iso_size_raw": "2.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-3bb.png",
@@ -237,7 +250,8 @@
       "iso_size": 3.0,
       "iso_size_raw": "3.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-4bb.png",
@@ -254,7 +268,8 @@
       "iso_size": 4.0,
       "iso_size_raw": "4.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-5bb.png",
@@ -271,7 +286,8 @@
       "iso_size": 5.0,
       "iso_size_raw": "5.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -288,7 +304,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-7bb.png",
@@ -305,7 +322,8 @@
       "iso_size": 7.0,
       "iso_size_raw": "7.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/bvb/SB-LIMP-0.5bb-vs-BB-ISO-8bb.png",
@@ -322,7 +340,8 @@
       "iso_size": 8.0,
       "iso_size_raw": "8.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BB-vs-BU-OPEN-2bb.png",
@@ -339,7 +358,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BB-vs-CO-OPEN-2bb.png",
@@ -356,7 +376,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BB-vs-HJ-OPEN-2bb.png",
@@ -373,7 +394,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BB-vs-SB-OPEN-6bb.png",
@@ -390,7 +412,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BB-vs-UTG-OPEN-2bb.png",
@@ -407,7 +430,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -424,7 +448,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -441,7 +466,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -458,7 +484,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -475,7 +502,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -492,7 +520,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -509,7 +538,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -526,7 +556,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -543,7 +574,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb.png",
@@ -560,7 +592,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-vs-CO-OPEN-2bb.png",
@@ -577,7 +610,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-vs-HJ-OPEN-2bb.png",
@@ -594,7 +628,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/BU-vs-UTG-OPEN-2bb.png",
@@ -611,7 +646,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -628,7 +664,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -645,7 +682,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -662,7 +700,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -679,7 +718,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -696,7 +736,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BU-3BET-10bb.png",
@@ -713,7 +754,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BU-3BET-8bb.png",
@@ -730,7 +772,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -747,7 +790,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -764,7 +808,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -781,7 +826,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-16bb.png",
@@ -798,7 +844,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb.png",
@@ -815,7 +862,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-vs-HJ-OPEN-2bb.png",
@@ -832,7 +880,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/CO-vs-UTG-OPEN-2bb.png",
@@ -849,7 +898,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -866,7 +916,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -883,7 +934,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -900,7 +952,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -917,7 +970,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -934,7 +988,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BU-3BET-10bb.png",
@@ -951,7 +1006,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BU-3BET-8bb.png",
@@ -968,7 +1024,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-CO-3BET-10bb.png",
@@ -985,7 +1042,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-CO-3BET-8bb.png",
@@ -1002,7 +1060,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -1019,7 +1078,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -1036,7 +1096,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -1053,7 +1114,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-16bb.png",
@@ -1070,7 +1132,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb.png",
@@ -1087,7 +1150,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/HJ-vs-UTG-OPEN-2bb.png",
@@ -1104,7 +1168,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-LIMP-0.5bb-vs-BB-ISO-3bb.png",
@@ -1121,7 +1186,8 @@
       "iso_size": 3.0,
       "iso_size_raw": "3.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -1138,7 +1204,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -1155,7 +1222,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-OPEN-6bb.png",
@@ -1172,7 +1240,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-vs-BU-OPEN-2bb.png",
@@ -1189,7 +1258,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-vs-CO-OPEN-2bb.png",
@@ -1206,7 +1276,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-vs-HJ-OPEN-2bb.png",
@@ -1223,7 +1294,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/SB-vs-UTG-OPEN-2bb.png",
@@ -1240,7 +1312,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -1257,7 +1330,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -1274,7 +1348,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -1291,7 +1366,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -1308,7 +1384,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -1325,7 +1402,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BU-3BET-10bb.png",
@@ -1342,7 +1420,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BU-3BET-8bb.png",
@@ -1359,7 +1438,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-CO-3BET-10bb.png",
@@ -1376,7 +1456,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-CO-3BET-8bb.png",
@@ -1393,7 +1474,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-HJ-3BET-10bb.png",
@@ -1410,7 +1492,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-HJ-3BET-8bb.png",
@@ -1427,7 +1510,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -1444,7 +1528,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -1461,7 +1546,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -1478,7 +1564,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-16bb.png",
@@ -1495,7 +1582,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb.png",
@@ -1512,7 +1600,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-BU-OPEN-2.5bb.png",
@@ -1529,7 +1618,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-CO-OPEN-2.5bb.png",
@@ -1546,7 +1636,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-HJ-OPEN-2.5bb.png",
@@ -1563,7 +1654,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-SB-OPEN-6bb.png",
@@ -1580,7 +1672,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-UTG-OPEN-2.5bb.png",
@@ -1597,7 +1690,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -1614,7 +1708,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -1631,7 +1726,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -1648,7 +1744,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -1665,7 +1762,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -1682,7 +1780,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-10bb.png",
@@ -1699,7 +1798,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -1716,7 +1816,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -1733,7 +1834,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -1750,7 +1852,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb.png",
@@ -1767,7 +1870,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-vs-CO-OPEN-2.5bb.png",
@@ -1784,7 +1888,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-vs-HJ-OPEN-2.5bb.png",
@@ -1801,7 +1906,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/BU-vs-UTG-OPEN-2.5bb.png",
@@ -1818,7 +1924,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -1835,7 +1942,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -1852,7 +1960,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -1869,7 +1978,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -1886,7 +1996,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -1903,7 +2014,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BU-3BET-10bb.png",
@@ -1920,7 +2032,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BU-3BET-6bb.png",
@@ -1937,7 +2050,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BU-3BET-8bb.png",
@@ -1954,7 +2068,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-10bb.png",
@@ -1971,7 +2086,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -1988,7 +2104,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -2005,7 +2122,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -2022,7 +2140,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-18bb.png",
@@ -2039,7 +2158,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb.png",
@@ -2056,7 +2176,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-vs-HJ-OPEN-2.5bb.png",
@@ -2073,7 +2194,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/CO-vs-UTG-OPEN-2.5bb.png",
@@ -2090,7 +2212,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -2107,7 +2230,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -2124,7 +2248,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -2141,7 +2266,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -2158,7 +2284,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -2175,7 +2302,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BU-3BET-10bb.png",
@@ -2192,7 +2320,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BU-3BET-8bb.png",
@@ -2209,7 +2338,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-CO-3BET-10bb.png",
@@ -2226,7 +2356,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-CO-3BET-6bb.png",
@@ -2243,7 +2374,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-CO-3BET-8bb.png",
@@ -2260,7 +2392,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-10bb.png",
@@ -2277,7 +2410,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -2294,7 +2428,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -2311,7 +2446,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -2328,7 +2464,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-18bb.png",
@@ -2345,7 +2482,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb.png",
@@ -2362,7 +2500,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/HJ-vs-UTG-OPEN-2.5bb.png",
@@ -2379,7 +2518,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -2396,7 +2536,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -2413,7 +2554,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/SB-OPEN-6bb.png",
@@ -2430,7 +2572,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-BU-OPEN-2.5bb.png",
@@ -2447,7 +2590,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-CO-OPEN-2.5bb.png",
@@ -2464,7 +2608,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-HJ-OPEN-2.5bb.png",
@@ -2481,7 +2626,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-UTG-OPEN-2.5bb.png",
@@ -2498,7 +2644,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -2515,7 +2662,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -2532,7 +2680,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -2549,7 +2698,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -2566,7 +2716,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -2583,7 +2734,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BU-3BET-10bb.png",
@@ -2600,7 +2752,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BU-3BET-8bb.png",
@@ -2617,7 +2770,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-CO-3BET-10bb.png",
@@ -2634,7 +2788,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-CO-3BET-8bb.png",
@@ -2651,7 +2806,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-HJ-3BET-10bb.png",
@@ -2668,7 +2824,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-HJ-3BET-8bb.png",
@@ -2685,7 +2842,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -2702,7 +2860,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -2719,7 +2878,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -2736,7 +2896,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-18bb.png",
@@ -2753,7 +2914,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb.png",
@@ -2770,7 +2932,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BB-vs-BU-OPEN-3bb.png",
@@ -2787,7 +2950,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BB-vs-CO-OPEN-3bb.png",
@@ -2804,7 +2968,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BB-vs-HJ-OPEN-3bb.png",
@@ -2821,7 +2986,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BB-vs-SB-OPEN-6bb.png",
@@ -2838,7 +3004,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BB-vs-UTG-OPEN-3bb.png",
@@ -2855,7 +3022,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -2872,7 +3040,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -2889,7 +3058,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -2906,7 +3076,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -2923,7 +3094,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -2940,7 +3112,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-10bb.png",
@@ -2957,7 +3130,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -2974,7 +3148,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -2991,7 +3166,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -3008,7 +3184,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb.png",
@@ -3025,7 +3202,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-vs-CO-OPEN-3bb.png",
@@ -3042,7 +3220,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-vs-HJ-OPEN-3bb.png",
@@ -3059,7 +3238,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/BU-vs-UTG-OPEN-3bb.png",
@@ -3076,7 +3256,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -3093,7 +3274,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -3110,7 +3292,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -3127,7 +3310,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -3144,7 +3328,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -3161,7 +3346,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BU-3BET-10bb.png",
@@ -3178,7 +3364,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BU-3BET-8bb.png",
@@ -3195,7 +3382,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-10bb.png",
@@ -3212,7 +3400,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -3229,7 +3418,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -3246,7 +3436,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -3263,7 +3454,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-18bb.png",
@@ -3280,7 +3472,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb.png",
@@ -3297,7 +3490,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-vs-HJ-OPEN-3bb.png",
@@ -3314,7 +3508,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/CO-vs-UTG-OPEN-3bb.png",
@@ -3331,7 +3526,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -3348,7 +3544,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -3365,7 +3562,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -3382,7 +3580,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -3399,7 +3598,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -3416,7 +3616,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BU-3BET-10bb.png",
@@ -3433,7 +3634,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BU-3BET-12bb.png",
@@ -3450,7 +3652,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BU-3BET-8bb.png",
@@ -3467,7 +3670,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-CO-3BET-10bb.png",
@@ -3484,7 +3688,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-CO-3BET-8bb.png",
@@ -3501,7 +3706,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -3518,7 +3724,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -3535,7 +3742,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -3552,7 +3760,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-18bb.png",
@@ -3569,7 +3778,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-20bb.png",
@@ -3586,7 +3796,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb.png",
@@ -3603,7 +3814,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/HJ-vs-UTG-OPEN-3bb.png",
@@ -3620,7 +3832,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -3637,7 +3850,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -3654,7 +3868,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/SB-OPEN-6bb.png",
@@ -3671,7 +3886,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/SB-vs-BU-OPEN-3bb.png",
@@ -3688,7 +3904,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/SB-vs-CO-OPEN-3bb.png",
@@ -3705,7 +3922,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/SB-vs-HJ-OPEN-3bb.png",
@@ -3722,7 +3940,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/SB-vs-UTG-OPEN-3bb.png",
@@ -3739,7 +3958,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -3756,7 +3976,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -3773,7 +3994,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -3790,7 +4012,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -3807,7 +4030,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -3824,7 +4048,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-10bb.png",
@@ -3841,7 +4066,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-12bb.png",
@@ -3858,7 +4084,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-14bb.png",
@@ -3875,7 +4102,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-16bb.png",
@@ -3892,7 +4120,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-CO-3BET-10bb.png",
@@ -3909,7 +4138,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-CO-3BET-12bb.png",
@@ -3926,7 +4156,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-CO-3BET-8bb.png",
@@ -3943,7 +4174,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-HJ-3BET-10bb.png",
@@ -3960,7 +4192,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-HJ-3BET-8bb.png",
@@ -3977,7 +4210,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -3994,7 +4228,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -4011,7 +4246,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -4028,7 +4264,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-18bb.png",
@@ -4045,7 +4282,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb.png",
@@ -4062,7 +4300,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-BU-OPEN-3.5bb.png",
@@ -4079,7 +4318,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-CO-OPEN-3.5bb.png",
@@ -4096,7 +4336,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-HJ-OPEN-3.5bb.png",
@@ -4113,7 +4354,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-SB-OPEN-6bb.png",
@@ -4130,7 +4372,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-UTG-OPEN-3.5bb.png",
@@ -4147,7 +4390,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-12bb.png",
@@ -4164,7 +4408,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -4181,7 +4426,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -4198,7 +4444,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -4215,7 +4462,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -4232,7 +4480,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-12bb.png",
@@ -4249,7 +4498,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -4266,7 +4516,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -4283,7 +4534,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -4300,7 +4552,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -4317,7 +4570,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb.png",
@@ -4334,7 +4588,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-vs-CO-OPEN-3.5bb.png",
@@ -4351,7 +4606,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-vs-HJ-OPEN-3.5bb.png",
@@ -4368,7 +4624,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/BU-vs-UTG-OPEN-3.5bb.png",
@@ -4385,7 +4642,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-12bb.png",
@@ -4402,7 +4660,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -4419,7 +4678,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -4436,7 +4696,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -4453,7 +4714,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -4470,7 +4732,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BU-3BET-10bb.png",
@@ -4487,7 +4750,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BU-3BET-12bb.png",
@@ -4504,7 +4768,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-12bb.png",
@@ -4521,7 +4786,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -4538,7 +4804,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -4555,7 +4822,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -4572,7 +4840,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -4589,7 +4858,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb.png",
@@ -4606,7 +4876,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-vs-HJ-OPEN-3.5bb.png",
@@ -4623,7 +4894,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/CO-vs-UTG-OPEN-3.5bb.png",
@@ -4640,7 +4912,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -4657,7 +4930,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -4674,7 +4948,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -4691,7 +4966,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -4708,7 +4984,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-10bb.png",
@@ -4725,7 +5002,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-12bb.png",
@@ -4742,7 +5020,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-14bb.png",
@@ -4759,7 +5038,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-16bb.png",
@@ -4776,7 +5056,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-CO-3BET-10bb.png",
@@ -4793,7 +5074,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-CO-3BET-12bb.png",
@@ -4810,7 +5092,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-CO-3BET-14bb.png",
@@ -4827,7 +5110,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-12bb.png",
@@ -4844,7 +5128,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -4861,7 +5146,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -4878,7 +5164,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -4895,7 +5182,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -4912,7 +5200,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb.png",
@@ -4929,7 +5218,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/HJ-vs-UTG-OPEN-3.5bb.png",
@@ -4946,7 +5236,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -4963,7 +5254,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -4980,7 +5272,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/SB-OPEN-6bb.png",
@@ -4997,7 +5290,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-BU-OPEN-3.5bb.png",
@@ -5014,7 +5308,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-CO-OPEN-3.5bb.png",
@@ -5031,7 +5326,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-HJ-OPEN-3.5bb.png",
@@ -5048,7 +5344,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-UTG-OPEN-3.5bb.png",
@@ -5065,7 +5362,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -5082,7 +5380,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -5099,7 +5398,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -5116,7 +5416,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -5133,7 +5434,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-10bb.png",
@@ -5150,7 +5452,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-12bb.png",
@@ -5167,7 +5470,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-14bb.png",
@@ -5184,7 +5488,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-16bb.png",
@@ -5201,7 +5506,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-10bb.png",
@@ -5218,7 +5524,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-12bb.png",
@@ -5235,7 +5542,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-14bb.png",
@@ -5252,7 +5560,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-16bb.png",
@@ -5269,7 +5578,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-HJ-3BET-10bb.png",
@@ -5286,7 +5596,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-HJ-3BET-12bb.png",
@@ -5303,7 +5614,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-HJ-3BET-14bb.png",
@@ -5320,7 +5632,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -5337,7 +5650,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -5354,7 +5668,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -5371,7 +5686,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -5388,7 +5704,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb.png",
@@ -5405,7 +5722,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-BU-OPEN-4bb-SB-3BET-13bb.png",
@@ -5422,7 +5740,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-BU-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -5439,7 +5758,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-BU-OPEN-4bb.png",
@@ -5456,7 +5776,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-BU-3BET-11bb.png",
@@ -5473,7 +5794,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-BU-CALL-SQZ-28bb.png",
@@ -5490,7 +5812,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-SB-3BET-13bb.png",
@@ -5507,7 +5830,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -5524,7 +5848,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb.png",
@@ -5541,7 +5866,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-BU-3BET-11bb.png",
@@ -5558,7 +5884,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-28bb.png",
@@ -5575,7 +5902,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-CO-3BET-11bb.png",
@@ -5592,7 +5920,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-28bb.png",
@@ -5609,7 +5938,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-SB-3BET-13bb.png",
@@ -5626,7 +5956,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -5643,7 +5974,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb.png",
@@ -5660,7 +5992,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-SB-OPEN-6bb.png",
@@ -5677,7 +6010,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-BU-3BET-11bb.png",
@@ -5694,7 +6028,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-28bb.png",
@@ -5711,7 +6046,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-CO-3BET-11bb.png",
@@ -5728,7 +6064,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-28bb.png",
@@ -5745,7 +6082,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-HJ-3BET-11bb.png",
@@ -5762,7 +6100,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-28bb.png",
@@ -5779,7 +6118,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-SB-3BET-13bb.png",
@@ -5796,7 +6136,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -5813,7 +6154,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb.png",
@@ -5830,7 +6172,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -5847,7 +6190,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -5864,7 +6208,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -5881,7 +6226,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -5898,7 +6244,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -5915,7 +6262,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -5932,7 +6280,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -5949,7 +6298,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-99.5bb.png",
@@ -5966,7 +6316,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -5983,7 +6334,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -6000,7 +6352,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -6017,7 +6370,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -6034,7 +6388,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -6051,7 +6406,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -6068,7 +6424,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb.png",
@@ -6085,7 +6442,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-CO-OPEN-4bb.png",
@@ -6102,7 +6460,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb-CO-3BET-11bb.png",
@@ -6119,7 +6478,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb-CO-CALL-SQZ-22bb.png",
@@ -6136,7 +6496,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb.png",
@@ -6153,7 +6514,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-CO-3BET-11bb.png",
@@ -6170,7 +6532,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-CO-CALL-SQZ-22bb.png",
@@ -6187,7 +6550,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-HJ-3BET-11bb.png",
@@ -6204,7 +6568,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-22bb.png",
@@ -6221,7 +6586,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb.png",
@@ -6238,7 +6604,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -6255,7 +6622,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -6272,7 +6640,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -6289,7 +6658,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -6306,7 +6676,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -6323,7 +6694,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -6340,7 +6712,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -6357,7 +6730,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-11bb.png",
@@ -6374,7 +6748,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-12bb.png",
@@ -6391,7 +6766,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-14bb.png",
@@ -6408,7 +6784,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-16bb.png",
@@ -6425,7 +6802,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -6442,7 +6820,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -6459,7 +6838,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -6476,7 +6856,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -6493,7 +6874,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -6510,7 +6892,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -6527,7 +6910,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb.png",
@@ -6544,7 +6928,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-vs-HJ-OPEN-4bb.png",
@@ -6561,7 +6946,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-3BET-11bb.png",
@@ -6578,7 +6964,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-22bb.png",
@@ -6595,7 +6982,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb.png",
@@ -6612,7 +7000,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -6629,7 +7018,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -6646,7 +7036,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -6663,7 +7054,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -6680,7 +7072,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -6697,7 +7090,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -6714,7 +7108,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -6731,7 +7126,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-11bb.png",
@@ -6748,7 +7144,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-12bb.png",
@@ -6765,7 +7162,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-14bb.png",
@@ -6782,7 +7180,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-16bb.png",
@@ -6799,7 +7198,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-18bb.png",
@@ -6816,7 +7216,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-11bb.png",
@@ -6833,7 +7234,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-12bb.png",
@@ -6850,7 +7252,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-14bb.png",
@@ -6867,7 +7270,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-16bb.png",
@@ -6884,7 +7288,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -6901,7 +7306,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -6918,7 +7324,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -6935,7 +7342,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -6952,7 +7360,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -6969,7 +7378,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -6986,7 +7396,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb.png",
@@ -7003,7 +7414,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/HJ-vs-UTG-OPEN-4bb.png",
@@ -7020,7 +7432,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -7037,7 +7450,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -7054,7 +7468,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-OPEN-6bb-vs-BB-3BET-99.5bb.png",
@@ -7071,7 +7486,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-OPEN-6bb.png",
@@ -7088,7 +7504,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-BU-OPEN-4bb.png",
@@ -7105,7 +7522,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-CO-OPEN-4bb-BU-3BET-11bb.png",
@@ -7122,7 +7540,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-CO-OPEN-4bb-BU-CALL-SQZ-26bb.png",
@@ -7139,7 +7558,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-CO-OPEN-4bb.png",
@@ -7156,7 +7576,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-BU-3BET-11bb.png",
@@ -7173,7 +7594,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-26bb.png",
@@ -7190,7 +7612,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-CO-3BET-11bb.png",
@@ -7207,7 +7630,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-26bb.png",
@@ -7224,7 +7648,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb.png",
@@ -7241,7 +7666,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-BU-3BET-11bb.png",
@@ -7258,7 +7684,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-26bb.png",
@@ -7275,7 +7702,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-CO-3BET-11bb.png",
@@ -7292,7 +7720,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-26bb.png",
@@ -7309,7 +7738,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-HJ-3BET-11bb.png",
@@ -7326,7 +7756,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-26bb.png",
@@ -7343,7 +7774,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb.png",
@@ -7360,7 +7792,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -7377,7 +7810,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -7394,7 +7828,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -7411,7 +7846,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -7428,7 +7864,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -7445,7 +7882,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -7462,7 +7900,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -7479,7 +7918,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-11bb.png",
@@ -7496,7 +7936,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-12bb.png",
@@ -7513,7 +7954,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-14bb.png",
@@ -7530,7 +7972,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-16bb.png",
@@ -7547,7 +7990,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-18bb.png",
@@ -7564,7 +8008,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-11bb.png",
@@ -7581,7 +8026,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-12bb.png",
@@ -7598,7 +8044,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-14bb.png",
@@ -7615,7 +8062,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-16bb.png",
@@ -7632,7 +8080,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-11bb.png",
@@ -7649,7 +8098,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-12bb.png",
@@ -7666,7 +8116,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-14bb.png",
@@ -7683,7 +8134,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-16bb.png",
@@ -7700,7 +8152,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -7717,7 +8170,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -7734,7 +8188,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -7751,7 +8206,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -7768,7 +8224,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -7785,7 +8242,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -7802,7 +8260,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb.png",
@@ -7819,7 +8278,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BB-vs-BU-OPEN-5bb.png",
@@ -7836,7 +8296,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BB-vs-CO-OPEN-5bb.png",
@@ -7853,7 +8314,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BB-vs-HJ-OPEN-5bb.png",
@@ -7870,7 +8332,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BB-vs-SB-OPEN-6bb.png",
@@ -7887,7 +8350,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BB-vs-UTG-OPEN-5bb.png",
@@ -7904,7 +8368,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-15bb.png",
@@ -7921,7 +8386,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -7938,7 +8404,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -7955,7 +8422,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -7972,7 +8440,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -7989,7 +8458,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -8006,7 +8476,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -8023,7 +8494,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -8040,7 +8512,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -8057,7 +8530,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -8074,7 +8548,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -8091,7 +8566,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb.png",
@@ -8108,7 +8584,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-vs-CO-OPEN-5bb.png",
@@ -8125,7 +8602,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-vs-HJ-OPEN-5bb.png",
@@ -8142,7 +8620,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/BU-vs-UTG-OPEN-5bb.png",
@@ -8159,7 +8638,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-15bb.png",
@@ -8176,7 +8656,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -8193,7 +8674,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -8210,7 +8692,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -8227,7 +8710,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -8244,7 +8728,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -8261,7 +8746,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-11bb.png",
@@ -8278,7 +8764,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-12bb.png",
@@ -8295,7 +8782,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-14bb.png",
@@ -8312,7 +8800,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-15bb.png",
@@ -8329,7 +8818,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-16bb.png",
@@ -8346,7 +8836,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -8363,7 +8854,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -8380,7 +8872,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -8397,7 +8890,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -8414,7 +8908,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -8431,7 +8926,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb.png",
@@ -8448,7 +8944,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-vs-HJ-OPEN-5bb.png",
@@ -8465,7 +8962,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/CO-vs-UTG-OPEN-5bb.png",
@@ -8482,7 +8980,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-15bb.png",
@@ -8499,7 +8998,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -8516,7 +9016,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -8533,7 +9034,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -8550,7 +9052,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -8567,7 +9070,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -8584,7 +9088,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-11bb.png",
@@ -8601,7 +9106,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-12bb.png",
@@ -8618,7 +9124,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-14bb.png",
@@ -8635,7 +9142,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-15bb.png",
@@ -8652,7 +9160,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-16bb.png",
@@ -8669,7 +9178,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-11bb.png",
@@ -8686,7 +9196,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-12bb.png",
@@ -8703,7 +9214,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-14bb.png",
@@ -8720,7 +9232,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-15bb.png",
@@ -8737,7 +9250,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-16bb.png",
@@ -8754,7 +9268,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -8771,7 +9286,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -8788,7 +9304,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -8805,7 +9322,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -8822,7 +9340,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -8839,7 +9358,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb.png",
@@ -8856,7 +9376,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/HJ-vs-UTG-OPEN-5bb.png",
@@ -8873,7 +9394,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -8890,7 +9412,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -8907,7 +9430,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/SB-OPEN-6bb.png",
@@ -8924,7 +9448,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/SB-vs-BU-OPEN-5bb.png",
@@ -8941,7 +9466,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/SB-vs-CO-OPEN-5bb.png",
@@ -8958,7 +9484,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/SB-vs-HJ-OPEN-5bb.png",
@@ -8975,7 +9502,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/SB-vs-UTG-OPEN-5bb.png",
@@ -8992,7 +9520,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -9009,7 +9538,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -9026,7 +9556,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -9043,7 +9574,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -9060,7 +9592,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -9077,7 +9610,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-11bb.png",
@@ -9094,7 +9628,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-14bb.png",
@@ -9111,7 +9646,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-15bb.png",
@@ -9128,7 +9664,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-16bb.png",
@@ -9145,7 +9682,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-11bb.png",
@@ -9162,7 +9700,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-14bb.png",
@@ -9179,7 +9718,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-15bb.png",
@@ -9196,7 +9736,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-16bb.png",
@@ -9213,7 +9754,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-11bb.png",
@@ -9230,7 +9772,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-12bb.png",
@@ -9247,7 +9790,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-14bb.png",
@@ -9264,7 +9808,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-15bb.png",
@@ -9281,7 +9826,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-16bb.png",
@@ -9298,7 +9844,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -9315,7 +9862,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -9332,7 +9880,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -9349,7 +9898,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -9366,7 +9916,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -9383,7 +9934,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb.png",
@@ -9400,7 +9952,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BB-vs-BU-OPEN-6bb.png",
@@ -9417,7 +9970,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BB-vs-CO-OPEN-6bb.png",
@@ -9434,7 +9988,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BB-vs-HJ-OPEN-6bb.png",
@@ -9451,7 +10006,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BB-vs-SB-OPEN-6bb.png",
@@ -9468,7 +10024,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BB-vs-UTG-OPEN-6bb.png",
@@ -9485,7 +10042,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -9502,7 +10060,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -9519,7 +10078,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -9536,7 +10096,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -9553,7 +10114,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -9570,7 +10132,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -9587,7 +10150,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -9604,7 +10168,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -9621,7 +10186,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb.png",
@@ -9638,7 +10204,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-vs-CO-OPEN-6bb.png",
@@ -9655,7 +10222,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-vs-HJ-OPEN-6bb.png",
@@ -9672,7 +10240,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/BU-vs-UTG-OPEN-6bb.png",
@@ -9689,7 +10258,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -9706,7 +10276,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -9723,7 +10294,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -9740,7 +10312,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -9757,7 +10330,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-11bb.png",
@@ -9774,7 +10348,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-15bb.png",
@@ -9791,7 +10366,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-16bb.png",
@@ -9808,7 +10384,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-18bb.png",
@@ -9825,7 +10402,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -9842,7 +10420,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -9859,7 +10438,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -9876,7 +10456,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -9893,7 +10474,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb.png",
@@ -9910,7 +10492,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-vs-HJ-OPEN-6bb.png",
@@ -9927,7 +10510,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/CO-vs-UTG-OPEN-6bb.png",
@@ -9944,7 +10528,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -9961,7 +10546,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -9978,7 +10564,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -9995,7 +10582,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -10012,7 +10600,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-11bb.png",
@@ -10029,7 +10618,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-15bb.png",
@@ -10046,7 +10636,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-16bb.png",
@@ -10063,7 +10654,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-18bb.png",
@@ -10080,7 +10672,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-11bb.png",
@@ -10097,7 +10690,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-15bb.png",
@@ -10114,7 +10708,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-16bb.png",
@@ -10131,7 +10726,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-18bb.png",
@@ -10148,7 +10744,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -10165,7 +10762,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -10182,7 +10780,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -10199,7 +10798,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -10216,7 +10816,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb.png",
@@ -10233,7 +10834,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/HJ-vs-UTG-OPEN-6bb.png",
@@ -10250,7 +10852,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
@@ -10267,7 +10870,8 @@
       "iso_size": 6.0,
       "iso_size_raw": "6.0bb",
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -10284,7 +10888,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/SB-OPEN-6bb.png",
@@ -10301,7 +10906,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/SB-vs-BU-OPEN-6bb.png",
@@ -10318,7 +10924,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/SB-vs-CO-OPEN-6bb.png",
@@ -10335,7 +10942,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/SB-vs-HJ-OPEN-6bb.png",
@@ -10352,7 +10960,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/SB-vs-UTG-OPEN-6bb.png",
@@ -10369,7 +10978,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -10386,7 +10996,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -10403,7 +11014,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -10420,7 +11032,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -10437,7 +11050,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-11bb.png",
@@ -10454,7 +11068,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-15bb.png",
@@ -10471,7 +11086,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-16bb.png",
@@ -10488,7 +11104,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-18bb.png",
@@ -10505,7 +11122,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-11bb.png",
@@ -10522,7 +11140,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-15bb.png",
@@ -10539,7 +11158,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-16bb.png",
@@ -10556,7 +11176,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-18bb.png",
@@ -10573,7 +11194,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-11bb.png",
@@ -10590,7 +11212,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-15bb.png",
@@ -10607,7 +11230,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-16bb.png",
@@ -10624,7 +11248,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-18bb.png",
@@ -10641,7 +11266,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -10658,7 +11284,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -10675,7 +11302,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -10692,7 +11320,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -10709,7 +11338,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb.png",
@@ -10726,7 +11356,8 @@
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
-      "c4b_size_raw": null
+      "c4b_size_raw": null,
+      "seq_key": null
     }
   ]
 }
