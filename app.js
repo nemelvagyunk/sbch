@@ -9,7 +9,7 @@ const HERO_POS_BY_MODE = {
   open:   ["UTG","HJ","CO","BU","SB"],
   raise:  ["HJ","CO","BU","SB","BB"],
   "3bet": ["UTG","HJ","CO","BU","SB"],
-  sqz:    ["CO","BU","SB","BB"],
+  sqz:    ["UTG","HJ","CO","BU","SB","BB"],
 };
 const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
 
@@ -43,15 +43,14 @@ function getDefaultBetSize(stack, openSize, hero, villain){
 }
 
 const els = {
-  miniHeader:   document.querySelector(".miniHeader"),
-  status:       document.getElementById("status"),
-  modeGroup:    document.getElementById("modeGroup"),
-  stackGroup:   document.getElementById("stackGroup"),
-  heroGroup:    document.getElementById("heroGroup"),
-  villainGroup: document.getElementById("villainGroup"),
-  villain2Group:document.getElementById("villain2Group"),
-  sizeGroup:    document.getElementById("sizeGroup"),
-  img:          document.getElementById("chartImg"),
+  miniHeader:  document.querySelector(".miniHeader"),
+  status:      document.getElementById("status"),
+  modeGroup:   document.getElementById("modeGroup"),
+  stackGroup:  document.getElementById("stackGroup"),
+  heroGroup:   document.getElementById("heroGroup"),
+  villainGroup:document.getElementById("villainGroup"),
+  sizeGroup:   document.getElementById("sizeGroup"),
+  img:         document.getElementById("chartImg"),
 };
 
 let manifest = [];
@@ -83,10 +82,6 @@ function heroHasAnyChart(mode,stack,hero){ return !!(index[mode]&&index[mode][St
 function villainHasAnyChart(mode,stack,hero,villain){ return !!(index[mode]&&index[mode][String(stack)]&&index[mode][String(stack)][hero]&&index[mode][String(stack)][hero][villain]); }
 
 function sqzVillainKey(v1,v2){ return (v1||"_")+"_"+(v2||"_"); }
-function sqzHasV1(stack,hero,v1){
-  const h=(index["sqz"]||{})[String(stack)]||{};
-  return Object.keys(h[hero]||{}).some(k=>k.startsWith(v1+"_"));
-}
 function sqzHasV1V2(stack,hero,v1,v2){
   return !!((index["sqz"]||{})[String(stack)]?.[hero]?.[sqzVillainKey(v1,v2)]);
 }
@@ -143,7 +138,7 @@ function renderMode(){
       selected.mode=m.key; selected.villain=null; selected.villain2=null; selected.openSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     });
-    setBtnState(btn,{sel:selected.mode===m.key,dis:!hasMode(m.key)});
+    setBtnState(btn,{sel:selected.mode===m.key,dis:false});
     els.modeGroup.appendChild(btn);
   }
 }
@@ -169,7 +164,13 @@ function renderHero(){
       syncHash(); refreshAll();
     },"hero");
     let dis=false;
-    if (selected.mode&&selected.stack)
+    if (selected.mode==="sqz"){
+      // In SQZ hero must be after both villains
+      const v1i=selected.villain!=null?POS_ORDER[selected.villain]:-1;
+      const v2i=selected.villain2!=null?POS_ORDER[selected.villain2]:-1;
+      const minRequired=Math.max(v1i,v2i);
+      dis=POS_ORDER[p]<=minRequired;
+    } else if (selected.mode&&selected.stack)
       dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p)||!heroHasAnyChart(selected.mode,selected.stack,p);
     else if (selected.mode)
       dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p);
@@ -180,46 +181,54 @@ function renderHero(){
 
 function renderVillain(){
   els.villainGroup.innerHTML="";
+  if (selected.mode==="sqz"){
+    // Single row, toggle up to 2 villains; lower pos = V1 (raiser), higher = V2 (caller)
+    for (const p of VILLAIN_ALL){
+      const isSel1=selected.villain===p, isSel2=selected.villain2===p;
+      const isSel=isSel1||isSel2;
+      const btn=mkBtn(p,()=>{
+        if (selected.villain===p){ selected.villain=null; }
+        else if (selected.villain2===p){ selected.villain2=null; }
+        else {
+          // Add as new selection — assign to free slot, then sort by position
+          let a=selected.villain, b=selected.villain2;
+          if (!a) a=p; else b=p;
+          // Sort: lower pos = villain (V1/raiser), higher = villain2 (V2/caller)
+          if (a&&b){
+            if (POS_ORDER[a]>POS_ORDER[b]){const t=a;a=b;b=t;}
+          }
+          selected.villain=a; selected.villain2=b;
+        }
+        // Reset hero if it's no longer valid
+        if (selected.hero){
+          const v1i=selected.villain!=null?POS_ORDER[selected.villain]:-1;
+          const v2i=selected.villain2!=null?POS_ORDER[selected.villain2]:-1;
+          if (POS_ORDER[selected.hero]<=Math.max(v1i,v2i)) selected.hero=null;
+        }
+        selected.openSize=null; selected.betSize=null;
+        syncHash(); refreshAll();
+      },"villain");
+      // Disable if: already 2 selected and this isn't one of them, or same as hero
+      const twoSelected=!!(selected.villain&&selected.villain2);
+      const dis=(!isSel&&twoSelected)||(selected.hero&&p===selected.hero);
+      setBtnState(btn,{sel:isSel,dis:!!dis});
+      els.villainGroup.appendChild(btn);
+    }
+    return;
+  }
   for (const p of VILLAIN_ALL){
     const btn=mkBtn(p,()=>{
-      selected.villain=p; selected.villain2=null; selected.openSize=null; selected.betSize=null;
+      selected.villain=p; selected.openSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     },"villain");
     let dis=false;
     if (selected.mode==="open") dis=true;
-    else if (selected.mode==="sqz"){
-      if (selected.hero){
-        const hi=POS_ORDER[selected.hero], vi=POS_ORDER[p];
-        dis=vi>=hi-1;
-        if (!dis&&selected.stack) dis=!sqzHasV1(selected.stack,selected.hero,p);
-      }
-    } else if (selected.mode&&selected.stack&&selected.hero){
+    else if (selected.mode&&selected.stack&&selected.hero){
       const allowed=selected.mode==="raise"?(OPEN_ALLOWED_VILLAINS[selected.hero]||[]):VILLAIN_ALL.filter(x=>x!==selected.hero);
       dis=!allowed.includes(p)||!villainHasAnyChart(selected.mode,selected.stack,selected.hero,p);
     } else if (selected.hero&&p===selected.hero) dis=true;
     setBtnState(btn,{sel:selected.villain===p,dis});
     els.villainGroup.appendChild(btn);
-  }
-}
-
-function renderVillain2(){
-  const show=selected.mode==="sqz";
-  els.villain2Group.style.display=show?"":"none";
-  els.villain2Group.innerHTML="";
-  if (!show) return;
-  for (const p of VILLAIN_ALL){
-    const btn=mkBtn(p,()=>{
-      selected.villain2=p; selected.openSize=null; selected.betSize=null;
-      syncHash(); refreshAll();
-    },"villain");
-    let dis=true;
-    if (selected.hero&&selected.villain){
-      const hi=POS_ORDER[selected.hero], v1i=POS_ORDER[selected.villain], v2i=POS_ORDER[p];
-      dis=!(v2i>v1i&&v2i<hi);
-      if (!dis&&selected.stack) dis=!sqzHasV1V2(selected.stack,selected.hero,selected.villain,p);
-    }
-    setBtnState(btn,{sel:selected.villain2===p,dis});
-    els.villain2Group.appendChild(btn);
   }
 }
 
@@ -287,7 +296,7 @@ function renderChart(){
   else els.img.removeAttribute("src");
 }
 
-function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); renderMode(); renderStack(); renderHero(); renderVillain(); renderVillain2(); renderSize(); renderChart(); }
+function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
   const {mode,stack,hero,villain,villain2,openSize,betSize}=selected;
