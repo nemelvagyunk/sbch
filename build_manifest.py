@@ -31,13 +31,9 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
 
     def entry(facing, hero, villain, open_size, bet_size, villain2=None, iso_size=None, c4b_size=None):
         return {
-            "file": file_path,
-            "facing": facing,
-            "hero": hero,
-            "villain": villain,
-            "villain2": villain2,
-            "stack": stack,
-            "title": base,
+            "file": file_path, "facing": facing,
+            "hero": hero, "villain": villain, "villain2": villain2,
+            "stack": stack, "title": base,
             "open_size": open_size,
             "open_size_raw": f"{open_size}bb" if open_size else None,
             "threebet_size": bet_size,
@@ -66,7 +62,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
         bet_size  = _parse_size(f3b_m.group(4)+"bb")
         return entry("3bet", hero, villain, open_size, bet_size)
 
-    # 3. SQZ: BB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-28bb.png
+    # 3. SQZ
     sqz_m = re.match(
         r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-CALL-SQZ-([0-9]+(?:[.][0-9]+)?)bb$",
         base, re.IGNORECASE)
@@ -75,7 +71,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
                      _parse_size(sqz_m.group(3)+"bb"), _parse_size(sqz_m.group(5)+"bb"),
                      villain2=sqz_m.group(4).upper())
 
-    # 4. C4B: SB-vs-HJ-OPEN-4bb-BU-3BET-11bb.png
+    # 4. C4B
     c4b_m = re.match(
         r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-3BET-([0-9]+(?:[.][0-9]+)?)bb$",
         base, re.IGNORECASE)
@@ -84,22 +80,26 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
                      _parse_size(c4b_m.group(3)+"bb"), _parse_size(c4b_m.group(5)+"bb"),
                      villain2=c4b_m.group(4).upper())
 
-    # 5. BvB — BB-vs-SB-LIMP-0.5bb.png (csak bvb mappából)
-    bvb_m = re.match(r"^BB-vs-SB-LIMP-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
+    # 5. Facing limp BB with size — BB-vs-SB-OPEN-4bb.png
+    bvb_m = re.match(r"^BB-vs-SB-OPEN-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
     if bvb_m:
-        return entry("bvb", "BB", "SB", _parse_size(bvb_m.group(1)+"bb"), None)
+        return entry("limp", "BB", "SB", _parse_size(bvb_m.group(1)+"bb"), None)
 
-    # 6. BvB ISO — SB-LIMP-0.5bb-vs-BB-ISO-6bb.png (csak bvb mappából)
+    # 6. Facing limp BB no size — SB-Complete-BB.png (SB completes 0.5bb, BB decides)
+    if re.match(r"^SB-Complete-BB$", base, re.IGNORECASE):
+        return entry("limp", "BB", "SB", 0.5, None)
+
+    # 7. Facing limp SB — SB-LIMP-0.5bb-vs-BB-ISO-6bb.png
     iso_m = re.match(r"^SB-LIMP-([0-9]+(?:[.][0-9]+)?)bb-vs-BB-ISO-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
     if iso_m:
-        return entry("bvb_iso", "SB", "BB", _parse_size(iso_m.group(1)+"bb"), None,
+        return entry("limp", "SB", "BB", _parse_size(iso_m.group(1)+"bb"), None,
                      iso_size=_parse_size(iso_m.group(2)+"bb"))
 
-    # Skip SB-LIMP and BB-ISO in charts folders (belong in bvb folder only)
-    if re.search(r"(SB-LIMP|BB-ISO)", base, re.IGNORECASE):
+    # Skip SB-LIMP in charts folders
+    if re.search(r"SB-LIMP", base, re.IGNORECASE):
         return None
 
-    # 7. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
+    # 8. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
     fop_m = re.match(
         r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?$",
         base, re.IGNORECASE)
