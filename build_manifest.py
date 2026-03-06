@@ -29,23 +29,18 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
     base = m.group(1)
     file_path = f"{stack_folder}/{folder_name}/{filename}"
 
-    def entry(facing, hero, villain, open_size, bet_size, villain2=None, iso_size=None, c4b_size=None):
+    def entry(facing, hero, villain, open_size, bet_size):
         return {
             "file": file_path,
             "facing": facing,
             "hero": hero,
             "villain": villain,
-            "villain2": villain2,
             "stack": stack,
             "title": base,
             "open_size": open_size,
             "open_size_raw": f"{open_size}bb" if open_size else None,
             "threebet_size": bet_size,
             "threebet_size_raw": f"{bet_size}bb" if bet_size else None,
-            "iso_size": iso_size,
-            "iso_size_raw": f"{iso_size}bb" if iso_size else None,
-            "c4b_size": c4b_size,
-            "c4b_size_raw": f"{c4b_size}bb" if c4b_size else None,
         }
 
     # 1. Open RFI: UTG-OPEN.png or UTG-OPEN-2.5bb.png
@@ -66,43 +61,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
         bet_size  = _parse_size(f3b_m.group(4)+"bb")
         return entry("3bet", hero, villain, open_size, bet_size)
 
-    # 3. SQZ: CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-14bb.png
-    sqz_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-CALL-SQZ-([0-9]+(?:[.][0-9]+)?)bb$",
-        base, re.IGNORECASE)
-    if sqz_m:
-        hero      = sqz_m.group(1).upper()
-        villain   = sqz_m.group(2).upper()
-        open_size = _parse_size(sqz_m.group(3)+"bb")
-        villain2  = sqz_m.group(4).upper()
-        sqz_size  = _parse_size(sqz_m.group(5)+"bb")
-        return entry("sqz", hero, villain, open_size, sqz_size, villain2)
-
-    # 4. C4B: SB-vs-HJ-OPEN-4bb-BU-3BET-11bb.png
-    c4b_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-3BET-([0-9]+(?:[.][0-9]+)?)bb$",
-        base, re.IGNORECASE)
-    if c4b_m:
-        hero        = c4b_m.group(1).upper()
-        villain     = c4b_m.group(2).upper()
-        open_size   = _parse_size(c4b_m.group(3)+"bb")
-        villain2    = c4b_m.group(4).upper()
-        threebet_sz = _parse_size(c4b_m.group(5)+"bb")
-        return entry("c4b", hero, villain, open_size, threebet_sz, villain2)
-
-    # 5. BvB — BB-vs-SB-LIMP-0.5bb.png (BB faces SB limp)
-    bvb_m = re.match(r"^BB-vs-SB-LIMP-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
-    if bvb_m:
-        return entry("bvb", "BB", "SB", _parse_size(bvb_m.group(1)+"bb"), None)
-
-    # 6. BvB ISO — SB-LIMP-0.5bb-vs-BB-ISO-6bb.png (SB faces BB iso after limp)
-    iso_m = re.match(r"^SB-LIMP-([0-9]+(?:[.][0-9]+)?)bb-vs-BB-ISO-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
-    if iso_m:
-        limp_size = _parse_size(iso_m.group(1)+"bb")
-        iso_size  = _parse_size(iso_m.group(2)+"bb")
-        return entry("bvb_iso", "SB", "BB", limp_size, None, iso_size=iso_size)
-
-    # 7. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
+    # 3. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
     fop_m = re.match(
         r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?$",
         base, re.IGNORECASE)
@@ -111,6 +70,10 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
         villain   = fop_m.group(2).upper()
         open_size = _parse_size(fop_m.group(3)+"bb") if fop_m.group(3) else folder_open_size
         return entry("raise", hero, villain, open_size, None)
+
+    # Skip SB-LIMP and BB-ISO in charts folders (belong in bvb folder)
+    if re.search(r'(SB-LIMP|BB-ISO)', base, re.IGNORECASE):
+        return None
 
     return None
 
@@ -124,16 +87,6 @@ def main():
         if not os.path.isdir(stack_path):
             print(f"Nem található: {stack_folder}/ (kihagyva)")
             continue
-        bvb_path = os.path.join(stack_path, "bvb")
-        if os.path.isdir(bvb_path):
-            for fn in sorted(os.listdir(bvb_path)):
-                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
-                    continue
-                info = parse_chart_filename(fn, stack, None, "bvb", stack_folder)
-                if info:
-                    charts.append(info)
-                else:
-                    skipped.append(f"{stack_folder}/bvb/{fn}")
         for folder_name, open_size in OPEN_SIZE_FOLDERS.items():
             folder_path = os.path.join(stack_path, folder_name)
             if not os.path.isdir(folder_path):
