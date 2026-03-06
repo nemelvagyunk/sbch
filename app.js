@@ -218,15 +218,23 @@ function applyDefaults3bet(){
   }
 }
 
+function applyDefaultsRaise(){
+  if (selected.mode!=="raise"||!selected.stack||!selected.hero) return;
+  if (selected.openSize==null){
+    const avail=availableOpenSizes("raise",selected.stack,selected.hero,selected.villain);
+    if (avail.includes(4)) selected.openSize=4;
+    else if (avail.length===1) selected.openSize=avail[0];
+  }
+}
+
 function renderChart(){
   clearError();
-  applyDefaults3bet();
   const chart=pickChart();
   if (chart) els.img.src=chart.file;
   else els.img.removeAttribute("src");
 }
 
-function refreshAll(){ renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
+function refreshAll(){ applyDefaultsRaise(); applyDefaults3bet(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
   const {mode,stack,hero,villain,openSize,betSize}=selected;
@@ -248,7 +256,7 @@ async function init(){
     const data=await res.json();
     manifest=data.charts||[];
     buildIndex();
-    selected={mode:null,stack:null,hero:null,villain:null,openSize:null,betSize:null};
+    selected={mode:null,stack:100,hero:null,villain:null,openSize:null,betSize:null};
     refreshAll();
   }catch(e){
     console.error(e);
