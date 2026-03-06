@@ -29,7 +29,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
     base = m.group(1)
     file_path = f"{stack_folder}/{folder_name}/{filename}"
 
-    def entry(facing, hero, villain, open_size, bet_size, villain2=None, iso_size=None, c4b_size=None):
+    def entry(facing, hero, villain, open_size, bet_size, villain2=None, iso_size=None, c4b_size=None, seq_key=None):
         return {
             "file": file_path, "facing": facing,
             "hero": hero, "villain": villain, "villain2": villain2,
@@ -42,6 +42,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
             "iso_size_raw": f"{iso_size}bb" if iso_size else None,
             "c4b_size": c4b_size,
             "c4b_size_raw": f"{c4b_size}bb" if c4b_size else None,
+            "seq_key": seq_key,
         }
 
     # 1. Open RFI: UTG-OPEN.png or UTG-OPEN-2.5bb.png
@@ -95,18 +96,8 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
         return entry("limp", "SB", "BB", _parse_size(iso_m.group(1)+"bb"), None,
                      iso_size=_parse_size(iso_m.group(2)+"bb"))
 
-    # 8. Open limp decision (limp folder) — BU-LIMP-SB-decision.png
-    if folder_name == "limp":
-        dec_m = re.match(r"^(.+)-(UTG|HJ|CO|BU|SB|BB)-decision$", base, re.IGNORECASE)
-        if dec_m:
-            seq = dec_m.group(1)
-            hero = dec_m.group(2).upper()
-            limper_m = re.match(r"^(UTG|HJ|CO|BU|SB|BB)-LIMP", seq, re.IGNORECASE)
-            if limper_m:
-                return entry("openlimp", hero, limper_m.group(1).upper(), None, None, seq_key=seq)
-
-    # Skip SB-LIMP and BB-vs-SB-LIMP in charts folders (belong in bvb folder only)
-    if re.search(r"SB-LIMP|BB-vs-SB-LIMP", base, re.IGNORECASE):
+    # Skip SB-LIMP in charts folders
+    if re.search(r"SB-LIMP", base, re.IGNORECASE):
         return None
 
     # 8. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
@@ -135,16 +126,6 @@ def main():
         if not os.path.isdir(stack_path):
             print(f"Nem található: {stack_folder}/ (kihagyva)")
             continue
-        limp_path = os.path.join(stack_path, "limp")
-        if os.path.isdir(limp_path):
-            for fn in sorted(os.listdir(limp_path)):
-                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
-                    continue
-                info = parse_chart_filename(fn, stack, None, "limp", stack_folder)
-                if info:
-                    charts.append(info)
-                else:
-                    skipped.append(f"{stack_folder}/limp/{fn}")
         bvb_path = os.path.join(stack_path, "bvb")
         if os.path.isdir(bvb_path):
             for fn in sorted(os.listdir(bvb_path)):
