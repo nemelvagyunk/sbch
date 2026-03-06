@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-06T09:06:03.206621Z",
+  "generated": "2026-03-06T09:41:12.652205Z",
   "charts": [
     {
       "file": "100/charts2bb/BB-vs-BU-OPEN-2bb.png",
@@ -12,7 +12,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BB-vs-CO-OPEN-2bb.png",
@@ -25,7 +27,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BB-vs-HJ-OPEN-2bb.png",
@@ -38,7 +42,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BB-vs-SB-OPEN-6bb.png",
@@ -51,7 +57,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BB-vs-UTG-OPEN-2bb.png",
@@ -64,7 +72,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -77,7 +87,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -90,7 +102,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -103,7 +117,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -116,7 +132,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -129,7 +147,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -142,7 +162,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -155,7 +177,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -168,7 +192,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-OPEN-2bb.png",
@@ -181,7 +207,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-vs-CO-OPEN-2bb.png",
@@ -194,7 +222,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-vs-HJ-OPEN-2bb.png",
@@ -207,7 +237,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/BU-vs-UTG-OPEN-2bb.png",
@@ -220,7 +252,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -233,7 +267,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -246,7 +282,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -259,7 +297,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -272,7 +312,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -285,7 +327,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BU-3BET-10bb.png",
@@ -298,7 +342,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-BU-3BET-8bb.png",
@@ -311,7 +357,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -324,7 +372,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -337,7 +387,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -350,7 +402,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb-vs-SB-3BET-16bb.png",
@@ -363,7 +417,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-OPEN-2bb.png",
@@ -376,7 +432,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-vs-HJ-OPEN-2bb.png",
@@ -389,7 +447,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/CO-vs-UTG-OPEN-2bb.png",
@@ -402,7 +462,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -415,7 +477,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -428,7 +492,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -441,7 +507,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -454,7 +522,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -467,7 +537,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BU-3BET-10bb.png",
@@ -480,7 +552,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-BU-3BET-8bb.png",
@@ -493,7 +567,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-CO-3BET-10bb.png",
@@ -506,7 +582,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-CO-3BET-8bb.png",
@@ -519,7 +597,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -532,7 +612,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -545,7 +627,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -558,7 +642,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb-vs-SB-3BET-16bb.png",
@@ -571,7 +657,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-OPEN-2bb.png",
@@ -584,7 +672,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/HJ-vs-UTG-OPEN-2bb.png",
@@ -597,7 +687,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -610,7 +702,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/SB-OPEN-6bb.png",
@@ -623,7 +717,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/SB-vs-BU-OPEN-2bb.png",
@@ -636,7 +732,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/SB-vs-CO-OPEN-2bb.png",
@@ -649,7 +747,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/SB-vs-HJ-OPEN-2bb.png",
@@ -662,7 +762,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/SB-vs-UTG-OPEN-2bb.png",
@@ -675,7 +777,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-12bb.png",
@@ -688,7 +792,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-14bb.png",
@@ -701,7 +807,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-16bb.png",
@@ -714,7 +822,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-18bb.png",
@@ -727,7 +837,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BB-3BET-20bb.png",
@@ -740,7 +852,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BU-3BET-10bb.png",
@@ -753,7 +867,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-BU-3BET-8bb.png",
@@ -766,7 +882,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-CO-3BET-10bb.png",
@@ -779,7 +897,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-CO-3BET-8bb.png",
@@ -792,7 +912,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-HJ-3BET-10bb.png",
@@ -805,7 +927,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-HJ-3BET-8bb.png",
@@ -818,7 +942,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-10bb.png",
@@ -831,7 +957,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-12bb.png",
@@ -844,7 +972,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-14bb.png",
@@ -857,7 +987,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb-vs-SB-3BET-16bb.png",
@@ -870,7 +1002,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2bb/UTG-OPEN-2bb.png",
@@ -883,7 +1017,9 @@
       "open_size": 2.0,
       "open_size_raw": "2.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-BU-OPEN-2.5bb.png",
@@ -896,7 +1032,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-CO-OPEN-2.5bb.png",
@@ -909,7 +1047,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-HJ-OPEN-2.5bb.png",
@@ -922,7 +1062,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-SB-OPEN-6bb.png",
@@ -935,7 +1077,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BB-vs-UTG-OPEN-2.5bb.png",
@@ -948,7 +1092,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -961,7 +1107,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -974,7 +1122,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -987,7 +1137,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -1000,7 +1152,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -1013,7 +1167,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-10bb.png",
@@ -1026,7 +1182,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -1039,7 +1197,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -1052,7 +1212,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -1065,7 +1227,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-OPEN-2.5bb.png",
@@ -1078,7 +1242,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-vs-CO-OPEN-2.5bb.png",
@@ -1091,7 +1257,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-vs-HJ-OPEN-2.5bb.png",
@@ -1104,7 +1272,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/BU-vs-UTG-OPEN-2.5bb.png",
@@ -1117,7 +1287,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -1130,7 +1302,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -1143,7 +1317,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -1156,7 +1332,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -1169,7 +1347,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -1182,7 +1362,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BU-3BET-10bb.png",
@@ -1195,7 +1377,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BU-3BET-6bb.png",
@@ -1208,7 +1392,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 6.0,
-      "threebet_size_raw": "6.0bb"
+      "threebet_size_raw": "6.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-BU-3BET-8bb.png",
@@ -1221,7 +1407,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-10bb.png",
@@ -1234,7 +1422,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -1247,7 +1437,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -1260,7 +1452,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -1273,7 +1467,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb-vs-SB-3BET-18bb.png",
@@ -1286,7 +1482,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-OPEN-2.5bb.png",
@@ -1299,7 +1497,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-vs-HJ-OPEN-2.5bb.png",
@@ -1312,7 +1512,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/CO-vs-UTG-OPEN-2.5bb.png",
@@ -1325,7 +1527,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -1338,7 +1542,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -1351,7 +1557,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -1364,7 +1572,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -1377,7 +1587,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -1390,7 +1602,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BU-3BET-10bb.png",
@@ -1403,7 +1617,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-BU-3BET-8bb.png",
@@ -1416,7 +1632,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-CO-3BET-10bb.png",
@@ -1429,7 +1647,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-CO-3BET-6bb.png",
@@ -1442,7 +1662,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 6.0,
-      "threebet_size_raw": "6.0bb"
+      "threebet_size_raw": "6.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-CO-3BET-8bb.png",
@@ -1455,7 +1677,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-10bb.png",
@@ -1468,7 +1692,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -1481,7 +1707,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -1494,7 +1722,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -1507,7 +1737,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb-vs-SB-3BET-18bb.png",
@@ -1520,7 +1752,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-OPEN-2.5bb.png",
@@ -1533,7 +1767,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/HJ-vs-UTG-OPEN-2.5bb.png",
@@ -1546,7 +1782,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -1559,7 +1797,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/SB-OPEN-6bb.png",
@@ -1572,7 +1812,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-BU-OPEN-2.5bb.png",
@@ -1585,7 +1827,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-CO-OPEN-2.5bb.png",
@@ -1598,7 +1842,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-HJ-OPEN-2.5bb.png",
@@ -1611,7 +1857,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/SB-vs-UTG-OPEN-2.5bb.png",
@@ -1624,7 +1872,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-12bb.png",
@@ -1637,7 +1887,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-14bb.png",
@@ -1650,7 +1902,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-16bb.png",
@@ -1663,7 +1917,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-18bb.png",
@@ -1676,7 +1932,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BB-3BET-20bb.png",
@@ -1689,7 +1947,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BU-3BET-10bb.png",
@@ -1702,7 +1962,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-BU-3BET-8bb.png",
@@ -1715,7 +1977,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-CO-3BET-10bb.png",
@@ -1728,7 +1992,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-CO-3BET-8bb.png",
@@ -1741,7 +2007,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-HJ-3BET-10bb.png",
@@ -1754,7 +2022,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-HJ-3BET-8bb.png",
@@ -1767,7 +2037,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-12bb.png",
@@ -1780,7 +2052,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-14bb.png",
@@ -1793,7 +2067,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-16bb.png",
@@ -1806,7 +2082,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb-vs-SB-3BET-18bb.png",
@@ -1819,7 +2097,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts2-5bb/UTG-OPEN-2.5bb.png",
@@ -1832,7 +2112,9 @@
       "open_size": 2.5,
       "open_size_raw": "2.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BB-vs-BU-OPEN-3bb.png",
@@ -1845,7 +2127,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BB-vs-CO-OPEN-3bb.png",
@@ -1858,7 +2142,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BB-vs-HJ-OPEN-3bb.png",
@@ -1871,7 +2157,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BB-vs-SB-OPEN-6bb.png",
@@ -1884,7 +2172,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BB-vs-UTG-OPEN-3bb.png",
@@ -1897,7 +2187,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -1910,7 +2202,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -1923,7 +2217,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -1936,7 +2232,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -1949,7 +2247,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -1962,7 +2262,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-10bb.png",
@@ -1975,7 +2277,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -1988,7 +2292,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -2001,7 +2307,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -2014,7 +2322,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-OPEN-3bb.png",
@@ -2027,7 +2337,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-vs-CO-OPEN-3bb.png",
@@ -2040,7 +2352,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-vs-HJ-OPEN-3bb.png",
@@ -2053,7 +2367,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/BU-vs-UTG-OPEN-3bb.png",
@@ -2066,7 +2382,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -2079,7 +2397,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -2092,7 +2412,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -2105,7 +2427,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -2118,7 +2442,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -2131,7 +2457,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BU-3BET-10bb.png",
@@ -2144,7 +2472,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-BU-3BET-8bb.png",
@@ -2157,7 +2487,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-10bb.png",
@@ -2170,7 +2502,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -2183,7 +2517,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -2196,7 +2532,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -2209,7 +2547,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb-vs-SB-3BET-18bb.png",
@@ -2222,7 +2562,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-OPEN-3bb.png",
@@ -2235,7 +2577,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-vs-HJ-OPEN-3bb.png",
@@ -2248,7 +2592,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/CO-vs-UTG-OPEN-3bb.png",
@@ -2261,7 +2607,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -2274,7 +2622,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -2287,7 +2637,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -2300,7 +2652,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -2313,7 +2667,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -2326,7 +2682,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BU-3BET-10bb.png",
@@ -2339,7 +2697,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BU-3BET-12bb.png",
@@ -2352,7 +2712,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-BU-3BET-8bb.png",
@@ -2365,7 +2727,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-CO-3BET-10bb.png",
@@ -2378,7 +2742,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-CO-3BET-8bb.png",
@@ -2391,7 +2757,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -2404,7 +2772,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -2417,7 +2787,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -2430,7 +2802,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-18bb.png",
@@ -2443,7 +2817,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb-vs-SB-3BET-20bb.png",
@@ -2456,7 +2832,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-OPEN-3bb.png",
@@ -2469,7 +2847,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/HJ-vs-UTG-OPEN-3bb.png",
@@ -2482,7 +2862,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -2495,7 +2877,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/SB-OPEN-6bb.png",
@@ -2508,7 +2892,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/SB-vs-BU-OPEN-3bb.png",
@@ -2521,7 +2907,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/SB-vs-CO-OPEN-3bb.png",
@@ -2534,7 +2922,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/SB-vs-HJ-OPEN-3bb.png",
@@ -2547,7 +2937,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/SB-vs-UTG-OPEN-3bb.png",
@@ -2560,7 +2952,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-12bb.png",
@@ -2573,7 +2967,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-14bb.png",
@@ -2586,7 +2982,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-16bb.png",
@@ -2599,7 +2997,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-18bb.png",
@@ -2612,7 +3012,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BB-3BET-20bb.png",
@@ -2625,7 +3027,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-10bb.png",
@@ -2638,7 +3042,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-12bb.png",
@@ -2651,7 +3057,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-14bb.png",
@@ -2664,7 +3072,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-BU-3BET-16bb.png",
@@ -2677,7 +3087,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-CO-3BET-10bb.png",
@@ -2690,7 +3102,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-CO-3BET-12bb.png",
@@ -2703,7 +3117,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-CO-3BET-8bb.png",
@@ -2716,7 +3132,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-HJ-3BET-10bb.png",
@@ -2729,7 +3147,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-HJ-3BET-8bb.png",
@@ -2742,7 +3162,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 8.0,
-      "threebet_size_raw": "8.0bb"
+      "threebet_size_raw": "8.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-12bb.png",
@@ -2755,7 +3177,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-14bb.png",
@@ -2768,7 +3192,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-16bb.png",
@@ -2781,7 +3207,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb-vs-SB-3BET-18bb.png",
@@ -2794,7 +3222,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3bb/UTG-OPEN-3bb.png",
@@ -2807,7 +3237,9 @@
       "open_size": 3.0,
       "open_size_raw": "3.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-BU-OPEN-3.5bb.png",
@@ -2820,7 +3252,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-CO-OPEN-3.5bb.png",
@@ -2833,7 +3267,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-HJ-OPEN-3.5bb.png",
@@ -2846,7 +3282,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-SB-OPEN-6bb.png",
@@ -2859,7 +3297,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BB-vs-UTG-OPEN-3.5bb.png",
@@ -2872,7 +3312,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-12bb.png",
@@ -2885,7 +3327,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -2898,7 +3342,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -2911,7 +3357,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -2924,7 +3372,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -2937,7 +3387,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-12bb.png",
@@ -2950,7 +3402,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -2963,7 +3417,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -2976,7 +3432,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -2989,7 +3447,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -3002,7 +3462,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-OPEN-3.5bb.png",
@@ -3015,7 +3477,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-vs-CO-OPEN-3.5bb.png",
@@ -3028,7 +3492,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-vs-HJ-OPEN-3.5bb.png",
@@ -3041,7 +3507,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/BU-vs-UTG-OPEN-3.5bb.png",
@@ -3054,7 +3522,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-12bb.png",
@@ -3067,7 +3537,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -3080,7 +3552,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -3093,7 +3567,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -3106,7 +3582,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -3119,7 +3597,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BU-3BET-10bb.png",
@@ -3132,7 +3612,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-BU-3BET-12bb.png",
@@ -3145,7 +3627,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-12bb.png",
@@ -3158,7 +3642,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -3171,7 +3657,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -3184,7 +3672,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -3197,7 +3687,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -3210,7 +3702,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-OPEN-3.5bb.png",
@@ -3223,7 +3717,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-vs-HJ-OPEN-3.5bb.png",
@@ -3236,7 +3732,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/CO-vs-UTG-OPEN-3.5bb.png",
@@ -3249,7 +3747,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -3262,7 +3762,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -3275,7 +3777,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -3288,7 +3792,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -3301,7 +3807,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-10bb.png",
@@ -3314,7 +3822,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-12bb.png",
@@ -3327,7 +3837,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-14bb.png",
@@ -3340,7 +3852,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-BU-3BET-16bb.png",
@@ -3353,7 +3867,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-CO-3BET-10bb.png",
@@ -3366,7 +3882,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-CO-3BET-12bb.png",
@@ -3379,7 +3897,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-CO-3BET-14bb.png",
@@ -3392,7 +3912,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-12bb.png",
@@ -3405,7 +3927,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -3418,7 +3942,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -3431,7 +3957,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -3444,7 +3972,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -3457,7 +3987,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-OPEN-3.5bb.png",
@@ -3470,7 +4002,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/HJ-vs-UTG-OPEN-3.5bb.png",
@@ -3483,7 +4017,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -3496,7 +4032,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/SB-OPEN-6bb.png",
@@ -3509,7 +4047,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-BU-OPEN-3.5bb.png",
@@ -3522,7 +4062,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-CO-OPEN-3.5bb.png",
@@ -3535,7 +4077,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-HJ-OPEN-3.5bb.png",
@@ -3548,7 +4092,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/SB-vs-UTG-OPEN-3.5bb.png",
@@ -3561,7 +4107,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-14bb.png",
@@ -3574,7 +4122,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-16bb.png",
@@ -3587,7 +4137,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-18bb.png",
@@ -3600,7 +4152,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BB-3BET-20bb.png",
@@ -3613,7 +4167,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-10bb.png",
@@ -3626,7 +4182,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-12bb.png",
@@ -3639,7 +4197,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-14bb.png",
@@ -3652,7 +4212,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-BU-3BET-16bb.png",
@@ -3665,7 +4227,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-10bb.png",
@@ -3678,7 +4242,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-12bb.png",
@@ -3691,7 +4257,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-14bb.png",
@@ -3704,7 +4272,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-CO-3BET-16bb.png",
@@ -3717,7 +4287,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-HJ-3BET-10bb.png",
@@ -3730,7 +4302,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 10.0,
-      "threebet_size_raw": "10.0bb"
+      "threebet_size_raw": "10.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-HJ-3BET-12bb.png",
@@ -3743,7 +4317,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-HJ-3BET-14bb.png",
@@ -3756,7 +4332,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-14bb.png",
@@ -3769,7 +4347,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-16bb.png",
@@ -3782,7 +4362,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-18bb.png",
@@ -3795,7 +4377,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb-vs-SB-3BET-20bb.png",
@@ -3808,7 +4392,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts3-5bb/UTG-OPEN-3.5bb.png",
@@ -3821,7 +4407,9 @@
       "open_size": 3.5,
       "open_size_raw": "3.5bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-BU-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -3834,7 +4422,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-BU-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "BU",
+      "villain2": "SB",
+      "stack": 100,
+      "title": "BB-vs-BU-OPEN-4bb-SB-CALL-SQZ-3.5bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 3.5,
+      "threebet_size_raw": "3.5bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-BU-OPEN-4bb.png",
@@ -3847,7 +4452,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-BU-CALL-SQZ-28bb.png",
@@ -3860,7 +4467,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "CO",
+      "villain2": "BU",
+      "stack": 100,
+      "title": "BB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -3873,7 +4497,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-CO-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "CO",
+      "villain2": "SB",
+      "stack": 100,
+      "title": "BB-vs-CO-OPEN-4bb-SB-CALL-SQZ-3.5bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 3.5,
+      "threebet_size_raw": "3.5bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-CO-OPEN-4bb.png",
@@ -3886,7 +4527,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-28bb.png",
@@ -3899,7 +4542,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "HJ",
+      "villain2": "BU",
+      "stack": 100,
+      "title": "BB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-28bb.png",
@@ -3912,7 +4572,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "HJ",
+      "villain2": "CO",
+      "stack": 100,
+      "title": "BB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -3925,7 +4602,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "HJ",
+      "villain2": "SB",
+      "stack": 100,
+      "title": "BB-vs-HJ-OPEN-4bb-SB-CALL-SQZ-3.5bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 3.5,
+      "threebet_size_raw": "3.5bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-HJ-OPEN-4bb.png",
@@ -3938,7 +4632,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-SB-OPEN-6bb.png",
@@ -3951,7 +4647,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-28bb.png",
@@ -3964,7 +4662,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "UTG",
+      "villain2": "BU",
+      "stack": 100,
+      "title": "BB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-28bb.png",
@@ -3977,7 +4692,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "UTG",
+      "villain2": "CO",
+      "stack": 100,
+      "title": "BB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-28bb.png",
@@ -3990,7 +4722,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "UTG",
+      "villain2": "HJ",
+      "stack": 100,
+      "title": "BB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-SB-CALL-SQZ-28bb.png",
@@ -4003,7 +4752,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 28.0,
-      "threebet_size_raw": "28.0bb"
+      "threebet_size_raw": "28.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb-SB-CALL-SQZ-3.5bb.png",
+      "facing": "sqz",
+      "hero": "BB",
+      "villain": "UTG",
+      "villain2": "SB",
+      "stack": 100,
+      "title": "BB-vs-UTG-OPEN-4bb-SB-CALL-SQZ-3.5bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 3.5,
+      "threebet_size_raw": "3.5bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BB-vs-UTG-OPEN-4bb.png",
@@ -4016,7 +4782,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -4029,7 +4797,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -4042,7 +4812,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -4055,7 +4827,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -4068,7 +4842,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -4081,7 +4857,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -4094,7 +4872,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -4107,7 +4887,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-BB-3BET-99.5bb.png",
@@ -4120,7 +4902,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 99.5,
-      "threebet_size_raw": "99.5bb"
+      "threebet_size_raw": "99.5bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -4133,7 +4917,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -4146,7 +4932,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -4159,7 +4947,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -4172,7 +4962,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -4185,7 +4977,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -4198,7 +4992,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-OPEN-4bb.png",
@@ -4211,7 +5007,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-vs-CO-OPEN-4bb.png",
@@ -4224,7 +5022,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb-CO-CALL-SQZ-22bb.png",
@@ -4237,7 +5037,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BU",
+      "villain": "HJ",
+      "villain2": "CO",
+      "stack": 100,
+      "title": "BU-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-vs-HJ-OPEN-4bb.png",
@@ -4250,7 +5067,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-CO-CALL-SQZ-22bb.png",
@@ -4263,7 +5082,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BU",
+      "villain": "UTG",
+      "villain2": "CO",
+      "stack": 100,
+      "title": "BU-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-22bb.png",
@@ -4276,7 +5112,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "BU",
+      "villain": "UTG",
+      "villain2": "HJ",
+      "stack": 100,
+      "title": "BU-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/BU-vs-UTG-OPEN-4bb.png",
@@ -4289,7 +5142,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -4302,7 +5157,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -4315,7 +5172,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -4328,7 +5187,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -4341,7 +5202,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -4354,7 +5217,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -4367,7 +5232,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -4380,7 +5247,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-11bb.png",
@@ -4393,7 +5262,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-12bb.png",
@@ -4406,7 +5277,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-14bb.png",
@@ -4419,7 +5292,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-BU-3BET-16bb.png",
@@ -4432,7 +5307,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -4445,7 +5322,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -4458,7 +5337,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -4471,7 +5352,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -4484,7 +5367,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -4497,7 +5382,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -4510,7 +5397,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-OPEN-4bb.png",
@@ -4523,7 +5412,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-vs-HJ-OPEN-4bb.png",
@@ -4536,7 +5427,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-3BET-11bb-C4B-33bb.png",
+      "facing": "c4b",
+      "hero": "CO",
+      "villain": "UTG",
+      "villain2": "HJ",
+      "stack": 100,
+      "title": "CO-vs-UTG-OPEN-4bb-HJ-3BET-11bb-C4B-33bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 11.0,
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": 33.0,
+      "c4b_size_raw": "33.0bb"
     },
     {
       "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-22bb.png",
@@ -4549,7 +5457,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "CO",
+      "villain": "UTG",
+      "villain2": "HJ",
+      "stack": 100,
+      "title": "CO-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/CO-vs-UTG-OPEN-4bb.png",
@@ -4562,7 +5487,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -4575,7 +5502,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -4588,7 +5517,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -4601,7 +5532,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -4614,7 +5547,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -4627,7 +5562,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -4640,7 +5577,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -4653,7 +5592,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-11bb.png",
@@ -4666,7 +5607,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-12bb.png",
@@ -4679,7 +5622,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-14bb.png",
@@ -4692,7 +5637,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-16bb.png",
@@ -4705,7 +5652,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-BU-3BET-18bb.png",
@@ -4718,7 +5667,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-11bb.png",
@@ -4731,7 +5682,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-12bb.png",
@@ -4744,7 +5697,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-14bb.png",
@@ -4757,7 +5712,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-CO-3BET-16bb.png",
@@ -4770,7 +5727,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -4783,7 +5742,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -4796,7 +5757,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -4809,7 +5772,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -4822,7 +5787,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -4835,7 +5802,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -4848,7 +5817,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-OPEN-4bb.png",
@@ -4861,7 +5832,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/HJ-vs-UTG-OPEN-4bb.png",
@@ -4874,7 +5847,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -4887,7 +5862,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-OPEN-6bb-vs-BB-3BET-99.5bb.png",
@@ -4900,7 +5877,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 99.5,
-      "threebet_size_raw": "99.5bb"
+      "threebet_size_raw": "99.5bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-OPEN-6bb.png",
@@ -4913,7 +5892,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-BU-OPEN-4bb.png",
@@ -4926,7 +5907,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-CO-OPEN-4bb-BU-CALL-SQZ-26bb.png",
@@ -4939,7 +5922,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
-      "threebet_size_raw": "26.0bb"
+      "threebet_size_raw": "26.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/SB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "SB",
+      "villain": "CO",
+      "villain2": "BU",
+      "stack": 100,
+      "title": "SB-vs-CO-OPEN-4bb-BU-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-CO-OPEN-4bb.png",
@@ -4952,7 +5952,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-26bb.png",
@@ -4965,7 +5967,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
-      "threebet_size_raw": "26.0bb"
+      "threebet_size_raw": "26.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "SB",
+      "villain": "HJ",
+      "villain2": "BU",
+      "stack": 100,
+      "title": "SB-vs-HJ-OPEN-4bb-BU-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-26bb.png",
@@ -4978,7 +5997,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
-      "threebet_size_raw": "26.0bb"
+      "threebet_size_raw": "26.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "SB",
+      "villain": "HJ",
+      "villain2": "CO",
+      "stack": 100,
+      "title": "SB-vs-HJ-OPEN-4bb-CO-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-HJ-OPEN-4bb.png",
@@ -4991,7 +6027,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-26bb.png",
@@ -5004,7 +6042,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
-      "threebet_size_raw": "26.0bb"
+      "threebet_size_raw": "26.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "SB",
+      "villain": "UTG",
+      "villain2": "BU",
+      "stack": 100,
+      "title": "SB-vs-UTG-OPEN-4bb-BU-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-26bb.png",
@@ -5017,7 +6072,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
-      "threebet_size_raw": "26.0bb"
+      "threebet_size_raw": "26.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "SB",
+      "villain": "UTG",
+      "villain2": "CO",
+      "stack": 100,
+      "title": "SB-vs-UTG-OPEN-4bb-CO-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-26bb.png",
@@ -5030,7 +6102,24 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 26.0,
-      "threebet_size_raw": "26.0bb"
+      "threebet_size_raw": "26.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
+    },
+    {
+      "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb.png",
+      "facing": "sqz",
+      "hero": "SB",
+      "villain": "UTG",
+      "villain2": "HJ",
+      "stack": 100,
+      "title": "SB-vs-UTG-OPEN-4bb-HJ-CALL-SQZ-4bb",
+      "open_size": 4.0,
+      "open_size_raw": "4.0bb",
+      "threebet_size": 4.0,
+      "threebet_size_raw": "4.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/SB-vs-UTG-OPEN-4bb.png",
@@ -5043,7 +6132,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-13bb.png",
@@ -5056,7 +6147,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-14bb.png",
@@ -5069,7 +6162,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-16bb.png",
@@ -5082,7 +6177,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-18bb.png",
@@ -5095,7 +6192,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-20bb.png",
@@ -5108,7 +6207,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-22bb.png",
@@ -5121,7 +6222,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BB-3BET-24bb.png",
@@ -5134,7 +6237,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-11bb.png",
@@ -5147,7 +6252,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-12bb.png",
@@ -5160,7 +6267,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-14bb.png",
@@ -5173,7 +6282,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-16bb.png",
@@ -5186,7 +6297,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-BU-3BET-18bb.png",
@@ -5199,7 +6312,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-11bb.png",
@@ -5212,7 +6327,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-12bb.png",
@@ -5225,7 +6342,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-14bb.png",
@@ -5238,7 +6357,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-CO-3BET-16bb.png",
@@ -5251,7 +6372,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-11bb.png",
@@ -5264,7 +6387,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-12bb.png",
@@ -5277,7 +6402,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-14bb.png",
@@ -5290,7 +6417,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-HJ-3BET-16bb.png",
@@ -5303,7 +6432,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-13bb.png",
@@ -5316,7 +6447,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 13.0,
-      "threebet_size_raw": "13.0bb"
+      "threebet_size_raw": "13.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-14bb.png",
@@ -5329,7 +6462,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-16bb.png",
@@ -5342,7 +6477,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-18bb.png",
@@ -5355,7 +6492,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-20bb.png",
@@ -5368,7 +6507,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb-vs-SB-3BET-22bb.png",
@@ -5381,7 +6522,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts4bb/UTG-OPEN-4bb.png",
@@ -5394,7 +6537,9 @@
       "open_size": 4.0,
       "open_size_raw": "4.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BB-vs-BU-OPEN-5bb.png",
@@ -5407,7 +6552,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BB-vs-CO-OPEN-5bb.png",
@@ -5420,7 +6567,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BB-vs-HJ-OPEN-5bb.png",
@@ -5433,7 +6582,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BB-vs-SB-OPEN-6bb.png",
@@ -5446,7 +6597,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BB-vs-UTG-OPEN-5bb.png",
@@ -5459,7 +6612,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-15bb.png",
@@ -5472,7 +6627,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -5485,7 +6642,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -5498,7 +6657,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -5511,7 +6672,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -5524,7 +6687,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -5537,7 +6702,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -5550,7 +6717,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -5563,7 +6732,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -5576,7 +6747,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -5589,7 +6762,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -5602,7 +6777,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-OPEN-5bb.png",
@@ -5615,7 +6792,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-vs-CO-OPEN-5bb.png",
@@ -5628,7 +6807,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-vs-HJ-OPEN-5bb.png",
@@ -5641,7 +6822,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/BU-vs-UTG-OPEN-5bb.png",
@@ -5654,7 +6837,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-15bb.png",
@@ -5667,7 +6852,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -5680,7 +6867,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -5693,7 +6882,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -5706,7 +6897,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -5719,7 +6912,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -5732,7 +6927,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-11bb.png",
@@ -5745,7 +6942,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-12bb.png",
@@ -5758,7 +6957,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-14bb.png",
@@ -5771,7 +6972,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-15bb.png",
@@ -5784,7 +6987,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-BU-3BET-16bb.png",
@@ -5797,7 +7002,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -5810,7 +7017,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -5823,7 +7032,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -5836,7 +7047,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -5849,7 +7062,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -5862,7 +7077,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-OPEN-5bb.png",
@@ -5875,7 +7092,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-vs-HJ-OPEN-5bb.png",
@@ -5888,7 +7107,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/CO-vs-UTG-OPEN-5bb.png",
@@ -5901,7 +7122,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-15bb.png",
@@ -5914,7 +7137,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -5927,7 +7152,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -5940,7 +7167,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -5953,7 +7182,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -5966,7 +7197,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -5979,7 +7212,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-11bb.png",
@@ -5992,7 +7227,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-12bb.png",
@@ -6005,7 +7242,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-14bb.png",
@@ -6018,7 +7257,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-15bb.png",
@@ -6031,7 +7272,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-BU-3BET-16bb.png",
@@ -6044,7 +7287,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-11bb.png",
@@ -6057,7 +7302,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-12bb.png",
@@ -6070,7 +7317,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-14bb.png",
@@ -6083,7 +7332,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-15bb.png",
@@ -6096,7 +7347,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-CO-3BET-16bb.png",
@@ -6109,7 +7362,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -6122,7 +7377,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -6135,7 +7392,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -6148,7 +7407,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -6161,7 +7422,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -6174,7 +7437,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-OPEN-5bb.png",
@@ -6187,7 +7452,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/HJ-vs-UTG-OPEN-5bb.png",
@@ -6200,7 +7467,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -6213,7 +7482,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/SB-OPEN-6bb.png",
@@ -6226,7 +7497,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/SB-vs-BU-OPEN-5bb.png",
@@ -6239,7 +7512,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/SB-vs-CO-OPEN-5bb.png",
@@ -6252,7 +7527,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/SB-vs-HJ-OPEN-5bb.png",
@@ -6265,7 +7542,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/SB-vs-UTG-OPEN-5bb.png",
@@ -6278,7 +7557,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-16bb.png",
@@ -6291,7 +7572,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-18bb.png",
@@ -6304,7 +7587,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-20bb.png",
@@ -6317,7 +7602,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-22bb.png",
@@ -6330,7 +7617,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BB-3BET-24bb.png",
@@ -6343,7 +7632,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-11bb.png",
@@ -6356,7 +7647,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-14bb.png",
@@ -6369,7 +7662,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-15bb.png",
@@ -6382,7 +7677,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-BU-3BET-16bb.png",
@@ -6395,7 +7692,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-11bb.png",
@@ -6408,7 +7707,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-14bb.png",
@@ -6421,7 +7722,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-15bb.png",
@@ -6434,7 +7737,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-CO-3BET-16bb.png",
@@ -6447,7 +7752,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-11bb.png",
@@ -6460,7 +7767,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-12bb.png",
@@ -6473,7 +7782,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 12.0,
-      "threebet_size_raw": "12.0bb"
+      "threebet_size_raw": "12.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-14bb.png",
@@ -6486,7 +7797,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 14.0,
-      "threebet_size_raw": "14.0bb"
+      "threebet_size_raw": "14.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-15bb.png",
@@ -6499,7 +7812,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-HJ-3BET-16bb.png",
@@ -6512,7 +7827,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-15bb.png",
@@ -6525,7 +7842,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-16bb.png",
@@ -6538,7 +7857,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-18bb.png",
@@ -6551,7 +7872,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-20bb.png",
@@ -6564,7 +7887,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb-vs-SB-3BET-22bb.png",
@@ -6577,7 +7902,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts5bb/UTG-OPEN-5bb.png",
@@ -6590,7 +7917,9 @@
       "open_size": 5.0,
       "open_size_raw": "5.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BB-vs-BU-OPEN-6bb.png",
@@ -6603,7 +7932,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BB-vs-CO-OPEN-6bb.png",
@@ -6616,7 +7947,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BB-vs-HJ-OPEN-6bb.png",
@@ -6629,7 +7962,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BB-vs-SB-OPEN-6bb.png",
@@ -6642,7 +7977,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BB-vs-UTG-OPEN-6bb.png",
@@ -6655,7 +7992,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -6668,7 +8007,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -6681,7 +8022,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -6694,7 +8037,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -6707,7 +8052,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -6720,7 +8067,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -6733,7 +8082,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -6746,7 +8097,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -6759,7 +8112,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-OPEN-6bb.png",
@@ -6772,7 +8127,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-vs-CO-OPEN-6bb.png",
@@ -6785,7 +8142,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-vs-HJ-OPEN-6bb.png",
@@ -6798,7 +8157,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/BU-vs-UTG-OPEN-6bb.png",
@@ -6811,7 +8172,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -6824,7 +8187,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -6837,7 +8202,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -6850,7 +8217,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -6863,7 +8232,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-11bb.png",
@@ -6876,7 +8247,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-15bb.png",
@@ -6889,7 +8262,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-16bb.png",
@@ -6902,7 +8277,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-BU-3BET-18bb.png",
@@ -6915,7 +8292,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -6928,7 +8307,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -6941,7 +8322,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -6954,7 +8337,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -6967,7 +8352,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-OPEN-6bb.png",
@@ -6980,7 +8367,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-vs-HJ-OPEN-6bb.png",
@@ -6993,7 +8382,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/CO-vs-UTG-OPEN-6bb.png",
@@ -7006,7 +8397,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -7019,7 +8412,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -7032,7 +8427,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -7045,7 +8442,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -7058,7 +8457,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-11bb.png",
@@ -7071,7 +8472,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-15bb.png",
@@ -7084,7 +8487,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-16bb.png",
@@ -7097,7 +8502,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-BU-3BET-18bb.png",
@@ -7110,7 +8517,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-11bb.png",
@@ -7123,7 +8532,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-15bb.png",
@@ -7136,7 +8547,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-16bb.png",
@@ -7149,7 +8562,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-CO-3BET-18bb.png",
@@ -7162,7 +8577,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -7175,7 +8592,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -7188,7 +8607,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -7201,7 +8622,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -7214,7 +8637,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-OPEN-6bb.png",
@@ -7227,7 +8652,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/HJ-vs-UTG-OPEN-6bb.png",
@@ -7240,7 +8667,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -7253,7 +8682,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/SB-OPEN-6bb.png",
@@ -7266,7 +8697,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/SB-vs-BU-OPEN-6bb.png",
@@ -7279,7 +8712,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/SB-vs-CO-OPEN-6bb.png",
@@ -7292,7 +8727,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/SB-vs-HJ-OPEN-6bb.png",
@@ -7305,7 +8742,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/SB-vs-UTG-OPEN-6bb.png",
@@ -7318,7 +8757,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-18bb.png",
@@ -7331,7 +8772,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-20bb.png",
@@ -7344,7 +8787,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-22bb.png",
@@ -7357,7 +8802,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BB-3BET-24bb.png",
@@ -7370,7 +8817,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 24.0,
-      "threebet_size_raw": "24.0bb"
+      "threebet_size_raw": "24.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-11bb.png",
@@ -7383,7 +8832,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-15bb.png",
@@ -7396,7 +8847,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-16bb.png",
@@ -7409,7 +8862,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-BU-3BET-18bb.png",
@@ -7422,7 +8877,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-11bb.png",
@@ -7435,7 +8892,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-15bb.png",
@@ -7448,7 +8907,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-16bb.png",
@@ -7461,7 +8922,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-CO-3BET-18bb.png",
@@ -7474,7 +8937,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-11bb.png",
@@ -7487,7 +8952,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 11.0,
-      "threebet_size_raw": "11.0bb"
+      "threebet_size_raw": "11.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-15bb.png",
@@ -7500,7 +8967,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 15.0,
-      "threebet_size_raw": "15.0bb"
+      "threebet_size_raw": "15.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-16bb.png",
@@ -7513,7 +8982,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-HJ-3BET-18bb.png",
@@ -7526,7 +8997,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-16bb.png",
@@ -7539,7 +9012,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 16.0,
-      "threebet_size_raw": "16.0bb"
+      "threebet_size_raw": "16.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-18bb.png",
@@ -7552,7 +9027,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 18.0,
-      "threebet_size_raw": "18.0bb"
+      "threebet_size_raw": "18.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-20bb.png",
@@ -7565,7 +9042,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 20.0,
-      "threebet_size_raw": "20.0bb"
+      "threebet_size_raw": "20.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb-vs-SB-3BET-22bb.png",
@@ -7578,7 +9057,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": 22.0,
-      "threebet_size_raw": "22.0bb"
+      "threebet_size_raw": "22.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null
     },
     {
       "file": "100/charts6bb/UTG-OPEN-6bb.png",
@@ -7591,7 +9072,9 @@
       "open_size": 6.0,
       "open_size_raw": "6.0bb",
       "threebet_size": null,
-      "threebet_size_raw": null
+      "threebet_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null
     }
   ]
 }
