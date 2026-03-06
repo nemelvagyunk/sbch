@@ -85,7 +85,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
     if bvb_m:
         return entry("limp", "BB", "SB", _parse_size(bvb_m.group(1)+"bb"), None)
 
-    # 6. Facing limp BB no size — SB-Complete-BB.png (SB completes 0.5bb, BB decides)
+    # 6. Facing limp BB no size — SB-Complete-BB.png
     if re.match(r"^SB-Complete-BB$", base, re.IGNORECASE):
         return entry("limp", "BB", "SB", 0.5, None)
 

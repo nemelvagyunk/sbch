@@ -83,7 +83,6 @@ function buildIndex(){
     } else {
       const v=(f==="sqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
       const os=sk(ch.open_size);
-      // limp+SB: key by iso_size; limp+BB: key by "_" (no bet)
       const bs=(f==="limp"&&h==="SB")?sk(ch.iso_size):sk(ch.threebet_size);
       if (!index[f])             index[f]={};
       if (!index[f][st])         index[f][st]={};
@@ -121,7 +120,6 @@ function c4bSizes(stack,hero,v1,v2,openSize,threebetSize){
   return Object.keys(((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{})[sk(threebetSize)]||{}).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 function limpOpenSizes(stack,hero){
-  const v=hero==="SB"?"BB":"SB";
   return Object.keys(((index["limp"]||{})[String(stack)]||{})[hero]||{}).map(Number).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
 }
 function limpIsoSizes(stack,openSize){
@@ -148,7 +146,6 @@ function pickChart(){
     return ((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(villain,villain2)]||{})[sk(openSize)]||{})[sk(threebetSize)]?.[sk(betSize)]||null;
   }
   if (mode==="limp"){
-    const v=hero==="SB"?"BB":"SB";
     if (hero==="BB") return ((((index["limp"]||{})[String(stack)]||{})["BB"]||{})["SB"]||{})[sk(openSize)]?.["_"]||null;
     return ((((index["limp"]||{})[String(stack)]||{})["SB"]||{})["BB"]||{})[sk(openSize)]?.[sk(betSize)]||null;
   }
@@ -274,13 +271,11 @@ function renderVillain(){
 function renderSize(){
   els.sizeGroup.innerHTML="";
   if (selected.mode==="limp"&&selected.hero&&selected.stack){
-    const openSizes=limpOpenSizes(selected.stack,selected.hero);
-    for (const v of openSizes){
+    for (const v of limpOpenSizes(selected.stack,selected.hero)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.openSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-    // SB also needs iso size selector
     if (selected.hero==="SB"&&selected.openSize!=null){
       for (const v of limpIsoSizes(selected.stack,selected.openSize)){
         const btn=mkBtn(sizeLabel(v)+"bb iso",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
