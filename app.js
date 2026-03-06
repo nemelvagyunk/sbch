@@ -9,7 +9,10 @@ const HERO_POS_BY_MODE = {
   open:   ["UTG","HJ","CO","BU","SB"],
   raise:  ["HJ","CO","BU","SB","BB"],
   "3bet": ["UTG","HJ","CO","BU","SB"],
+  sqz:    ["UTG","HJ","CO","BU","SB","BB"],
+  c4b:    ["UTG","HJ","CO","BU","SB","BB"],
 };
+const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
 
 const OPEN_ALLOWED_VILLAINS = {
   HJ: ["UTG"],
@@ -54,23 +57,38 @@ const els = {
 let manifest = [];
 // index[facing][stack][hero][villain_or__][openSizeStr][betSizeStr_or__] = chart
 let index = {};
-let selected = { mode:null, stack:100, hero:null, villain:null, openSize:null, betSize:null };
+let selected = { mode:null, stack:100, hero:null, villain:null, villain2:null, openSize:null, threebetSize:null, betSize:null };
 
 function showError(msg){ els.status.textContent=msg; els.miniHeader.classList.add("visible"); }
 function clearError(){ els.miniHeader.classList.remove("visible"); }
 function sk(v){ return (v==null) ? "_" : String(v); }
 
+let indexC4b = {};
 function buildIndex(){
-  index = {};
-  for (const c of manifest){
-    const f=c.facing, st=String(c.stack||"_"), h=c.hero,
-          v=c.villain||"_", os=sk(c.open_size), bs=sk(c.threebet_size);
-    if (!index[f])             index[f]={};
-    if (!index[f][st])         index[f][st]={};
-    if (!index[f][st][h])      index[f][st][h]={};
-    if (!index[f][st][h][v])   index[f][st][h][v]={};
-    if (!index[f][st][h][v][os]) index[f][st][h][v][os]={};
-    index[f][st][h][v][os][bs]=c;
+  index = {}; indexC4b = {};
+  for (const ch of manifest){
+    const f=ch.facing, st=String(ch.stack||"_"), h=ch.hero;
+    if (f==="c4b"){
+      const v=((ch.villain||"_")+"_"+(ch.villain2||"_"));
+      const os=sk(ch.open_size), ts=sk(ch.threebet_size), cs=sk(ch.c4b_size);
+      if (!indexC4b[st])               indexC4b[st]={};
+      if (!indexC4b[st][h])            indexC4b[st][h]={};
+      if (!indexC4b[st][h][v])         indexC4b[st][h][v]={};
+      if (!indexC4b[st][h][v][os])     indexC4b[st][h][v][os]={};
+      if (!indexC4b[st][h][v][os][ts]) indexC4b[st][h][v][os][ts]={};
+      indexC4b[st][h][v][os][ts][cs]=ch;
+      if (!index[f])     index[f]={};
+      if (!index[f][st]) index[f][st]={};
+    } else {
+      const v=(f==="sqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
+      const os=sk(ch.open_size), bs=sk(ch.threebet_size);
+      if (!index[f])             index[f]={};
+      if (!index[f][st])         index[f][st]={};
+      if (!index[f][st][h])      index[f][st][h]={};
+      if (!index[f][st][h][v])   index[f][st][h][v]={};
+      if (!index[f][st][h][v][os]) index[f][st][h][v][os]={};
+      index[f][st][h][v][os][bs]=ch;
+    }
   }
 }
 
@@ -79,13 +97,27 @@ function hasStack(mode,stack){ return !!(index[mode]&&index[mode][String(stack)]
 function heroHasAnyChart(mode,stack,hero){ return !!(index[mode]&&index[mode][String(stack)]&&index[mode][String(stack)][hero]); }
 function villainHasAnyChart(mode,stack,hero,villain){ return !!(index[mode]&&index[mode][String(stack)]&&index[mode][String(stack)][hero]&&index[mode][String(stack)][hero][villain]); }
 
-function availableOpenSizes(mode,stack,hero,villain){
-  const sub=(((index[mode]||{})[String(stack)]||{})[hero]||{})[villain||"_"]||{};
+function sqzKey(v1,v2){ return (v1||"_")+"_"+(v2||"_"); }
+function availableOpenSizes(mode,stack,hero,villain,villain2){
+  const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
+  const sub=(((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{};
   return Object.keys(sub).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
-
-function availableBetSizes(mode,stack,hero,villain,openSize){
-  const sub=((((index[mode]||{})[String(stack)]||{})[hero]||{})[villain||"_"]||{})[sk(openSize)]||{};
+function availableBetSizes(mode,stack,hero,villain,openSize,villain2){
+  const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
+  const sub=((((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{})[sk(openSize)]||{};
+  return Object.keys(sub).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
+}
+function c4bOpenSizes(stack,hero,v1,v2){
+  const sub=((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{};
+  return Object.keys(sub).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
+}
+function c4bThreebetSizes(stack,hero,v1,v2,openSize){
+  const sub=(((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{};
+  return Object.keys(sub).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
+}
+function c4bSizes(stack,hero,v1,v2,openSize,threebetSize){
+  const sub=((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{})[sk(threebetSize)]||{};
   return Object.keys(sub).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 
@@ -101,9 +133,15 @@ function allBetSizesEver(){
 }
 
 function pickChart(){
-  const {mode,stack,hero,villain,openSize,betSize}=selected;
+  const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize}=selected;
   if (!mode||!stack||!hero) return null;
-  return ((((index[mode]||{})[String(stack)]||{})[hero]||{})[villain||"_"]||{})[sk(openSize)]?.[sk(betSize)]||null;
+  if (mode==="c4b"){
+    if (!villain||!villain2) return null;
+    const sub=((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(villain,villain2)]||{};
+    return ((sub[sk(openSize)]||{})[sk(threebetSize)]||{})[sk(betSize)]||null;
+  }
+  const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
+  return ((((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{})[sk(openSize)]?.[sk(betSize)]||null;
 }
 
 function sizeLabel(v){ return (Math.round(v)===v)?String(Math.round(v)):String(v); }
@@ -123,12 +161,13 @@ function mkBtn(label,onClick,extraClass=""){
 
 function renderMode(){
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"}]){
+  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"}]){
     const btn=mkBtn(m.label,()=>{
-      selected.mode=m.key; selected.villain=null; selected.openSize=null; selected.betSize=null;
+      selected.mode=m.key; selected.villain=null; selected.villain2=null;
+      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     });
-    setBtnState(btn,{sel:selected.mode===m.key,dis:!hasMode(m.key)});
+    setBtnState(btn,{sel:selected.mode===m.key,dis:false});
     els.modeGroup.appendChild(btn);
   }
 }
@@ -137,7 +176,8 @@ function renderStack(){
   els.stackGroup.innerHTML="";
   for (const s of ALL_STACKS){
     const btn=mkBtn(String(s),()=>{
-      selected.stack=s; selected.villain=null; selected.openSize=null; selected.betSize=null;
+      selected.stack=s; selected.villain=null; selected.villain2=null;
+      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     },"size");
     const dis = selected.mode ? !hasStack(selected.mode,s) : false;
@@ -150,11 +190,18 @@ function renderHero(){
   els.heroGroup.innerHTML="";
   for (const p of HERO_ALL){
     const btn=mkBtn(p,()=>{
-      selected.hero=p; selected.villain=null; selected.openSize=null; selected.betSize=null;
+      selected.hero=p; selected.villain=null; selected.villain2=null;
+      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     },"hero");
     let dis=false;
-    if (selected.mode&&selected.stack)
+    if (selected.mode==="sqz"||selected.mode==="c4b"){
+      if (p===selected.villain||p===selected.villain2) dis=true;
+      else if (selected.mode==="sqz"&&selected.villain&&selected.villain2){
+        const maxV=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
+        dis=POS_ORDER[p]<=maxV;
+      }
+    } else if (selected.mode&&selected.stack)
       dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p)||!heroHasAnyChart(selected.mode,selected.stack,p);
     else if (selected.mode)
       dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p);
@@ -165,6 +212,31 @@ function renderHero(){
 
 function renderVillain(){
   els.villainGroup.innerHTML="";
+  if (selected.mode==="sqz"||selected.mode==="c4b"){
+    for (const p of VILLAIN_ALL){
+      const isSel=selected.villain===p||selected.villain2===p;
+      const btn=mkBtn(p,()=>{
+        if (selected.villain===p) selected.villain=null;
+        else if (selected.villain2===p) selected.villain2=null;
+        else {
+          let a=selected.villain, b=selected.villain2;
+          if (!a) a=p; else b=p;
+          if (a&&b&&POS_ORDER[a]>POS_ORDER[b]){const t=a;a=b;b=t;}
+          selected.villain=a; selected.villain2=b;
+        }
+        if (selected.hero&&(selected.hero===selected.villain||selected.hero===selected.villain2)) selected.hero=null;
+        if (selected.mode==="sqz"&&selected.hero&&selected.villain&&selected.villain2){
+          if (POS_ORDER[selected.hero]<=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2])) selected.hero=null;
+        }
+        selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
+        syncHash(); refreshAll();
+      },"villain");
+      const twoSel=!!(selected.villain&&selected.villain2);
+      setBtnState(btn,{sel:isSel,dis:(!isSel&&twoSel)||(!!selected.hero&&p===selected.hero)});
+      els.villainGroup.appendChild(btn);
+    }
+    return;
+  }
   for (const p of VILLAIN_ALL){
     const btn=mkBtn(p,()=>{
       selected.villain=p; selected.openSize=null; selected.betSize=null;
@@ -183,8 +255,15 @@ function renderVillain(){
 
 function renderSize(){
   els.sizeGroup.innerHTML="";
-  if (selected.mode==="3bet"){
-    const avail=availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize);
+  if (selected.mode==="c4b"){
+    const avail=c4bSizes(selected.stack,selected.hero,selected.villain,selected.villain2,selected.openSize,selected.threebetSize);
+    for (const v of avail){
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
+      setBtnState(btn,{sel:selected.betSize===v,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
+  } else if (selected.mode==="3bet"||selected.mode==="sqz"){
+    const avail=availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
     for (const v of avail){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
@@ -201,42 +280,77 @@ function renderSize(){
   }
 }
 
+function applyDefaultsOpen(){
+  if (selected.mode!=="open"||!selected.stack||!selected.hero) return;
+  if (selected.openSize==null){
+    const avail=availableOpenSizes("open",selected.stack,selected.hero,"_");
+    if (avail.includes(4)) selected.openSize=4;
+    else if (avail.length===1) selected.openSize=avail[0];
+  }
+}
+function applyDefaultsRaise(){
+  if (selected.mode!=="raise"||!selected.stack||!selected.hero) return;
+  if (selected.openSize==null){
+    const avail=availableOpenSizes("raise",selected.stack,selected.hero,selected.villain);
+    if (avail.includes(4)) selected.openSize=4;
+    else if (avail.length===1) selected.openSize=avail[0];
+  }
+}
 function applyDefaults3bet(){
-  if (selected.mode!=="3bet"||!selected.stack||!selected.hero||!selected.villain) return;
+  if ((selected.mode!=="3bet"&&selected.mode!=="sqz")||!selected.stack||!selected.hero||!selected.villain) return;
+  if (selected.mode==="sqz"&&!selected.villain2) return;
   if (selected.openSize==null){
     const def=DEFAULT_OPEN_SIZE_BY_HERO[selected.hero];
-    const avail=availableOpenSizes("3bet",selected.stack,selected.hero,selected.villain);
+    const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.villain2);
     if (def!=null&&avail.includes(def)) selected.openSize=def;
     else if (avail.length===1) selected.openSize=avail[0];
   }
   if (selected.betSize==null&&selected.openSize!=null){
-    const def=getDefaultBetSize(selected.stack,selected.openSize,selected.hero,selected.villain);
-    const avail=availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize);
-    if (def!=null&&avail.includes(def)) selected.betSize=def;
-    else if (avail.length===1) selected.betSize=avail[0];
-    else if (avail.length>0) selected.betSize=avail[0]; // fallback: first available
+    const avail=availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
+    if (selected.mode==="3bet"){
+      const def=getDefaultBetSize(selected.stack,selected.openSize,selected.hero,selected.villain);
+      if (def!=null&&avail.includes(def)) selected.betSize=def;
+      else if (avail.length>0) selected.betSize=avail[0];
+    } else if (avail.length>0) selected.betSize=avail[0];
   }
 }
-
+function applyDefaultsC4b(){
+  if (selected.mode!=="c4b"||!selected.stack||!selected.hero||!selected.villain||!selected.villain2) return;
+  if (selected.openSize==null){
+    const avail=c4bOpenSizes(selected.stack,selected.hero,selected.villain,selected.villain2);
+    const def=DEFAULT_OPEN_SIZE_BY_HERO[selected.villain];
+    if (def!=null&&avail.includes(def)) selected.openSize=def;
+    else if (avail.includes(4)) selected.openSize=4;
+    else if (avail.length>0) selected.openSize=avail[0];
+  }
+  if (selected.threebetSize==null&&selected.openSize!=null){
+    const avail=c4bThreebetSizes(selected.stack,selected.hero,selected.villain,selected.villain2,selected.openSize);
+    if (avail.length>0) selected.threebetSize=avail[0];
+  }
+  if (selected.betSize==null&&selected.openSize!=null&&selected.threebetSize!=null){
+    const avail=c4bSizes(selected.stack,selected.hero,selected.villain,selected.villain2,selected.openSize,selected.threebetSize);
+    if (avail.length>0) selected.betSize=avail[0];
+  }
+}
 function renderChart(){
   clearError();
-  applyDefaults3bet();
   const chart=pickChart();
   if (chart) els.img.src=chart.file;
   else els.img.removeAttribute("src");
 }
-
-function refreshAll(){ renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
+function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
-  const {mode,stack,hero,villain,openSize,betSize}=selected;
+  const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize}=selected;
   const p=new URLSearchParams();
-  if (mode)          p.set("mode",mode);
-  if (stack)         p.set("stack",String(stack));
-  if (hero)          p.set("hero",hero);
-  if (villain)       p.set("villain",villain);
-  if (openSize!=null) p.set("os",String(openSize));
-  if (betSize!=null)  p.set("bs",String(betSize));
+  if (mode)            p.set("mode",mode);
+  if (stack)           p.set("stack",String(stack));
+  if (hero)            p.set("hero",hero);
+  if (villain)         p.set("villain",villain);
+  if (villain2)        p.set("v2",villain2);
+  if (openSize!=null)  p.set("os",String(openSize));
+  if (threebetSize!=null) p.set("ts",String(threebetSize));
+  if (betSize!=null)   p.set("bs",String(betSize));
   const h=p.toString();
   if (h!==window.location.hash.replace(/^#/,"")) window.history.replaceState(null,"","#"+h);
 }
@@ -248,7 +362,7 @@ async function init(){
     const data=await res.json();
     manifest=data.charts||[];
     buildIndex();
-    selected={mode:null,stack:100,hero:null,villain:null,openSize:null,betSize:null};
+    selected={mode:null,stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null};
     refreshAll();
   }catch(e){
     console.error(e);
