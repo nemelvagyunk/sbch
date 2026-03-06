@@ -120,7 +120,8 @@ function c4bSizes(stack,hero,v1,v2,openSize,threebetSize){
   return Object.keys(((((indexC4b[String(stack)]||{})[hero]||{})[sqzKey(v1,v2)]||{})[sk(openSize)]||{})[sk(threebetSize)]||{}).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 function limpOpenSizes(stack,hero){
-  return Object.keys(((index["limp"]||{})[String(stack)]||{})[hero]||{}).map(Number).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
+  const v=hero==="BB"?"SB":"BB";
+  return Object.keys((((index["limp"]||{})[String(stack)]||{})[hero]||{})[v]||{}).map(Number).filter(x=>!isNaN(x)).sort((a,b)=>a-b);
 }
 function limpIsoSizes(stack,openSize){
   const sub=(((index["limp"]||{})[String(stack)]||{})["SB"]||{})["BB"]||{};
