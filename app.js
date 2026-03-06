@@ -220,7 +220,7 @@ function renderHero(){
     },"hero");
     let dis=false;
     if (selected.mode==="openlimp"){
-      if (selected.villain) dis=POS_ORDER[p]<=POS_ORDER[selected.villain];
+      if (selected.villain) dis=POS_ORDER[p]<POS_ORDER[selected.villain];
       else dis=false;
     } else if (selected.mode==="limp"){
       dis=!["SB","BB"].includes(p);
