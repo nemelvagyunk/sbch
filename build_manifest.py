@@ -29,7 +29,7 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
     base = m.group(1)
     file_path = f"{stack_folder}/{folder_name}/{filename}"
 
-    def entry(facing, hero, villain, open_size, bet_size, villain2=None):
+    def entry(facing, hero, villain, open_size, bet_size, villain2=None, c4b_size=None):
         return {
             "file": file_path,
             "facing": facing,
@@ -42,6 +42,8 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
             "open_size_raw": f"{open_size}bb" if open_size else None,
             "threebet_size": bet_size,
             "threebet_size_raw": f"{bet_size}bb" if bet_size else None,
+            "c4b_size": c4b_size,
+            "c4b_size_raw": f"{c4b_size}bb" if c4b_size else None,
         }
 
     # 1. Open RFI: UTG-OPEN.png or UTG-OPEN-2.5bb.png
@@ -68,13 +70,26 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
         base, re.IGNORECASE)
     if sqz_m:
         hero      = sqz_m.group(1).upper()
-        villain   = sqz_m.group(2).upper()   # V1 openraiser
+        villain   = sqz_m.group(2).upper()
         open_size = _parse_size(sqz_m.group(3)+"bb") if sqz_m.group(3) else folder_open_size
-        villain2  = sqz_m.group(4).upper()   # V2 caller
+        villain2  = sqz_m.group(4).upper()
         sqz_size  = _parse_size(sqz_m.group(5)+"bb")
         return entry("sqz", hero, villain, open_size, sqz_size, villain2)
 
-    # 4. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
+    # 4. C4B: BB-vs-UTG-OPEN-4bb-BU-3BET-12bb-C4B-28bb.png
+    c4b_m = re.match(
+        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?-(UTG|HJ|CO|BU|SB|BB)-3BET-([0-9]+(?:[.\-][0-9]+)?)bb-C4B-([0-9]+(?:[.\-][0-9]+)?)bb$",
+        base, re.IGNORECASE)
+    if c4b_m:
+        hero        = c4b_m.group(1).upper()
+        villain     = c4b_m.group(2).upper()
+        open_size   = _parse_size(c4b_m.group(3)+"bb") if c4b_m.group(3) else folder_open_size
+        villain2    = c4b_m.group(4).upper()
+        threebet_sz = _parse_size(c4b_m.group(5)+"bb")
+        c4b_sz      = _parse_size(c4b_m.group(6)+"bb")
+        return entry("c4b", hero, villain, open_size, threebet_sz, villain2, c4b_sz)
+
+    # 5. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
     fop_m = re.match(
         r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?$",
         base, re.IGNORECASE)
