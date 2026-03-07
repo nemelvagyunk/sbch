@@ -188,7 +188,7 @@ function mkBtn(label,onClick,extraClass=""){
 
 function renderMode(){
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"BvB"},{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
+  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"Facing limp"},{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key; selected.villain=null; selected.villain2=null;
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
@@ -336,18 +336,10 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode==="3bet"){
+  } else if (selected.mode==="3bet"||selected.mode==="sqz"){
     for (const v of availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
-      els.sizeGroup.appendChild(btn);
-    }
-  } else if (selected.mode==="sqz"){
-    const avail=new Set(availableOpenSizes("sqz",selected.stack,selected.hero,selected.villain,selected.villain2));
-    const hasCtx=!!(selected.villain&&selected.villain2);
-    for (const v of ALL_OPEN_SIZES){
-      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
-      setBtnState(btn,{sel:selected.openSize===v,dis:hasCtx?!avail.has(v):false});
       els.sizeGroup.appendChild(btn);
     }
   } else if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp") {
@@ -379,10 +371,13 @@ function applyDefaults3bet(){
   if ((selected.mode!=="3bet"&&selected.mode!=="sqz")||!selected.stack||!selected.hero||!selected.villain) return;
   if (selected.mode==="sqz"&&!selected.villain2) return;
   if (selected.openSize==null){
-    const def=DEFAULT_OPEN_SIZE_BY_HERO[selected.hero];
+    const def=selected.mode==="sqz"
+      ? DEFAULT_OPEN_SIZE_BY_HERO[selected.villain]
+      : DEFAULT_OPEN_SIZE_BY_HERO[selected.hero];
     const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.villain2);
     if (def!=null&&avail.includes(def)) selected.openSize=def;
     else if (avail.length===1) selected.openSize=avail[0];
+    else if (selected.mode==="sqz"&&avail.length>0) selected.openSize=avail[0];
   }
   if (selected.betSize==null&&selected.openSize!=null){
     const avail=availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
