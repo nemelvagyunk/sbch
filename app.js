@@ -16,6 +16,7 @@ const HERO_POS_BY_MODE = {
   vsopenlimp: ["SB","BB","UTG","HJ","CO","BU"],
 };
 const VSOPENLIMP_VILLAINS = ["UTG","HJ","CO","BU"];
+const faceisoVillains_placeholder = null;
 function faceisoVillains(stack, hero){
   if (!stack || !hero) return ["UTG","HJ","CO","BU","SB","BB"];
   return Object.keys(((index["faceiso"]||{})[String(stack)]||{})[hero]||{});
@@ -172,6 +173,7 @@ function pickChart(){
 }
 
 function sizeLabel(v){ return (Math.round(v)===v)?String(Math.round(v)):String(v); }
+function allinClass(v){ return (v!=null&&selected.stack&&v>=selected.stack-1)?" allin":""; }
 
 function setBtnState(btn,{sel=false,dis=false}={}){
   btn.classList.toggle("selected",!!sel);
@@ -184,6 +186,14 @@ function mkBtn(label,onClick,extraClass=""){
   b.type="button"; b.className="btn"+(extraClass?" "+extraClass:"");
   b.textContent=label; b.addEventListener("click",onClick);
   return b;
+}
+
+function snapToNearest(sortedArr,val){
+  if(!sortedArr||sortedArr.length===0)return null;
+  if(sortedArr.includes(val))return val;
+  let best=sortedArr[0],bestDist=Math.abs(val-sortedArr[0]);
+  for(const v of sortedArr){const d=Math.abs(val-v);if(d<bestDist){bestDist=d;best=v;}}
+  return best;
 }
 
 function renderMode(){
@@ -319,7 +329,7 @@ function renderSize(){
     // villain or hero not yet selected — show nothing
   } else if (selected.mode==="limp"&&selected.hero&&selected.stack){
     for (const v of limpOpenSizes(selected.stack,selected.hero)){
-      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size"+allinClass(v));
       setBtnState(btn,{sel:selected.openSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
@@ -332,40 +342,26 @@ function renderSize(){
     }
   } else if (selected.mode==="c4b"){
     for (const v of c4bSizes(selected.stack,selected.hero,selected.villain,selected.villain2,selected.openSize,selected.threebetSize)){
-      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode==="sqz"){
-    const openAvail=availableOpenSizes("sqz",selected.stack,selected.hero,selected.villain,selected.villain2);
-    for (const v of openAvail){
-      const btn=mkBtn("open "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize");
-      setBtnState(btn,{sel:selected.openSize===v,dis:false});
-      els.sizeGroup.appendChild(btn);
-    }
-    const sqzAvail=availableBetSizes("sqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
-    if (sqzAvail.length>0){
-      const div=document.createElement("span");
-      div.className="divider"; div.textContent="|"; div.setAttribute("aria-hidden","true");
-      els.sizeGroup.appendChild(div);
-      for (const v of sqzAvail){
-        const btn=mkBtn("sqz "+sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
-        setBtnState(btn,{sel:selected.betSize===v,dis:false});
-        els.sizeGroup.appendChild(btn);
-      }
-    }
-  } else if (selected.mode==="3bet"){
+  } else if (selected.mode==="3bet"||selected.mode==="sqz"){
     for (const v of availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize,null)){
-      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
   } else if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp") {
-    const avail=new Set(availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain));
+    const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain);
     const hasCtx=!!(selected.mode&&selected.stack&&selected.hero);
     for (const v of ALL_OPEN_SIZES){
-      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
-      setBtnState(btn,{sel:selected.openSize===v,dis:hasCtx?!avail.has(v):false});
+      const snapped=hasCtx?snapToNearest(avail,v):v;
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{
+        const s=snapToNearest(availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain),v);
+        if(s!=null){selected.openSize=s; selected.betSize=null; syncHash(); refreshAll();}
+      },"size");
+      setBtnState(btn,{sel:selected.openSize===snapped&&snapped!=null,dis:hasCtx&&snapped==null});
       els.sizeGroup.appendChild(btn);
     }
   }
