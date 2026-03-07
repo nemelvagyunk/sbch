@@ -336,8 +336,28 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode==="3bet"||selected.mode==="sqz"){
-    for (const v of availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2)){
+  } else if (selected.mode==="sqz"){
+    // Open sizes (villain's open)
+    const openAvail=availableOpenSizes("sqz",selected.stack,selected.hero,selected.villain,selected.villain2);
+    for (const v of openAvail){
+      const btn=mkBtn("open "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize");
+      setBtnState(btn,{sel:selected.openSize===v,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
+    // Squeeze sizes
+    const sqzAvail=availableBetSizes("sqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
+    if (sqzAvail.length>0){
+      const div=document.createElement("span");
+      div.className="divider"; div.textContent="|"; div.setAttribute("aria-hidden","true");
+      els.sizeGroup.appendChild(div);
+      for (const v of sqzAvail){
+        const btn=mkBtn("sqz "+sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
+        setBtnState(btn,{sel:selected.betSize===v,dis:false});
+        els.sizeGroup.appendChild(btn);
+      }
+    }
+  } else if (selected.mode==="3bet"){
+    for (const v of availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize,null)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
