@@ -16,7 +16,10 @@ const HERO_POS_BY_MODE = {
   vsopenlimp: ["SB","BB","UTG","HJ","CO","BU"],
 };
 const VSOPENLIMP_VILLAINS = ["UTG","HJ","CO","BU"];
-const FACEISO_VILLAINS    = ["SB","BB"];
+function faceisoVillains(stack, hero){
+  if (!stack || !hero) return ["UTG","HJ","CO","BU","SB","BB"];
+  return Object.keys(((index["faceiso"]||{})[String(stack)]||{})[hero]||{});
+}
 const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
 
 const OPEN_ALLOWED_VILLAINS = {
@@ -248,7 +251,7 @@ function renderVillain(){
   els.villainGroup.innerHTML="";
   if (selected.mode==="vsopenlimp"||selected.mode==="faceiso"){
     els.villainGroup.style.display="";
-    const vlist=selected.mode==="faceiso"?FACEISO_VILLAINS:VSOPENLIMP_VILLAINS;
+    const vlist=selected.mode==="faceiso"?faceisoVillains(selected.stack,selected.hero):VSOPENLIMP_VILLAINS;
     for (const p of vlist){
       const btn=mkBtn(p,()=>{
         selected.villain=p; selected.hero=null; selected.limpSeq=null;
@@ -337,14 +340,12 @@ function renderSize(){
       els.sizeGroup.appendChild(btn);
     }
   } else if (selected.mode==="sqz"){
-    // Open sizes (villain's open)
     const openAvail=availableOpenSizes("sqz",selected.stack,selected.hero,selected.villain,selected.villain2);
     for (const v of openAvail){
       const btn=mkBtn("open "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize");
       setBtnState(btn,{sel:selected.openSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-    // Squeeze sizes
     const sqzAvail=availableBetSizes("sqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
     if (sqzAvail.length>0){
       const div=document.createElement("span");
