@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-07T14:58:50.090844Z",
+  "generated": "2026-03-07T15:19:14.620228Z",
   "charts": [
     {
       "file": "100/limp/BU-LIMP-SB-FOLD-BB-RAISE-12bb-BU-decision.png",
@@ -164,13 +164,13 @@
       "seq_key": "CO-LIMP-BU-FOLD-SB-LIMP-BB-RAISE-13bb"
     },
     {
-      "file": "100/limp/CO-LIMP-BU-FOLD-SB-LIMP-BB-decision.png",
-      "facing": "vsopenlimp",
-      "hero": "BB",
-      "villain": "CO",
+      "file": "100/limp/CO-LIMP-BU-FOLD-SB-RAISE-10bb-BB-FOLD-CO-decision.png",
+      "facing": "faceiso",
+      "hero": "CO",
+      "villain": "SB",
       "villain2": null,
       "stack": 100,
-      "title": "CO-LIMP-BU-FOLD-SB-LIMP-BB-decision",
+      "title": "CO-LIMP-BU-FOLD-SB-RAISE-10bb-BB-FOLD-CO-decision",
       "open_size": null,
       "open_size_raw": null,
       "threebet_size": null,
@@ -179,7 +179,7 @@
       "iso_size_raw": null,
       "c4b_size": null,
       "c4b_size_raw": null,
-      "seq_key": "CO-LIMP-BU-FOLD-SB-LIMP"
+      "seq_key": "CO-LIMP-BU-FOLD-SB-RAISE-10bb-BB-FOLD"
     },
     {
       "file": "100/limp/CO-LIMP-BU-FOLD-SB-decision.png",
@@ -218,24 +218,6 @@
       "seq_key": "CO-LIMP-BU-LIMP-SB-FOLD-BB-RAISE-13bb"
     },
     {
-      "file": "100/limp/CO-LIMP-BU-LIMP-SB-FOLD-BB-decision.png",
-      "facing": "vsopenlimp",
-      "hero": "BB",
-      "villain": "CO",
-      "villain2": null,
-      "stack": 100,
-      "title": "CO-LIMP-BU-LIMP-SB-FOLD-BB-decision",
-      "open_size": null,
-      "open_size_raw": null,
-      "threebet_size": null,
-      "threebet_size_raw": null,
-      "iso_size": null,
-      "iso_size_raw": null,
-      "c4b_size": null,
-      "c4b_size_raw": null,
-      "seq_key": "CO-LIMP-BU-LIMP-SB-FOLD"
-    },
-    {
       "file": "100/limp/CO-LIMP-BU-LIMP-SB-LIMP-BB-RAISE-14bb-CO-decision.png",
       "facing": "faceiso",
       "hero": "CO",
@@ -254,13 +236,13 @@
       "seq_key": "CO-LIMP-BU-LIMP-SB-LIMP-BB-RAISE-14bb"
     },
     {
-      "file": "100/limp/CO-LIMP-BU-LIMP-SB-LIMP-BB-decision.png",
-      "facing": "vsopenlimp",
-      "hero": "BB",
-      "villain": "CO",
+      "file": "100/limp/CO-LIMP-BU-LIMP-SB-RAISE-11bb-BB-FOLD-CO-decision.png",
+      "facing": "faceiso",
+      "hero": "CO",
+      "villain": "SB",
       "villain2": null,
       "stack": 100,
-      "title": "CO-LIMP-BU-LIMP-SB-LIMP-BB-decision",
+      "title": "CO-LIMP-BU-LIMP-SB-RAISE-11bb-BB-FOLD-CO-decision",
       "open_size": null,
       "open_size_raw": null,
       "threebet_size": null,
@@ -269,16 +251,16 @@
       "iso_size_raw": null,
       "c4b_size": null,
       "c4b_size_raw": null,
-      "seq_key": "CO-LIMP-BU-LIMP-SB-LIMP"
+      "seq_key": "CO-LIMP-BU-LIMP-SB-RAISE-11bb-BB-FOLD"
     },
     {
-      "file": "100/limp/CO-LIMP-BU-LIMP-SB-decision.png",
-      "facing": "vsopenlimp",
-      "hero": "SB",
-      "villain": "CO",
+      "file": "100/limp/CO-LIMP-BU-RAISE-4bb-SB-FOLD-BB-FOLD-CO-decision.png",
+      "facing": "faceiso",
+      "hero": "CO",
+      "villain": "BU",
       "villain2": null,
       "stack": 100,
-      "title": "CO-LIMP-BU-LIMP-SB-decision",
+      "title": "CO-LIMP-BU-RAISE-4bb-SB-FOLD-BB-FOLD-CO-decision",
       "open_size": null,
       "open_size_raw": null,
       "threebet_size": null,
@@ -287,7 +269,7 @@
       "iso_size_raw": null,
       "c4b_size": null,
       "c4b_size_raw": null,
-      "seq_key": "CO-LIMP-BU-LIMP"
+      "seq_key": "CO-LIMP-BU-RAISE-4bb-SB-FOLD-BB-FOLD"
     },
     {
       "file": "100/limp/CO-LIMP-BU-decision.png",

@@ -283,7 +283,7 @@ function renderVillain(){
       },"villain");
       const twoSel=!!(selected.villain&&selected.villain2);
       let dis=(!isSel&&twoSel)||(!!selected.hero&&p===selected.hero);
-      if (!dis&&selected.hero) dis=POS_ORDER[p]>=POS_ORDER[selected.hero];
+      if (!dis&&selected.hero&&selected.mode!=="sqz") dis=POS_ORDER[p]>=POS_ORDER[selected.hero];
       setBtnState(btn,{sel:isSel,dis});
       els.villainGroup.appendChild(btn);
     }
