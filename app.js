@@ -336,10 +336,18 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode==="3bet"||selected.mode==="sqz"){
+  } else if (selected.mode==="3bet"){
     for (const v of availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
+  } else if (selected.mode==="sqz"){
+    const avail=new Set(availableOpenSizes("sqz",selected.stack,selected.hero,selected.villain,selected.villain2));
+    const hasCtx=!!(selected.villain&&selected.villain2);
+    for (const v of ALL_OPEN_SIZES){
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size");
+      setBtnState(btn,{sel:selected.openSize===v,dis:hasCtx?!avail.has(v):false});
       els.sizeGroup.appendChild(btn);
     }
   } else if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp") {
