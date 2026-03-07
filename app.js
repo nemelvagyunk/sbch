@@ -34,16 +34,13 @@ const DEFAULT_OPEN_SIZE_BY_HERO = {
   UTG: 4, HJ: 4, CO: 4, BU: 4, SB: 6,
 };
 
-// DEFAULT_BET_SIZE[stack][openSize][hero][villain] = default 3bet size
+// DEFAULT_BET_SIZE[stack][openSize][hero=3bettor][villain=opener] — 100bb only
 const DEFAULT_BET_SIZE = {
   100: {
-    4: {
-      UTG: { HJ:11,  CO:11,  BU:12,  SB:16,  BB:18  },
-      HJ:  { CO:11,  BU:12,  SB:16,  BB:18  },
-      CO:  { BU:12,  SB:16,  BB:18  },
-      BU:  { SB:16,  BB:18  },
-      SB:  { BB:18  },
-    },
+    4:   { SB:{UTG:16,HJ:16,CO:16,BU:14}, BB:{UTG:18,HJ:18,CO:18,BU:18} },
+    3:   { SB:{UTG:16,HJ:16,CO:14,BU:12}, BB:{UTG:18,HJ:18,CO:18,BU:18} },
+    2.5: { SB:{UTG:14,HJ:14,CO:14,BU:12}, BB:{UTG:16,HJ:16,CO:16,BU:14} },
+    2:   { SB:{UTG:14,HJ:14,CO:12,BU:12}, BB:{UTG:14,HJ:14,CO:14,BU:14} },
   },
 };
 
