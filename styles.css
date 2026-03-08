@@ -37,5 +37,6 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
   .group>button{flex:1 1 30%;}
   #chartImg{max-height:calc(100vh - 340px);}
 }
+
 .btn.size.allin{border-color:rgba(168,85,247,0.6);color:#d8b4fe;}
 .btn.size.allin.selected{border-color:rgba(168,85,247,0.9);box-shadow:0 0 0 3px rgba(168,85,247,0.18);color:#e9d5ff;}

@@ -16,9 +16,9 @@ const HERO_POS_BY_MODE = {
   vsopenlimp: ["SB","BB","UTG","HJ","CO","BU"],
 };
 const VSOPENLIMP_VILLAINS = ["UTG","HJ","CO","BU"];
-const faceisoVillains_placeholder = null;
-function faceisoVillains(stack, hero){
-  if (!stack || !hero) return ["UTG","HJ","CO","BU","SB","BB"];
+const faceisoVillains_unused=null;
+function faceisoVillains(stack,hero){
+  if(!stack||!hero)return["UTG","HJ","CO","BU","SB","BB"];
   return Object.keys(((index["faceiso"]||{})[String(stack)]||{})[hero]||{});
 }
 const POS_ORDER = {UTG:0,HJ:1,CO:2,BU:3,SB:4,BB:5};
@@ -188,14 +188,6 @@ function mkBtn(label,onClick,extraClass=""){
   return b;
 }
 
-function snapToNearest(sortedArr,val){
-  if(!sortedArr||sortedArr.length===0)return null;
-  if(sortedArr.includes(val))return val;
-  let best=sortedArr[0],bestDist=Math.abs(val-sortedArr[0]);
-  for(const v of sortedArr){const d=Math.abs(val-v);if(d<bestDist){bestDist=d;best=v;}}
-  return best;
-}
-
 function renderMode(){
   els.modeGroup.innerHTML="";
   for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"Facing limp"},{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
@@ -335,7 +327,7 @@ function renderSize(){
     }
     if (selected.hero==="SB"&&selected.openSize!=null){
       for (const v of limpIsoSizes(selected.stack,selected.openSize)){
-        const btn=mkBtn(sizeLabel(v)+"bb iso",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size");
+        const btn=mkBtn(sizeLabel(v)+"bb iso",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
         setBtnState(btn,{sel:selected.betSize===v,dis:false});
         els.sizeGroup.appendChild(btn);
       }
@@ -346,7 +338,25 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode==="3bet"||selected.mode==="sqz"){
+  } else if (selected.mode==="sqz"){
+    const openAvail=availableOpenSizes("sqz",selected.stack,selected.hero,selected.villain,selected.villain2);
+    for (const v of openAvail){
+      const btn=mkBtn("open "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize"+allinClass(v));
+      setBtnState(btn,{sel:selected.openSize===v,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
+    const sqzAvail=availableBetSizes("sqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
+    if (sqzAvail.length>0){
+      const div=document.createElement("span");
+      div.className="divider"; div.textContent="|"; div.setAttribute("aria-hidden","true");
+      els.sizeGroup.appendChild(div);
+      for (const v of sqzAvail){
+        const btn=mkBtn("sqz "+sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
+        setBtnState(btn,{sel:selected.betSize===v,dis:false});
+        els.sizeGroup.appendChild(btn);
+      }
+    }
+  } else if (selected.mode==="3bet"){
     for (const v of availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize,null)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
@@ -354,14 +364,9 @@ function renderSize(){
     }
   } else if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp") {
     const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain);
-    const hasCtx=!!(selected.mode&&selected.stack&&selected.hero);
-    for (const v of ALL_OPEN_SIZES){
-      const snapped=hasCtx?snapToNearest(avail,v):v;
-      const btn=mkBtn(sizeLabel(v)+"bb",()=>{
-        const s=snapToNearest(availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain),v);
-        if(s!=null){selected.openSize=s; selected.betSize=null; syncHash(); refreshAll();}
-      },"size");
-      setBtnState(btn,{sel:selected.openSize===snapped&&snapped!=null,dis:hasCtx&&snapped==null});
+    for (const v of avail){
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size"+allinClass(v));
+      setBtnState(btn,{sel:selected.openSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
   }
