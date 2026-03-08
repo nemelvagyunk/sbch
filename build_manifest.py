@@ -7,11 +7,11 @@ STACK_SIZES = [50, 75, 100]
 
 OPEN_SIZE_FOLDERS = {
     "charts2bb":   2.0,
-    "charts2-5bb": 2.5,
+    "charts2.5bb": 2.5,
     "charts3bb":   3.0,
-    "charts3-5bb": 3.5,
+    "charts3.5bb": 3.5,
     "charts4bb":   4.0,
-    "charts4-5bb": 4.5,
+    "charts4.5bb": 4.5,
     "charts5bb":   5.0,
     "charts6bb":   6.0,
     "charts7bb":   7.0,
