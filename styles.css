@@ -95,3 +95,16 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
   border-color:rgba(239,68,68,0.45);
   transform:translateY(-1px);
 }
+
+/* No chart message */
+.noChartMsg{
+  display:none;
+  width:100%;
+  padding:48px 16px;
+  text-align:center;
+  font-size:18px;
+  font-weight:700;
+  color:rgba(156,163,175,0.55);
+  letter-spacing:0.3px;
+  background:#0b0f14;
+}

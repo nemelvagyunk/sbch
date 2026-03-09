@@ -269,50 +269,66 @@ function renderHero(){
 }
 
 function renderVillain(){
-  els.villainGroup.innerHTML="";
-  if (selected.mode==="limp"){ els.villainGroup.style.display="none"; return; }
-  els.villainGroup.style.display="";
+  const grp = els.villainGroup;
+  grp.innerHTML="";
+  if (selected.mode==="limp"){ grp.style.display="none"; return; }
+  grp.style.display="";
+
+  function makeVillainBtn(p, isSel, isDis){
+    const btn = document.createElement("button");
+    btn.type="button";
+    btn.className="btn villain";
+    btn.textContent=p;
+    btn.dataset.pos=p;
+    if (isSel) btn.classList.add("selected");
+    if (isDis){ btn.classList.add("disabled"); btn.disabled=true; }
+    return btn;
+  }
+
   if (selected.mode==="sqz"||selected.mode==="c4b"){
+    const twoSel=!!(selected.villain&&selected.villain2);
     for (const p of VILLAIN_ALL){
       const isSel=selected.villain===p||selected.villain2===p;
-      const btn=mkBtn(p,()=>{
-        if (selected.villain===p) selected.villain=null;
-        else if (selected.villain2===p) selected.villain2=null;
-        else {
-          let a=selected.villain, b=selected.villain2;
-          if (!a) a=p; else b=p;
-          if (a&&b&&POS_ORDER[a]>POS_ORDER[b]){const t=a;a=b;b=t;}
-          selected.villain=a; selected.villain2=b;
-        }
-        selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
-        syncHash(); refreshAll();
-      },"villain");
-      const twoSel=!!(selected.villain&&selected.villain2);
-      setBtnState(btn,{sel:isSel,dis:(!isSel&&twoSel)});
-      els.villainGroup.appendChild(btn);
+      const isDis=!isSel&&twoSel;
+      grp.appendChild(makeVillainBtn(p,isSel,isDis));
     }
+    grp.onclick=function(e){
+      const btn=e.target.closest("button[data-pos]");
+      if (!btn||btn.disabled) return;
+      const p=btn.dataset.pos;
+      if (selected.villain===p) selected.villain=null;
+      else if (selected.villain2===p) selected.villain2=null;
+      else {
+        let a=selected.villain, b=selected.villain2;
+        if (!a) a=p; else b=p;
+        if (a&&b&&POS_ORDER[a]>POS_ORDER[b]){const t=a;a=b;b=t;}
+        selected.villain=a; selected.villain2=b;
+      }
+      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
+      syncHash(); refreshAll();
+    };
     return;
   }
+
   if (selected.mode==="vsopenlimp"||selected.mode==="faceiso"){
     const vlist=selected.mode==="faceiso"?faceisoVillains(selected.stack,selected.hero):VSOPENLIMP_VILLAINS;
     for (const p of vlist){
-      const btn=mkBtn(p,()=>{
-        selected.villain=p; selected.limpSeq=null;
-        syncHash(); refreshAll();
-      },"villain");
-      setBtnState(btn,{sel:selected.villain===p,dis:false});
-      els.villainGroup.appendChild(btn);
+      grp.appendChild(makeVillainBtn(p, selected.villain===p, false));
     }
-    return;
+  } else {
+    for (const p of VILLAIN_ALL){
+      grp.appendChild(makeVillainBtn(p, selected.villain===p, false));
+    }
   }
-  for (const p of VILLAIN_ALL){
-    const btn=mkBtn(p,()=>{
-      selected.villain=p; selected.openSize=null; selected.betSize=null;
-      syncHash(); refreshAll();
-    },"villain");
-    setBtnState(btn,{sel:selected.villain===p,dis:false});
-    els.villainGroup.appendChild(btn);
-  }
+
+  grp.onclick=function(e){
+    const btn=e.target.closest("button[data-pos]");
+    if (!btn||btn.disabled) return;
+    const p=btn.dataset.pos;
+    selected.villain = (selected.villain===p) ? null : p;
+    selected.openSize=null; selected.betSize=null; selected.limpSeq=null;
+    syncHash(); refreshAll();
+  };
 }
 
 function renderSize(){
@@ -462,8 +478,30 @@ function applyDefaultsLimp(){
 function renderChart(){
   clearError();
   const chart=pickChart();
-  if (chart) els.img.src=chart.file;
-  else els.img.removeAttribute("src");
+  const frame=document.querySelector(".frame");
+  let noChartMsg=document.getElementById("noChartMsg");
+  if (!noChartMsg){
+    noChartMsg=document.createElement("div");
+    noChartMsg.id="noChartMsg";
+    noChartMsg.className="noChartMsg";
+    frame.appendChild(noChartMsg);
+  }
+  // only show "Nincs ilyen chart" if something meaningful is selected
+  const hasSelection = selected.mode && (selected.hero||selected.villain||selected.openSize);
+  if (chart){
+    els.img.src=chart.file;
+    els.img.style.display="";
+    noChartMsg.style.display="none";
+  } else if (hasSelection){
+    els.img.removeAttribute("src");
+    els.img.style.display="none";
+    noChartMsg.textContent="Nincs ilyen chart";
+    noChartMsg.style.display="";
+  } else {
+    els.img.removeAttribute("src");
+    els.img.style.display="";
+    noChartMsg.style.display="none";
+  }
 }
 // Modes where villain row appears ABOVE hero row
 const VILLAIN_FIRST_MODES = ["raise","3bet","sqz","c4b"];
