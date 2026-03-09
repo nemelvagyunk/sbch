@@ -386,7 +386,7 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-  } else if (selected.mode==="raise" || selected.mode===null) {
+  } else if (selected.mode==="raise") {
     // show all open sizes immediately — visible even before any selection
     const avail = (selected.stack && Object.keys(index["raise"]||{}).length>0) ? allRaiseOpenSizesForStack(selected.stack) : ALL_OPEN_SIZES;
     for (const v of avail){
@@ -520,7 +520,7 @@ function applyLayout(){
 }
 
 function resetAll(){
-  selected={mode:null,stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
+  selected={mode:"raise",stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
   syncHash(); refreshAll();
 }
 
@@ -551,7 +551,7 @@ async function init(){
     manifest=data.charts||[];
     buildIndex();
     if (!ALL_STACKS.includes(selected.stack)) selected.stack = ALL_STACKS[ALL_STACKS.length-1];
-    selected={...selected,mode:null,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
+    selected={...selected,mode:"raise",hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
     // inject reset button into appNav once
     const nav = document.querySelector(".appNav");
     if (nav && !nav.querySelector(".resetBtn")){
@@ -631,7 +631,7 @@ document.addEventListener("keydown", function(e){
     const idx = parseInt(numMatch[1]) - 1;
     // collect current visible sizes same way renderSize does
     let sizes = [];
-    if (selected.mode==="raise"||selected.mode===null){
+    if (selected.mode==="raise"){
       sizes = (selected.stack && Object.keys(index["raise"]||{}).length>0)
         ? allRaiseOpenSizesForStack(selected.stack)
         : ALL_OPEN_SIZES;
