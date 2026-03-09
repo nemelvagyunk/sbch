@@ -250,54 +250,16 @@ function renderHero(){
   for (const p of HERO_ALL){
     const btn=mkBtn(p,()=>{
       selected.hero=p;
-      if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp"){ selected.villain=null; selected.villain2=null; }
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     },"hero");
-    let dis=false;
-    if (selected.mode==="vsopenlimp"){
-      if (selected.villain) dis=POS_ORDER[p]<=POS_ORDER[selected.villain];
-      else dis=false;
-    } else if (selected.mode==="faceiso"){
-      dis=!(HERO_POS_BY_MODE["faceiso"]||[]).includes(p);
-    } else if (selected.mode==="limp"){
-      dis=!["SB","BB"].includes(p);
-    } else if (selected.mode==="sqz"||selected.mode==="c4b"){
-      if (p===selected.villain||p===selected.villain2) dis=true;
-      else if (selected.mode==="sqz"&&selected.villain&&selected.villain2)
-        dis=POS_ORDER[p]<=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
-      else dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p);
-    } else if (VILLAIN_FIRST_MODES.includes(selected.mode)){
-      // positional only — no chart-availability gating so villain can be picked first freely
-      if (!( HERO_POS_BY_MODE[selected.mode]||[] ).includes(p)){ dis=true; }
-      else if (selected.mode==="raise"&&selected.villain)
-        dis = POS_ORDER[p] <= POS_ORDER[selected.villain];
-      else if (selected.mode==="3bet"&&selected.villain)
-        dis = p===selected.villain;
-    } else if (selected.mode&&selected.stack)
-      dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p)||!heroHasAnyChart(selected.mode,selected.stack,p);
-    else if (selected.mode)
-      dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p);
-    setBtnState(btn,{sel:selected.hero===p,dis});
+    setBtnState(btn,{sel:selected.hero===p,dis:false});
     els.heroGroup.appendChild(btn);
   }
 }
 
 function renderVillain(){
   els.villainGroup.innerHTML="";
-  if (selected.mode==="vsopenlimp"||selected.mode==="faceiso"){
-    els.villainGroup.style.display="";
-    const vlist=selected.mode==="faceiso"?faceisoVillains(selected.stack,selected.hero):VSOPENLIMP_VILLAINS;
-    for (const p of vlist){
-      const btn=mkBtn(p,()=>{
-        selected.villain=p; selected.hero=null; selected.limpSeq=null;
-        syncHash(); refreshAll();
-      },"villain");
-      setBtnState(btn,{sel:selected.villain===p,dis:false});
-      els.villainGroup.appendChild(btn);
-    }
-    return;
-  }
   if (selected.mode==="limp"){ els.villainGroup.style.display="none"; return; }
   els.villainGroup.style.display="";
   if (selected.mode==="sqz"||selected.mode==="c4b"){
@@ -312,18 +274,23 @@ function renderVillain(){
           if (a&&b&&POS_ORDER[a]>POS_ORDER[b]){const t=a;a=b;b=t;}
           selected.villain=a; selected.villain2=b;
         }
-        if (selected.hero&&(selected.hero===selected.villain||selected.hero===selected.villain2)) selected.hero=null;
-        if (selected.hero&&selected.villain&&selected.villain2){
-          const maxV=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
-          if (POS_ORDER[selected.hero]<=maxV) selected.hero=null;
-        }
         selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
         syncHash(); refreshAll();
       },"villain");
       const twoSel=!!(selected.villain&&selected.villain2);
-      let dis=(!isSel&&twoSel)||(!!selected.hero&&p===selected.hero);
-      if (!dis&&selected.hero&&selected.mode!=="sqz") dis=POS_ORDER[p]>=POS_ORDER[selected.hero];
-      setBtnState(btn,{sel:isSel,dis});
+      setBtnState(btn,{sel:isSel,dis:(!isSel&&twoSel)});
+      els.villainGroup.appendChild(btn);
+    }
+    return;
+  }
+  if (selected.mode==="vsopenlimp"||selected.mode==="faceiso"){
+    const vlist=selected.mode==="faceiso"?faceisoVillains(selected.stack,selected.hero):VSOPENLIMP_VILLAINS;
+    for (const p of vlist){
+      const btn=mkBtn(p,()=>{
+        selected.villain=p; selected.limpSeq=null;
+        syncHash(); refreshAll();
+      },"villain");
+      setBtnState(btn,{sel:selected.villain===p,dis:false});
       els.villainGroup.appendChild(btn);
     }
     return;
@@ -333,21 +300,7 @@ function renderVillain(){
       selected.villain=p; selected.openSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     },"villain");
-    let dis=false;
-    if (selected.mode==="open"){
-      dis=true;
-    } else if (selected.mode==="raise"){
-      // villain = the opener: UTG/HJ/CO/BU/SB can open; BB cannot
-      if (!["UTG","HJ","CO","BU","SB"].includes(p)){ dis=true; }
-      // if hero already chosen, only show valid openers for that hero
-      else if (selected.hero) dis=!(OPEN_ALLOWED_VILLAINS[selected.hero]||[]).includes(p);
-    } else if (selected.mode==="3bet"){
-      // villain = the opener; any position except hero
-      if (selected.hero) dis = p===selected.hero;
-    } else if (selected.hero&&p===selected.hero){
-      dis=true;
-    }
-    setBtnState(btn,{sel:selected.villain===p,dis});
+    setBtnState(btn,{sel:selected.villain===p,dis:false});
     els.villainGroup.appendChild(btn);
   }
 }
