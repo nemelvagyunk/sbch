@@ -271,7 +271,7 @@ function renderHero(){
 function renderVillain(){
   const grp = els.villainGroup;
   grp.innerHTML="";
-  if (selected.mode==="limp"){ grp.style.display="none"; return; }
+  if (selected.mode==="limp"||selected.mode==="open"){ grp.style.display="none"; return; }
   grp.style.display="";
 
   function makeVillainBtn(p, isSel, isDis){
@@ -326,7 +326,7 @@ function renderVillain(){
     if (!btn||btn.disabled) return;
     const p=btn.dataset.pos;
     selected.villain = (selected.villain===p) ? null : p;
-    selected.openSize=null; selected.betSize=null; selected.limpSeq=null;
+    selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll();
   };
 }
@@ -624,4 +624,44 @@ document.addEventListener("keydown", function(e){
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll(); return;
   }
+
+  // Number keys 1-9 → open size by index (sorted ascending)
+  const numMatch = k.match(/^([1-9])$/);
+  if (numMatch){
+    const idx = parseInt(numMatch[1]) - 1;
+    // collect current visible sizes same way renderSize does
+    let sizes = [];
+    if (selected.mode==="raise"||selected.mode===null){
+      sizes = (selected.stack && Object.keys(index["raise"]||{}).length>0)
+        ? allRaiseOpenSizesForStack(selected.stack)
+        : ALL_OPEN_SIZES;
+    } else if (selected.mode==="open"){
+      sizes = availableOpenSizes("open", selected.stack, selected.hero, "_");
+    } else if (selected.mode==="3bet"){
+      // bet sizes for 3bet
+      sizes = availableBetSizes("3bet", selected.stack, selected.hero, selected.villain, selected.openSize, null);
+    } else {
+      sizes = availableOpenSizes(selected.mode, selected.stack, selected.hero, selected.villain);
+    }
+    if (idx >= 0 && idx < sizes.length){
+      const v = sizes[idx];
+      if (selected.mode==="3bet"){
+        selected.betSize = (selected.betSize===v) ? null : v;
+      } else {
+        selected.openSize = (selected.openSize===v) ? null : v;
+        selected.betSize = null;
+      }
+      syncHash(); refreshAll();
+    }
+    return;
+  }
+});
+
+// ── Extra shortcuts ─────────────────────────────────────────────────
+document.addEventListener("keydown", function(e){
+  if (e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
+  const k = e.key.toLowerCase();
+  if (k==="ö"){ resetAll(); return; }
+  if (k==="ü"){ selected.stack=50;  selected.threebetSize=null; selected.betSize=null; syncHash(); refreshAll(); return; }
+  if (k==="ó"){ selected.stack=100; selected.threebetSize=null; selected.betSize=null; syncHash(); refreshAll(); return; }
 });
