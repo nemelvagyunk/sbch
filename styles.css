@@ -27,7 +27,7 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
 .btn.size{height:30px;font-size:11px;font-weight:900;padding:0 8px;border-radius:3px;}
 .btn.opensize{height:34px;font-size:12px;font-weight:900;padding:0 10px;border-radius:3px;}
 .frame{margin-top:8px;border:1px solid var(--line);border-radius:4px;background:rgba(17,24,39,0.35);overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.35);}
-#chartImg{width:100%;height:auto;display:block;max-height:calc(100vh - 220px);object-fit:contain;background:#0b0f14;}
+#chartImg{width:100%;height:auto;display:block;max-height:calc(100vh - 260px);object-fit:contain;background:#0b0f14;}
 @media (max-width:640px){
   .row{flex-wrap:wrap;}
   #modeGroup,#openSizeGroup{flex:1 1 auto;}
@@ -35,8 +35,50 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
   .divider{display:none;}
   .group{flex-wrap:wrap;}
   .group>button{flex:1 1 30%;}
-  #chartImg{max-height:calc(100vh - 340px);}
+  #chartImg{max-height:calc(100vh - 380px);}
 }
 
 .btn.size.allin{border-color:rgba(168,85,247,0.6);color:#d8b4fe;}
 .btn.size.allin.selected{border-color:rgba(168,85,247,0.9);box-shadow:0 0 0 3px rgba(168,85,247,0.18);color:#e9d5ff;}
+
+/* ── App navigation (SB ANTE / NO ANTE) ── */
+.appNav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  margin-top:10px;
+  padding:6px 0 4px;
+}
+.appNavBtn{
+  min-width:130px;
+  height:40px;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:0.5px;
+  text-decoration:none;
+  border-radius:4px;
+  border:1px solid rgba(100,120,150,0.35);
+  background:linear-gradient(180deg,rgba(25,35,50,0.95) 0%,rgba(14,20,32,0.95) 100%);
+  color:rgba(200,210,225,0.70);
+  transition:transform 80ms ease,border-color 120ms ease,box-shadow 120ms ease,color 120ms ease;
+}
+.appNavBtn:hover{
+  transform:translateY(-1px);
+  border-color:rgba(200,210,225,0.45);
+  color:var(--text);
+}
+/* SB ANTE active (green accent) */
+.appNavBtn--active{
+  color:#86efac;
+  border-color:rgba(34,197,94,0.65);
+  box-shadow:0 0 0 3px rgba(34,197,94,0.10);
+  background:linear-gradient(180deg,rgba(20,50,30,0.95) 0%,rgba(10,30,18,0.95) 100%);
+}
+/* NO ANTE active (blue accent) */
+.appNavBtn--noante.appNavBtn--active{
+  color:#93c5fd;
+  border-color:rgba(59,130,246,0.65);
+  box-shadow:0 0 0 3px rgba(59,130,246,0.12);
+  background:linear-gradient(180deg,rgba(10,30,65,0.95) 0%,rgba(5,16,38,0.95) 100%);
+}

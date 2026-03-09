@@ -1,9 +1,11 @@
 const APP_VERSION = (window.__APP_VERSION__ || "dev");
+const APP_MODE    = (window.__APP_MODE__    || "ante");   // "ante" | "noante"
 
 const HERO_ALL       = ["UTG","HJ","CO","BU","SB","BB"];
 const VILLAIN_ALL    = ["UTG","HJ","CO","BU","SB","BB"];
 const ALL_OPEN_SIZES = [2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7];
-const ALL_STACKS     = [50, 75, 100];
+// noante has no 75bb folder → strip 75 from stack list
+const ALL_STACKS     = APP_MODE === "noante" ? [50, 100] : [50, 75, 100];
 
 const HERO_POS_BY_MODE = {
   open:      ["UTG","HJ","CO","BU","SB"],
@@ -53,6 +55,7 @@ const els = {
   miniHeader:  document.querySelector(".miniHeader"),
   status:      document.getElementById("status"),
   vsoplGroup:  document.getElementById("vsoplGroup"),
+  row0divider: document.getElementById("row0divider"),
   modeGroup:   document.getElementById("modeGroup"),
   stackGroup:  document.getElementById("stackGroup"),
   heroGroup:   document.getElementById("heroGroup"),
@@ -190,16 +193,29 @@ function mkBtn(label,onClick,extraClass=""){
 }
 
 function renderMode(){
+  // ── vsoplGroup: hidden in noante mode ──
   els.vsoplGroup.innerHTML="";
-  for (const m of [{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
-    const btn=mkBtn(m.label,()=>{
-      selected.mode=m.key; selected.villain=null; selected.villain2=null;
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
-      syncHash(); refreshAll();
-    });
-    setBtnState(btn,{sel:selected.mode===m.key,dis:false});
-    els.vsoplGroup.appendChild(btn);
+  if (APP_MODE === "noante"){
+    els.vsoplGroup.style.display="none";
+    if (els.row0divider) els.row0divider.style.display="none";
+    // If current mode is one of the hidden modes, reset it
+    if (selected.mode==="vsopenlimp"||selected.mode==="faceiso"){
+      selected.mode=null;
+    }
+  } else {
+    els.vsoplGroup.style.display="";
+    if (els.row0divider) els.row0divider.style.display="";
+    for (const m of [{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
+      const btn=mkBtn(m.label,()=>{
+        selected.mode=m.key; selected.villain=null; selected.villain2=null;
+        selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+        syncHash(); refreshAll();
+      });
+      setBtnState(btn,{sel:selected.mode===m.key,dis:false});
+      els.vsoplGroup.appendChild(btn);
+    }
   }
+
   els.modeGroup.innerHTML="";
   for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"BvB"}]){
     const btn=mkBtn(m.label,()=>{
@@ -480,12 +496,15 @@ function syncHash(){
 
 async function init(){
   try{
-    const res=await fetch(`manifest.json?v=${encodeURIComponent(APP_VERSION)}`,{cache:"no-store"});
+    const manifestFile = APP_MODE === "noante" ? "manifest_noante.json" : "manifest.json";
+    const res=await fetch(`${manifestFile}?v=${encodeURIComponent(APP_VERSION)}`,{cache:"no-store"});
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data=await res.json();
     manifest=data.charts||[];
     buildIndex();
-    selected={mode:null,stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
+    // Ensure default stack is valid for this mode
+    if (!ALL_STACKS.includes(selected.stack)) selected.stack = ALL_STACKS[ALL_STACKS.length-1];
+    selected={...selected,mode:null,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
     refreshAll();
   }catch(e){
     console.error(e);

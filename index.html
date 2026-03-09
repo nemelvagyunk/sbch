@@ -10,8 +10,8 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="theme-color" content="#0b0f14" />
-  <title>Poker chart v2</title>
-  <link rel="stylesheet" href="styles.css?v=2026-03-06-03" />
+  <title>Poker chart v2 – SB Ante</title>
+  <link rel="stylesheet" href="styles.css?v=2026-03-09-01" />
 </head>
 <body>
   <header class="miniHeader">
@@ -21,7 +21,7 @@
     <div class="controls">
       <div class="row" id="row0">
         <div id="vsoplGroup" class="group"></div>
-        <div class="divider" aria-hidden="true">|</div>
+        <div class="divider row0divider" id="row0divider" aria-hidden="true">|</div>
         <div id="stackGroup" class="group"></div>
       </div>
       <div class="row" id="row1">
@@ -40,8 +40,16 @@
     <div class="frame">
       <img id="chartImg" alt="poker chart" />
     </div>
+    <div class="appNav">
+      <a href="index.html" class="btn appNavBtn appNavBtn--active">SB ANTE</a>
+      <a href="noante.html" class="btn appNavBtn">NO ANTE</a>
+    </div>
   </main>
-  <script>window.__APP_VERSION__="2026-03-06-03";if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js");}</script>
-  <script src="app.js?v=2026-03-06-03"></script>
+  <script>
+    window.__APP_VERSION__ = "2026-03-09-01";
+    window.__APP_MODE__    = "ante";
+    if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
+  </script>
+  <script src="app.js?v=2026-03-09-01"></script>
 </body>
 </html>

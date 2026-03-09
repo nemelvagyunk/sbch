@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="manifest" href="app.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#020c1b" />
+  <title>Poker chart v2 – No Ante</title>
+  <link rel="stylesheet" href="styles.css?v=2026-03-09-01" />
+  <style>
+    /* ── No Ante dark-blue theme override ── */
+    :root {
+      --bg:   #020c1b;
+      --line: #0f2340;
+    }
+    body {
+      background: radial-gradient(1200px 600px at 20% 0%, #071530 0%, #020c1b 55%);
+    }
+    .controls {
+      background: rgba(5, 18, 38, 0.55);
+      border-color: #0f2340;
+    }
+    .frame {
+      border-color: #0f2340;
+      background: rgba(5, 18, 38, 0.45);
+    }
+    #chartImg { background: #020c1b; }
+    .miniHeader { background: rgba(2, 12, 27, 0.90); }
+    .btn {
+      background: linear-gradient(180deg, rgba(8, 28, 58, 0.95) 0%, rgba(4, 14, 32, 0.95) 100%);
+      border-color: #0f2340;
+    }
+    .btn:hover { border-color: rgba(56, 139, 253, 0.45); }
+  </style>
+</head>
+<body>
+  <header class="miniHeader">
+    <div id="status" class="status">Betöltés…</div>
+  </header>
+  <main class="main">
+    <div class="controls">
+      <div class="row" id="row0">
+        <div id="vsoplGroup" class="group"></div>
+        <div class="divider row0divider" id="row0divider" aria-hidden="true">|</div>
+        <div id="stackGroup" class="group"></div>
+      </div>
+      <div class="row" id="row1">
+        <div id="modeGroup" class="group"></div>
+      </div>
+      <div class="row" id="row2">
+        <div id="heroGroup" class="group"></div>
+      </div>
+      <div class="row" id="row3">
+        <div id="villainGroup" class="group"></div>
+      </div>
+      <div class="row" id="row4">
+        <div id="sizeGroup" class="group"></div>
+      </div>
+    </div>
+    <div class="frame">
+      <img id="chartImg" alt="poker chart" />
+    </div>
+    <div class="appNav">
+      <a href="index.html" class="btn appNavBtn">SB ANTE</a>
+      <a href="noante.html" class="btn appNavBtn appNavBtn--active appNavBtn--noante">NO ANTE</a>
+    </div>
+  </main>
+  <script>
+    window.__APP_VERSION__ = "2026-03-09-01";
+    window.__APP_MODE__    = "noante";
+    if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
+  </script>
+  <script src="app.js?v=2026-03-09-01"></script>
+</body>
+</html>
