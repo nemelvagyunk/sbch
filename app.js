@@ -217,8 +217,8 @@ function renderMode(){
     if (els.row0divider) els.row0divider.style.display="";
     for (const m of [{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
       const btn=mkBtn(m.label,()=>{
-        selected.mode=m.key; selected.villain=null; selected.villain2=null;
-        selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+        selected.mode=m.key; selected.villain2=null;
+        selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
         syncHash(); refreshAll();
       });
       setBtnState(btn,{sel:selected.mode===m.key,dis:false});
@@ -229,11 +229,11 @@ function renderMode(){
   els.modeGroup.innerHTML="";
   for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"BvB"}]){
     const btn=mkBtn(m.label,()=>{
-      selected.mode=m.key; selected.villain=null; selected.villain2=null;
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
-      if (m.key==="raise")      selected.hero="BB";
-      else if (m.key==="3bet")  selected.hero="UTG";
-      else                      selected.hero=null;
+      selected.mode=m.key; selected.villain2=null;
+      selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+      // set default hero only if none selected
+      if (m.key==="raise"&&!selected.hero)      selected.hero="BB";
+      else if (m.key==="3bet"&&!selected.hero)  selected.hero="UTG";
       syncHash(); refreshAll();
     });
     setBtnState(btn,{sel:selected.mode===m.key,dis:false});
@@ -245,8 +245,8 @@ function renderStack(){
   els.stackGroup.innerHTML="";
   for (const s of ALL_STACKS){
     const btn=mkBtn(String(s),()=>{
-      selected.stack=s; selected.villain=null; selected.villain2=null;
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+      selected.stack=s;
+      selected.threebetSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     },"size");
     const dis = selected.mode ? !hasStack(selected.mode,s) : false;
@@ -260,7 +260,7 @@ function renderHero(){
   for (const p of HERO_ALL){
     const btn=mkBtn(p,()=>{
       selected.hero = (selected.hero===p) ? null : p;
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+      selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     },"hero");
     setBtnState(btn,{sel:selected.hero===p,dis:false});
@@ -304,7 +304,7 @@ function renderVillain(){
         if (a&&b&&POS_ORDER[a]>POS_ORDER[b]){const t=a;a=b;b=t;}
         selected.villain=a; selected.villain2=b;
       }
-      selected.openSize=null; selected.threebetSize=null; selected.betSize=null;
+      selected.threebetSize=null; selected.betSize=null;
       syncHash(); refreshAll();
     };
     return;
