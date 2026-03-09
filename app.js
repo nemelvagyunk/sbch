@@ -157,6 +157,16 @@ function allBetSizesEver(){
   return [...all].filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 
+function allRaiseOpenSizesForStack(stack){
+  // collect all open sizes in raise mode regardless of hero/villain
+  const all=new Set();
+  for (const [h,villains] of Object.entries((index["raise"]||{})[String(stack)]||{}))
+    for (const [v,sizes] of Object.entries(villains))
+      for (const os of Object.keys(sizes))
+        if (!isNaN(Number(os))) all.add(Number(os));
+  return [...all].sort((a,b)=>a-b);
+}
+
 function pickChart(){
   const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize,limpSeq}=selected;
   if (!mode||!stack||!hero) return null;
@@ -249,7 +259,7 @@ function renderHero(){
   els.heroGroup.innerHTML="";
   for (const p of HERO_ALL){
     const btn=mkBtn(p,()=>{
-      selected.hero=p;
+      selected.hero = (selected.hero===p) ? null : p;
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     },"hero");
@@ -360,6 +370,14 @@ function renderSize(){
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
+  } else if (selected.mode==="raise" || selected.mode===null) {
+    // show all open sizes immediately — visible even before any selection
+    const avail = (selected.stack && Object.keys(index["raise"]||{}).length>0) ? allRaiseOpenSizesForStack(selected.stack) : ALL_OPEN_SIZES;
+    for (const v of avail){
+      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size"+allinClass(v));
+      setBtnState(btn,{sel:selected.openSize===v,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
   } else if (selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp") {
     const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain);
     for (const v of avail){
@@ -463,6 +481,11 @@ function applyLayout(){
   }
 }
 
+function resetAll(){
+  selected={mode:null,stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
+  syncHash(); refreshAll();
+}
+
 function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsLimp(); applyDefaultsOpenLimp(); applyLayout(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
@@ -489,9 +512,16 @@ async function init(){
     const data=await res.json();
     manifest=data.charts||[];
     buildIndex();
-    // Ensure default stack is valid for this mode
     if (!ALL_STACKS.includes(selected.stack)) selected.stack = ALL_STACKS[ALL_STACKS.length-1];
     selected={...selected,mode:null,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
+    // inject reset button into appNav once
+    const nav = document.querySelector(".appNav");
+    if (nav && !nav.querySelector(".resetBtn")){
+      const rb = document.createElement("button");
+      rb.type="button"; rb.className="btn appNavBtn resetBtn"; rb.textContent="Reset";
+      rb.addEventListener("click", resetAll);
+      nav.appendChild(rb);
+    }
     refreshAll();
   }catch(e){
     console.error(e);

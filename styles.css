@@ -82,3 +82,16 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
   box-shadow:0 0 0 3px rgba(59,130,246,0.12);
   background:linear-gradient(180deg,rgba(10,30,65,0.95) 0%,rgba(5,16,38,0.95) 100%);
 }
+
+/* Reset button */
+.resetBtn{
+  min-width:80px;
+  color:rgba(200,210,225,0.50);
+  border-color:rgba(100,120,150,0.25);
+  background:linear-gradient(180deg,rgba(20,28,42,0.90) 0%,rgba(11,15,20,0.90) 100%);
+}
+.resetBtn:hover{
+  color:rgba(239,68,68,0.85);
+  border-color:rgba(239,68,68,0.45);
+  transform:translateY(-1px);
+}
