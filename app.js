@@ -569,3 +569,59 @@ async function init(){
 
 els.img.addEventListener("error",()=>showError("A kép nem tölthető be."));
 init();
+
+// ── Keyboard shortcuts ──────────────────────────────────────────────
+const KEY_MODE = {
+  q:"open", w:"raise", e:"3bet", r:"sqz", t:"c4b", z:"limp"
+};
+const KEY_VILLAIN = {
+  a:"UTG", s:"HJ", d:"CO", f:"BU", g:"SB", h:"BB"
+};
+// Í = key code varies by layout; we match by key value
+const KEY_HERO = {
+  "í":"UTG", y:"HJ", x:"CO", c:"BU", v:"SB", b:"BB"
+};
+
+document.addEventListener("keydown", function(e){
+  // ignore when typing in an input
+  if (e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
+  const k = e.key.toLowerCase();
+
+  if (KEY_MODE[k]!==undefined){
+    const newMode = KEY_MODE[k];
+    if (selected.mode===newMode){ selected.mode=null; }
+    else {
+      selected.mode=newMode;
+      selected.villain2=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+      if (newMode==="raise"&&!selected.hero) selected.hero="BB";
+      else if (newMode==="3bet"&&!selected.hero) selected.hero="UTG";
+    }
+    syncHash(); refreshAll(); return;
+  }
+
+  if (KEY_VILLAIN[k]!==undefined){
+    const p=KEY_VILLAIN[k];
+    if (selected.mode==="sqz"||selected.mode==="c4b"){
+      if (selected.villain===p) selected.villain=null;
+      else if (selected.villain2===p) selected.villain2=null;
+      else if (!selected.villain) selected.villain=p;
+      else if (!selected.villain2){
+        let a=selected.villain, b=p;
+        if (POS_ORDER[a]>POS_ORDER[b]){const t=a;a=b;b=t;}
+        selected.villain=a; selected.villain2=b;
+      }
+      selected.threebetSize=null; selected.betSize=null;
+    } else {
+      selected.villain=(selected.villain===p)?null:p;
+      selected.betSize=null; selected.limpSeq=null;
+    }
+    syncHash(); refreshAll(); return;
+  }
+
+  if (KEY_HERO[k]!==undefined){
+    const p=KEY_HERO[k];
+    selected.hero=(selected.hero===p)?null:p;
+    selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+    syncHash(); refreshAll(); return;
+  }
+});
