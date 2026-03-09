@@ -221,6 +221,9 @@ function renderMode(){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key; selected.villain=null; selected.villain2=null;
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+      if (m.key==="raise")      selected.hero="BB";
+      else if (m.key==="3bet")  selected.hero="UTG";
+      else                      selected.hero=null;
       syncHash(); refreshAll();
     });
     setBtnState(btn,{sel:selected.mode===m.key,dis:false});
@@ -264,6 +267,13 @@ function renderHero(){
       else if (selected.mode==="sqz"&&selected.villain&&selected.villain2)
         dis=POS_ORDER[p]<=Math.max(POS_ORDER[selected.villain],POS_ORDER[selected.villain2]);
       else dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p);
+    } else if (VILLAIN_FIRST_MODES.includes(selected.mode)){
+      // positional only — no chart-availability gating so villain can be picked first freely
+      if (!( HERO_POS_BY_MODE[selected.mode]||[] ).includes(p)){ dis=true; }
+      else if (selected.mode==="raise"&&selected.villain)
+        dis = POS_ORDER[p] <= POS_ORDER[selected.villain];
+      else if (selected.mode==="3bet"&&selected.villain)
+        dis = p===selected.villain;
     } else if (selected.mode&&selected.stack)
       dis=!(HERO_POS_BY_MODE[selected.mode]||[]).includes(p)||!heroHasAnyChart(selected.mode,selected.stack,p);
     else if (selected.mode)
@@ -324,11 +334,19 @@ function renderVillain(){
       syncHash(); refreshAll();
     },"villain");
     let dis=false;
-    if (selected.mode==="open") dis=true;
-    else if (selected.mode&&selected.stack&&selected.hero){
-      const allowed=selected.mode==="raise"?(OPEN_ALLOWED_VILLAINS[selected.hero]||[]):VILLAIN_ALL.filter(x=>x!==selected.hero);
-      dis=!allowed.includes(p)||!villainHasAnyChart(selected.mode,selected.stack,selected.hero,p);
-    } else if (selected.hero&&p===selected.hero) dis=true;
+    if (selected.mode==="open"){
+      dis=true;
+    } else if (selected.mode==="raise"){
+      // villain = the opener: UTG/HJ/CO/BU/SB can open; BB cannot
+      if (!["UTG","HJ","CO","BU","SB"].includes(p)){ dis=true; }
+      // if hero already chosen, only show valid openers for that hero
+      else if (selected.hero) dis=!(OPEN_ALLOWED_VILLAINS[selected.hero]||[]).includes(p);
+    } else if (selected.mode==="3bet"){
+      // villain = the opener; any position except hero
+      if (selected.hero) dis = p===selected.hero;
+    } else if (selected.hero&&p===selected.hero){
+      dis=true;
+    }
     setBtnState(btn,{sel:selected.villain===p,dis});
     els.villainGroup.appendChild(btn);
   }
@@ -476,7 +494,23 @@ function renderChart(){
   if (chart) els.img.src=chart.file;
   else els.img.removeAttribute("src");
 }
-function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsLimp(); applyDefaultsOpenLimp(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
+// Modes where villain row appears ABOVE hero row
+const VILLAIN_FIRST_MODES = ["raise","3bet","sqz","c4b"];
+
+function applyLayout(){
+  const row2 = document.getElementById("row2");
+  const row3 = document.getElementById("row3");
+  if (!row2||!row3) return;
+  if (VILLAIN_FIRST_MODES.includes(selected.mode)){
+    row2.appendChild(els.villainGroup);
+    row3.appendChild(els.heroGroup);
+  } else {
+    row2.appendChild(els.heroGroup);
+    row3.appendChild(els.villainGroup);
+  }
+}
+
+function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsLimp(); applyDefaultsOpenLimp(); applyLayout(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
   const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize,limpSeq}=selected;
