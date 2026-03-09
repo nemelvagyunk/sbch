@@ -190,7 +190,7 @@ function mkBtn(label,onClick,extraClass=""){
 
 function renderMode(){
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"Facing limp"},{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
+  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"BvB"},{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key; selected.villain=null; selected.villain2=null;
       selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
