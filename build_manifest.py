@@ -72,14 +72,15 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
                      _parse_size(sqz_m.group(3)+"bb"), _parse_size(sqz_m.group(5)+"bb"),
                      villain2=sqz_m.group(4).upper())
 
-    # 4. C4B
+    # 4. C4B — opcionális hero 4bet size suffix: ...3BET-11bb-22bb.png
     c4b_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-3BET-([0-9]+(?:[.][0-9]+)?)bb$",
+        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-3BET-([0-9]+(?:[.][0-9]+)?)bb(?:-([0-9]+(?:[.][0-9]+)?)bb)?$",
         base, re.IGNORECASE)
     if c4b_m:
         return entry("c4b", c4b_m.group(1).upper(), c4b_m.group(2).upper(),
                      _parse_size(c4b_m.group(3)+"bb"), _parse_size(c4b_m.group(5)+"bb"),
-                     villain2=c4b_m.group(4).upper())
+                     villain2=c4b_m.group(4).upper(),
+                     c4b_size=_parse_size(c4b_m.group(6)+"bb") if c4b_m.group(6) else None)
 
     # 5. Facing limp BB with size — BB-vs-SB-OPEN-4bb.png
     bvb_m = re.match(r"^BB-vs-SB-OPEN-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
