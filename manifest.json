@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-15T15:26:32.071427Z",
+  "generated": "2026-03-15T20:39:59.617908Z",
   "charts": [
     {
       "file": "50/charts2.5bb/BB-vs-BU-OPEN-2.5bb-SB-3BET-9bb.png",
@@ -10766,6 +10766,24 @@
       "seq_key": null
     },
     {
+      "file": "100/charts3bb/SB-LIMP-0.5bb-vs-BB-ISO-6bb.png",
+      "facing": "limp",
+      "hero": "SB",
+      "villain": "BB",
+      "villain2": null,
+      "stack": 100,
+      "title": "SB-LIMP-0.5bb-vs-BB-ISO-6bb",
+      "open_size": 0.5,
+      "open_size_raw": "0.5bb",
+      "threebet_size": null,
+      "threebet_size_raw": null,
+      "iso_size": 6.0,
+      "iso_size_raw": "6.0bb",
+      "c4b_size": null,
+      "c4b_size_raw": null,
+      "seq_key": null
+    },
+    {
       "file": "100/charts3bb/SB-OPEN-6bb-vs-BB-3BET-18bb.png",
       "facing": "3bet",
       "hero": "SB",
@@ -10795,6 +10813,24 @@
       "open_size_raw": "6.0bb",
       "threebet_size": 99.5,
       "threebet_size_raw": "99.5bb",
+      "iso_size": null,
+      "iso_size_raw": null,
+      "c4b_size": null,
+      "c4b_size_raw": null,
+      "seq_key": null
+    },
+    {
+      "file": "100/charts3bb/SB-OPEN-6bb.png",
+      "facing": "open",
+      "hero": "SB",
+      "villain": null,
+      "villain2": null,
+      "stack": 100,
+      "title": "SB-OPEN-6bb",
+      "open_size": 6.0,
+      "open_size_raw": "6.0bb",
+      "threebet_size": null,
+      "threebet_size_raw": null,
       "iso_size": null,
       "iso_size_raw": null,
       "c4b_size": null,
