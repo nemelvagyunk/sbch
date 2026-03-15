@@ -217,8 +217,8 @@ function renderMode(){
     if (els.row0divider) els.row0divider.style.display="";
     for (const m of [{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
       const btn=mkBtn(m.label,()=>{
-        selected.mode=m.key; selected.villain2=null;
-        selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+        selected.mode=m.key;
+        applyModeDefaults(m.key);
         syncHash(); refreshAll();
       });
       setBtnState(btn,{sel:selected.mode===m.key,dis:false});
@@ -229,11 +229,8 @@ function renderMode(){
   els.modeGroup.innerHTML="";
   for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"BvB"}]){
     const btn=mkBtn(m.label,()=>{
-      selected.mode=m.key; selected.villain2=null;
-      selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
-      // set default hero only if none selected
-      if (m.key==="raise"&&!selected.hero)      selected.hero="BB";
-      else if (m.key==="3bet"&&!selected.hero)  selected.hero="UTG";
+      selected.mode=m.key;
+      applyModeDefaults(m.key);
       syncHash(); refreshAll();
     });
     setBtnState(btn,{sel:selected.mode===m.key,dis:false});
@@ -545,6 +542,22 @@ function applyLayout(){
   }
 }
 
+function applyModeDefaults(mode){
+  // Minden tabváltáskor felülírja a hero/villain értékeket a tab saját defaultjára
+  if (mode==="raise"){
+    selected.hero="BB"; selected.villain="UTG"; selected.villain2=null;
+  } else if (mode==="open"){
+    selected.hero="UTG"; selected.villain=null; selected.villain2=null;
+  } else if (mode==="3bet"){
+    selected.hero="UTG"; selected.villain="BB"; selected.villain2=null;
+  } else if (mode==="sqz"){
+    selected.hero="BB"; selected.villain=null; selected.villain2=null;
+  } else if (mode==="c4b"){
+    selected.hero="BB"; selected.villain=null; selected.villain2=null;
+  }
+  selected.openSize=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+}
+
 function resetAll(){
   selected={mode:"raise",stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
   syncHash(); refreshAll();
@@ -618,9 +631,7 @@ document.addEventListener("keydown", function(e){
     if (selected.mode===newMode){ selected.mode=null; }
     else {
       selected.mode=newMode;
-      selected.villain2=null; selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
-      if (newMode==="raise"&&!selected.hero) selected.hero="BB";
-      else if (newMode==="3bet"&&!selected.hero) selected.hero="UTG";
+      applyModeDefaults(newMode);
     }
     syncHash(); refreshAll(); return;
   }
