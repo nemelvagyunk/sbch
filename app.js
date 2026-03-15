@@ -430,9 +430,10 @@ function applyDefaultsOpen(){
 }
 function applyDefaultsRaise(){
   if (selected.mode!=="raise"||!selected.stack||!selected.hero) return;
+  if (selected.villain==null) selected.villain="UTG";
   if (selected.openSize==null){
     const avail=availableOpenSizes("raise",selected.stack,selected.hero,selected.villain);
-    if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
+    if (avail.includes(3)) selected.openSize=3; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
   }
 }
 function applyDefaults3bet(){
