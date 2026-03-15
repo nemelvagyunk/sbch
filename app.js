@@ -380,8 +380,8 @@ function renderSize(){
       }
     }
   } else if (selected.mode==="3bet"){
-    // Open size selector — csak 3bb és 4bb jelenik meg
-    const THREEBET_OPEN_SIZES = [3, 4];
+    // Open size selector — 2.5bb, 3bb és 4bb jelenik meg (ante mode)
+    const THREEBET_OPEN_SIZES = APP_MODE === "noante" ? [2.5] : [2.5, 3, 4];
     const allOpenAvail = availableOpenSizes("3bet", selected.stack, selected.hero, selected.villain, null);
     const openToShow = THREEBET_OPEN_SIZES.filter(v => allOpenAvail.includes(v));
     const finalOpenSizes = openToShow.length > 0 ? openToShow : allOpenAvail;
@@ -424,7 +424,7 @@ function applyDefaultsOpen(){
   if (selected.mode!=="open"||!selected.stack||!selected.hero) return;
   if (selected.openSize==null){
     const avail=availableOpenSizes("open",selected.stack,selected.hero,"_");
-    if (avail.includes(4)) selected.openSize=4; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length===1) selected.openSize=avail[0];
+    if (avail.includes(3)) selected.openSize=3; else if (avail.includes(4)) selected.openSize=4; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length===1) selected.openSize=avail[0];
   }
 }
 function applyDefaultsRaise(){
@@ -449,16 +449,17 @@ function applyDefaults3bet(){
         if (avail.includes(2.5)) selected.openSize=2.5;
         else if (avail.length>0) selected.openSize=avail[0];
       } else {
-        if (avail.includes(4)) selected.openSize=4;
-        else if (avail.includes(3)) selected.openSize=3;
+        if (avail.includes(3)) selected.openSize=3;
+        else if (avail.includes(2.5)) selected.openSize=2.5;
+        else if (avail.includes(4)) selected.openSize=4;
         else if (avail.length>0) selected.openSize=avail[0];
       }
     } else {
       // sqz
-      const def=DEFAULT_OPEN_SIZE_BY_HERO[selected.villain];
       const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.villain2);
-      if (def!=null&&avail.includes(def)) selected.openSize=def;
-      else if (avail.length===1) selected.openSize=avail[0];
+      if (avail.includes(3)) selected.openSize=3;
+      else if (avail.includes(2.5)) selected.openSize=2.5;
+      else if (avail.includes(4)) selected.openSize=4;
       else if (avail.length>0) selected.openSize=avail[0];
     }
   }
