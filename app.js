@@ -381,10 +381,27 @@ function renderSize(){
       }
     }
   } else if (selected.mode==="3bet"){
-    for (const v of availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize,null)){
-      const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
-      setBtnState(btn,{sel:selected.betSize===v,dis:false});
+    // Open size selector — csak 3bb és 4bb jelenik meg
+    const THREEBET_OPEN_SIZES = [3, 4];
+    const allOpenAvail = availableOpenSizes("3bet", selected.stack, selected.hero, selected.villain, null);
+    const openToShow = THREEBET_OPEN_SIZES.filter(v => allOpenAvail.includes(v));
+    const finalOpenSizes = openToShow.length > 0 ? openToShow : allOpenAvail;
+    for (const v of finalOpenSizes){
+      const btn=mkBtn("open "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize"+allinClass(v));
+      setBtnState(btn,{sel:selected.openSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
+    }
+    // Elválasztó + 3bet size gombok
+    const betAvail=availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize,null);
+    if (betAvail.length>0){
+      const div=document.createElement("span");
+      div.className="divider"; div.textContent="|"; div.setAttribute("aria-hidden","true");
+      els.sizeGroup.appendChild(div);
+      for (const v of betAvail){
+        const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
+        setBtnState(btn,{sel:selected.betSize===v,dis:false});
+        els.sizeGroup.appendChild(btn);
+      }
     }
   } else if (selected.mode==="raise") {
     // show all open sizes immediately — visible even before any selection
@@ -422,13 +439,19 @@ function applyDefaults3bet(){
   if ((selected.mode!=="3bet"&&selected.mode!=="sqz")||!selected.stack||!selected.hero||!selected.villain) return;
   if (selected.mode==="sqz"&&!selected.villain2) return;
   if (selected.openSize==null){
-    const def=selected.mode==="sqz"
-      ? DEFAULT_OPEN_SIZE_BY_HERO[selected.villain]
-      : DEFAULT_OPEN_SIZE_BY_HERO[selected.hero];
-    const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.villain2);
-    if (def!=null&&avail.includes(def)) selected.openSize=def;
-    else if (avail.length===1) selected.openSize=avail[0];
-    else if (selected.mode==="sqz"&&avail.length>0) selected.openSize=avail[0];
+    if (selected.mode==="3bet"){
+      const avail=availableOpenSizes("3bet",selected.stack,selected.hero,selected.villain,null);
+      if (avail.includes(4)) selected.openSize=4;
+      else if (avail.includes(3)) selected.openSize=3;
+      else if (avail.length>0) selected.openSize=avail[0];
+    } else {
+      // sqz
+      const def=DEFAULT_OPEN_SIZE_BY_HERO[selected.villain];
+      const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.villain2);
+      if (def!=null&&avail.includes(def)) selected.openSize=def;
+      else if (avail.length===1) selected.openSize=avail[0];
+      else if (avail.length>0) selected.openSize=avail[0];
+    }
   }
   if (selected.betSize==null&&selected.openSize!=null){
     const avail=availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
