@@ -258,12 +258,14 @@ function renderStack(){
 function renderHero(){
   els.heroGroup.innerHTML="";
   for (const p of HERO_ALL){
+    const isBBinOpen = (selected.mode==="open" && p==="BB");
     const btn=mkBtn(p,()=>{
+      if (isBBinOpen) return;
       selected.hero = (selected.hero===p) ? null : p;
       selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
       syncHash(); refreshAll();
     },"hero");
-    setBtnState(btn,{sel:selected.hero===p,dis:false});
+    setBtnState(btn,{sel:selected.hero===p,dis:isBBinOpen});
     els.heroGroup.appendChild(btn);
   }
 }
@@ -425,7 +427,7 @@ function applyDefaultsOpen(){
   if (selected.mode!=="open"||!selected.stack||!selected.hero) return;
   if (selected.openSize==null){
     const avail=availableOpenSizes("open",selected.stack,selected.hero,"_");
-    if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
+    if (avail.includes(4)) selected.openSize=4; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length===1) selected.openSize=avail[0];
   }
 }
 function applyDefaultsRaise(){
@@ -644,6 +646,7 @@ document.addEventListener("keydown", function(e){
 
   if (KEY_HERO[k]!==undefined){
     const p=KEY_HERO[k];
+    if (selected.mode==="open" && p==="BB") return;
     selected.hero=(selected.hero===p)?null:p;
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll(); return;
