@@ -432,7 +432,11 @@ function applyDefaultsRaise(){
   if (selected.villain==null) selected.villain="UTG";
   if (selected.openSize==null){
     const avail=availableOpenSizes("raise",selected.stack,selected.hero,selected.villain);
-    if (avail.includes(3)) selected.openSize=3; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
+    if (APP_MODE==="noante"){
+      if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length>0) selected.openSize=avail[0];
+    } else {
+      if (avail.includes(3)) selected.openSize=3; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
+    }
   }
 }
 function applyDefaults3bet(){
@@ -441,9 +445,14 @@ function applyDefaults3bet(){
   if (selected.openSize==null){
     if (selected.mode==="3bet"){
       const avail=availableOpenSizes("3bet",selected.stack,selected.hero,selected.villain,null);
-      if (avail.includes(4)) selected.openSize=4;
-      else if (avail.includes(3)) selected.openSize=3;
-      else if (avail.length>0) selected.openSize=avail[0];
+      if (APP_MODE==="noante"){
+        if (avail.includes(2.5)) selected.openSize=2.5;
+        else if (avail.length>0) selected.openSize=avail[0];
+      } else {
+        if (avail.includes(4)) selected.openSize=4;
+        else if (avail.includes(3)) selected.openSize=3;
+        else if (avail.length>0) selected.openSize=avail[0];
+      }
     } else {
       // sqz
       const def=DEFAULT_OPEN_SIZE_BY_HERO[selected.villain];
