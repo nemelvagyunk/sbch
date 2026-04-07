@@ -206,17 +206,24 @@ function mkBtn(label,onClick,extraClass=""){
 }
 
 function renderMode(){
-  // ── vsoplGroup: hidden in noante mode ──
+  // ── vsoplGroup: Open + BvB + (ante: Vs openlimp + Open limp/vs iso) ──
   els.vsoplGroup.innerHTML="";
+  // Open and BvB always appear first in row0
+  for (const m of [{key:"open",label:"Open"},{key:"limp",label:"BvB"}]){
+    const btn=mkBtn(m.label,()=>{
+      selected.mode=m.key;
+      applyModeDefaults(m.key);
+      syncHash(); refreshAll();
+    });
+    setBtnState(btn,{sel:selected.mode===m.key,dis:false});
+    els.vsoplGroup.appendChild(btn);
+  }
   if (APP_MODE === "noante"){
-    els.vsoplGroup.style.display="none";
     if (els.row0divider) els.row0divider.style.display="none";
-    // If current mode is one of the hidden modes, reset it
     if (selected.mode==="vsopenlimp"||selected.mode==="faceiso"){
       selected.mode=null;
     }
   } else {
-    els.vsoplGroup.style.display="";
     if (els.row0divider) els.row0divider.style.display="";
     for (const m of [{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
       const btn=mkBtn(m.label,()=>{
@@ -230,7 +237,7 @@ function renderMode(){
   }
 
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"fsqz",label:"Facing SQZ"},{key:"c4b",label:"C4B"},{key:"f4b",label:"Facing 4bet"},{key:"limp",label:"BvB"}]){
+  for (const m of [{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"fsqz",label:"Facing SQZ"},{key:"c4b",label:"C4B"},{key:"f4b",label:"Facing 4bet"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key;
       applyModeDefaults(m.key);
