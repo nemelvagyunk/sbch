@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 
 BASE = os.path.dirname(__file__)
 
-STACK_SIZES = [50, 75, 100]
+STACK_SIZES = [30, 50, 75, 100]
 
 OPEN_SIZE_FOLDERS = {
     "charts2bb":   2.0,

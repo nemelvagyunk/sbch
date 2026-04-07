@@ -5,7 +5,7 @@ const HERO_ALL       = ["UTG","HJ","CO","BU","SB","BB"];
 const VILLAIN_ALL    = ["UTG","HJ","CO","BU","SB","BB"];
 const ALL_OPEN_SIZES = [2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7];
 // noante has no 75bb folder → strip 75 from stack list
-const ALL_STACKS     = APP_MODE === "noante" ? [50, 100] : [50, 75, 100];
+const ALL_STACKS     = APP_MODE === "noante" ? [50, 100] : [30, 50, 75, 100];
 
 const HERO_POS_BY_MODE = {
   open:      ["UTG","HJ","CO","BU","SB"],
