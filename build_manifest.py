@@ -72,14 +72,14 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
                      _parse_size(sqz_m.group(3)+"bb"), _parse_size(sqz_m.group(5)+"bb"),
                      villain2=sqz_m.group(4).upper())
 
-    # 4. C4B — opcionális hero 4bet size suffix: ...3BET-11bb-22bb.png
+    # 4. C4B — {hero}-vs-{villain}-OPEN-{villain2}-3BET-open{X}bb-3bet{Y}bb.png
     c4b_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-3BET-([0-9]+(?:[.][0-9]+)?)bb(?:-([0-9]+(?:[.][0-9]+)?)bb)?$",
+        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-(UTG|HJ|CO|BU|SB|BB)-3BET-open([0-9]+(?:[.][0-9]+)?)bb-3bet([0-9]+(?:[.][0-9]+)?)bb(?:-([0-9]+(?:[.][0-9]+)?)bb)?$",
         base, re.IGNORECASE)
     if c4b_m:
         return entry("c4b", c4b_m.group(1).upper(), c4b_m.group(2).upper(),
-                     _parse_size(c4b_m.group(3)+"bb"), _parse_size(c4b_m.group(5)+"bb"),
-                     villain2=c4b_m.group(4).upper(),
+                     _parse_size(c4b_m.group(4)+"bb"), _parse_size(c4b_m.group(5)+"bb"),
+                     villain2=c4b_m.group(3).upper(),
                      c4b_size=_parse_size(c4b_m.group(6)+"bb") if c4b_m.group(6) else None)
 
     # 5. Facing limp BB with size — BB-vs-SB-OPEN-4bb.png
@@ -119,6 +119,24 @@ def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_f
     if re.search(r"SB-LIMP|BB-vs-SB-LIMP", base, re.IGNORECASE):
         return None
 
+    # 8c. Facing 4bet — BB-vs-BU-OPEN-3BET-vs-4BET-3bet16bb-4bet32bb.png
+    f4b_m = re.match(
+        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-3BET-vs-4BET-3bet([0-9]+(?:[.][0-9]+)?)bb-4bet([0-9]+(?:[.][0-9]+)?)bb$",
+        base, re.IGNORECASE)
+    if f4b_m:
+        # open_size = 3bet size, threebet_size = 4bet size (fits existing [os][bs] index slots)
+        return entry("f4b", f4b_m.group(1).upper(), f4b_m.group(2).upper(),
+                     _parse_size(f4b_m.group(3)+"bb"), _parse_size(f4b_m.group(4)+"bb"))
+
+    # 8. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
+    fsqz_m = re.match(
+        r"^(UTG|HJ|CO|BU|SB|BB)-OPEN-vs-(UTG|HJ|CO|BU|SB|BB)-CALL-(UTG|HJ|CO|BU|SB|BB)-SQZ-sqz-([0-9]+(?:[.][0-9]+)?)bb$",
+        base, re.IGNORECASE)
+    if fsqz_m:
+        return entry("fsqz", fsqz_m.group(1).upper(), fsqz_m.group(2).upper(),
+                     folder_open_size, _parse_size(fsqz_m.group(4)+"bb"),
+                     villain2=fsqz_m.group(3).upper())
+
     # 8. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
     fop_m = re.match(
         r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?$",
@@ -155,6 +173,26 @@ def main():
                     charts.append(info)
                 else:
                     skipped.append(f"{stack_folder}/limp/{fn}")
+        fsqz_path = os.path.join(stack_path, "facing-sqz")
+        if os.path.isdir(fsqz_path):
+            for fn in sorted(os.listdir(fsqz_path)):
+                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
+                    continue
+                info = parse_chart_filename(fn, stack, None, "facing-sqz", stack_folder)
+                if info:
+                    charts.append(info)
+                else:
+                    skipped.append(f"{stack_folder}/facing-sqz/{fn}")
+        f4b_path = os.path.join(stack_path, "facing-4bet")
+        if os.path.isdir(f4b_path):
+            for fn in sorted(os.listdir(f4b_path)):
+                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
+                    continue
+                info = parse_chart_filename(fn, stack, None, "facing-4bet", stack_folder)
+                if info:
+                    charts.append(info)
+                else:
+                    skipped.append(f"{stack_folder}/facing-4bet/{fn}")
         bvb_path = os.path.join(stack_path, "bvb")
         if os.path.isdir(bvb_path):
             for fn in sorted(os.listdir(bvb_path)):

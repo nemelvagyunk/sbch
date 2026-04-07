@@ -12,6 +12,8 @@ const HERO_POS_BY_MODE = {
   raise:     ["HJ","CO","BU","SB","BB"],
   "3bet":    ["UTG","HJ","CO","BU","SB"],
   sqz:       ["UTG","HJ","CO","BU","SB","BB"],
+  fsqz:      ["UTG","HJ","CO","BU","SB","BB"],
+  f4b:       ["UTG","HJ","CO","BU","SB","BB"],
   c4b:       ["CO","BU","SB","BB"],
   limp:      ["SB","BB"],
   faceiso:    ["UTG","HJ","CO","BU"],
@@ -90,7 +92,7 @@ function buildIndex(){
       if (!index[f])     index[f]={};
       if (!index[f][st]) index[f][st]={};
     } else {
-      const v=(f==="sqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
+      const v=(f==="sqz"||f==="fsqz")?((ch.villain||"_")+"_"+(ch.villain2||"_")):(ch.villain||"_");
       const os=sk(ch.open_size);
       if (f==="faceiso"||f==="vsopenlimp"){
         const sq=ch.seq_key||"_", vk=ch.villain||"_";
@@ -119,12 +121,12 @@ function villainHasAnyChart(mode,stack,hero,villain){ return !!(index[mode]&&ind
 
 function sqzKey(v1,v2){ return (v1||"_")+"_"+(v2||"_"); }
 function availableOpenSizes(mode,stack,hero,villain,villain2){
-  const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
+  const vk=(mode==="sqz"||mode==="fsqz")?sqzKey(villain,villain2):(villain||"_");
   const sub=(((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{};
   return Object.keys(sub).map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
 function availableBetSizes(mode,stack,hero,villain,openSize,villain2){
-  const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
+  const vk=(mode==="sqz"||mode==="fsqz")?sqzKey(villain,villain2):(villain||"_");
   const sub=((((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{})[sk(openSize)]||{};
   return Object.keys(sub).filter(k=>k!=="_").map(Number).filter(v=>!isNaN(v)).sort((a,b)=>a-b);
 }
@@ -182,7 +184,8 @@ function pickChart(){
     if (hero==="BB") return ((((index["limp"]||{})[String(stack)]||{})["BB"]||{})["SB"]||{})[sk(openSize)]?.["_"]||null;
     return ((((index["limp"]||{})[String(stack)]||{})["SB"]||{})["BB"]||{})[sk(openSize)]?.[sk(betSize)]||null;
   }
-  const vk=(mode==="sqz")?sqzKey(villain,villain2):(villain||"_");
+  const vk=(mode==="sqz"||mode==="fsqz")?sqzKey(villain,villain2):(villain||"_");
+  if ((mode==="sqz"||mode==="fsqz")&&(!villain||!villain2)) return null;
   return ((((index[mode]||{})[String(stack)]||{})[hero]||{})[vk]||{})[sk(openSize)]?.[sk(betSize)]||null;
 }
 
@@ -227,7 +230,7 @@ function renderMode(){
   }
 
   els.modeGroup.innerHTML="";
-  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"c4b",label:"C4B"},{key:"limp",label:"BvB"}]){
+  for (const m of [{key:"open",label:"Open"},{key:"raise",label:"Facing open"},{key:"3bet",label:"Facing 3bet"},{key:"sqz",label:"SQZ"},{key:"fsqz",label:"Facing SQZ"},{key:"c4b",label:"C4B"},{key:"f4b",label:"Facing 4bet"},{key:"limp",label:"BvB"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key;
       applyModeDefaults(m.key);
@@ -284,7 +287,7 @@ function renderVillain(){
     return btn;
   }
 
-  if (selected.mode==="sqz"||selected.mode==="c4b"){
+  if (selected.mode==="sqz"||selected.mode==="fsqz"||selected.mode==="c4b"){
     const twoSel=!!(selected.villain&&selected.villain2);
     for (const p of VILLAIN_ALL){
       const isSel=selected.villain===p||selected.villain2===p;
@@ -360,6 +363,36 @@ function renderSize(){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
       setBtnState(btn,{sel:selected.betSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
+    }
+  } else if (selected.mode==="fsqz"){
+    // Facing SQZ: hero = opener, villain = caller, villain2 = squeezer
+    // Show sqz sizes only (no open size in filename)
+    if (selected.villain && selected.villain2){
+      const sqzAvail=availableBetSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
+      for (const v of sqzAvail){
+        const btn=mkBtn("sqz "+sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
+        setBtnState(btn,{sel:selected.betSize===v,dis:false});
+        els.sizeGroup.appendChild(btn);
+      }
+    }
+  } else if (selected.mode==="f4b"){
+    // open_size slot = 3bet size, threebet_size slot = 4bet size
+    const threebetAvail = availableOpenSizes("f4b", selected.stack, selected.hero, selected.villain, null);
+    for (const v of threebetAvail){
+      const btn=mkBtn("3bet "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize"+allinClass(v));
+      setBtnState(btn,{sel:selected.openSize===v,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
+    const fourbetAvail = availableBetSizes("f4b", selected.stack, selected.hero, selected.villain, selected.openSize, null);
+    if (fourbetAvail.length>0){
+      const div=document.createElement("span");
+      div.className="divider"; div.textContent="|"; div.setAttribute("aria-hidden","true");
+      els.sizeGroup.appendChild(div);
+      for (const v of fourbetAvail){
+        const btn=mkBtn("4bet "+sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
+        setBtnState(btn,{sel:selected.betSize===v,dis:false});
+        els.sizeGroup.appendChild(btn);
+      }
     }
   } else if (selected.mode==="sqz"){
     const openAvail=availableOpenSizes("sqz",selected.stack,selected.hero,selected.villain,selected.villain2);
@@ -490,6 +523,30 @@ function applyDefaultsC4b(){
     if (avail.length>0) selected.betSize=avail[0];
   }
 }
+function applyDefaultsFsqz(){
+  if (selected.mode!=="fsqz"||!selected.stack||!selected.hero||!selected.villain||!selected.villain2) return;
+  if (selected.openSize==null){
+    const avail=availableOpenSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.villain2);
+    if (avail.includes(3)) selected.openSize=3;
+    else if (avail.length>0) selected.openSize=avail[0];
+  }
+  if (selected.betSize==null){
+    const avail=availableBetSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
+    if (avail.length>0) selected.betSize=avail[0];
+  }
+}
+function applyDefaultsF4b(){
+  if (selected.mode!=="f4b"||!selected.stack||!selected.hero||!selected.villain) return;
+  if (selected.openSize==null){
+    // openSize slot holds the 3bet size
+    const avail=availableOpenSizes("f4b",selected.stack,selected.hero,selected.villain,null);
+    if (avail.length>0) selected.openSize=avail[0];
+  }
+  if (selected.betSize==null&&selected.openSize!=null){
+    const avail=availableBetSizes("f4b",selected.stack,selected.hero,selected.villain,selected.openSize,null);
+    if (avail.length>0) selected.betSize=avail[0];
+  }
+}
 function applyDefaultsOpenLimp(){
   if ((selected.mode!=="faceiso"&&selected.mode!=="vsopenlimp")||!selected.stack||!selected.hero||!selected.villain) return;
   if (selected.limpSeq==null){
@@ -537,7 +594,7 @@ function renderChart(){
   }
 }
 // Modes where villain row appears ABOVE hero row
-const VILLAIN_FIRST_MODES = ["raise","3bet","sqz","c4b"];
+const VILLAIN_FIRST_MODES = ["raise","3bet","sqz","fsqz","c4b","f4b"];
 
 function applyLayout(){
   const row2 = document.getElementById("row2");
@@ -562,6 +619,10 @@ function applyModeDefaults(mode){
     selected.hero="UTG"; selected.villain="BB"; selected.villain2=null;
   } else if (mode==="sqz"){
     selected.hero="BB"; selected.villain=null; selected.villain2=null;
+  } else if (mode==="fsqz"){
+    selected.hero="UTG"; selected.villain=null; selected.villain2=null;
+  } else if (mode==="f4b"){
+    selected.hero="BB"; selected.villain="UTG"; selected.villain2=null;
   } else if (mode==="c4b"){
     selected.hero="BB"; selected.villain=null; selected.villain2=null;
   }
@@ -573,7 +634,7 @@ function resetAll(){
   syncHash(); refreshAll();
 }
 
-function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsLimp(); applyDefaultsOpenLimp(); applyLayout(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
+function refreshAll(){ applyDefaultsOpen(); applyDefaultsRaise(); applyDefaults3bet(); applyDefaultsC4b(); applyDefaultsFsqz(); applyDefaultsF4b(); applyDefaultsLimp(); applyDefaultsOpenLimp(); applyLayout(); renderMode(); renderStack(); renderHero(); renderVillain(); renderSize(); renderChart(); }
 
 function syncHash(){
   const {mode,stack,hero,villain,villain2,openSize,threebetSize,betSize,limpSeq}=selected;
@@ -621,7 +682,7 @@ init();
 
 // ── Keyboard shortcuts ──────────────────────────────────────────────
 const KEY_MODE = {
-  q:"open", w:"raise", e:"3bet", r:"sqz", t:"c4b", z:"limp"
+  q:"open", w:"raise", e:"3bet", r:"sqz", u:"fsqz", t:"c4b", p:"f4b", z:"limp"
 };
 const KEY_VILLAIN = {
   a:"UTG", s:"HJ", d:"CO", f:"BU", g:"SB", h:"BB"
@@ -648,7 +709,7 @@ document.addEventListener("keydown", function(e){
 
   if (KEY_VILLAIN[k]!==undefined){
     const p=KEY_VILLAIN[k];
-    if (selected.mode==="sqz"||selected.mode==="c4b"){
+    if (selected.mode==="sqz"||selected.mode==="fsqz"||selected.mode==="c4b"){
       if (selected.villain===p) selected.villain=null;
       else if (selected.villain2===p) selected.villain2=null;
       else if (!selected.villain) selected.villain=p;
