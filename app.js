@@ -39,18 +39,13 @@ const DEFAULT_OPEN_SIZE_BY_HERO = {
   UTG: 4, HJ: 4, CO: 4, BU: 4, SB: 6,
 };
 
-// DEFAULT_BET_SIZE[stack][openSize][hero=3bettor][villain=opener] — 100bb only
-const DEFAULT_BET_SIZE = {
-  100: {
-    4:   { SB:{UTG:16,HJ:16,CO:16,BU:14}, BB:{UTG:18,HJ:18,CO:18,BU:18} },
-    3:   { SB:{UTG:16,HJ:16,CO:14,BU:12}, BB:{UTG:18,HJ:18,CO:18,BU:18} },
-    2.5: { SB:{UTG:14,HJ:14,CO:14,BU:12}, BB:{UTG:16,HJ:16,CO:16,BU:14} },
-    2:   { SB:{UTG:14,HJ:14,CO:12,BU:12}, BB:{UTG:14,HJ:14,CO:14,BU:14} },
-  },
-};
-
-function getDefaultBetSize(stack, openSize, hero, villain){
-  return (DEFAULT_BET_SIZE[stack]?.[openSize]?.[hero]?.[villain]) ?? null;
+// Default 3bet size a 3bettor pozíciója alapján.
+// IP (HJ/CO/BU) = 10bb; SB = 12bb; BB = 12bb (ha villain 3betel), 14bb (ha hero 3betel).
+function get3betDefault(threebettor, isHero){
+  if (threebettor==="HJ"||threebettor==="CO"||threebettor==="BU"||threebettor==="UTG") return 10;
+  if (threebettor==="SB") return 12;
+  if (threebettor==="BB") return isHero ? 14 : 12;
+  return null;
 }
 
 const els = {
@@ -475,7 +470,8 @@ function applyDefaultsRaise(){
     if (APP_MODE==="noante"){
       if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length>0) selected.openSize=avail[0];
     } else {
-      if (avail.includes(3)) selected.openSize=3; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
+      // villain opens → default 2.5bb
+      if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(3)) selected.openSize=3; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
     }
   }
 }
@@ -495,10 +491,10 @@ function applyDefaults3bet(){
         else if (avail.length>0) selected.openSize=avail[0];
       }
     } else {
-      // sqz
+      // sqz: villain opens → default 2.5bb
       const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.villain2);
-      if (avail.includes(3)) selected.openSize=3;
-      else if (avail.includes(2.5)) selected.openSize=2.5;
+      if (avail.includes(2.5)) selected.openSize=2.5;
+      else if (avail.includes(3)) selected.openSize=3;
       else if (avail.includes(4)) selected.openSize=4;
       else if (avail.length>0) selected.openSize=avail[0];
     }
@@ -506,7 +502,8 @@ function applyDefaults3bet(){
   if (selected.betSize==null&&selected.openSize!=null){
     const avail=availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
     if (selected.mode==="3bet"){
-      const def=getDefaultBetSize(selected.stack,selected.openSize,selected.hero,selected.villain);
+      // villain a 3bettor
+      const def=get3betDefault(selected.villain, false);
       if (def!=null&&avail.includes(def)) selected.betSize=def;
       else if (avail.length>0) selected.betSize=avail[0];
     } else if (avail.length>0) selected.betSize=avail[0];
@@ -545,9 +542,11 @@ function applyDefaultsFsqz(){
 function applyDefaultsF4b(){
   if (selected.mode!=="f4b"||!selected.stack||!selected.hero||!selected.villain) return;
   if (selected.openSize==null){
-    // openSize slot holds the 3bet size
+    // openSize slot = hero 3bet mérete
     const avail=availableOpenSizes("f4b",selected.stack,selected.hero,selected.villain,null);
-    if (avail.length>0) selected.openSize=avail[0];
+    const def=get3betDefault(selected.hero, true);
+    if (def!=null&&avail.includes(def)) selected.openSize=def;
+    else if (avail.length>0) selected.openSize=avail[0];
   }
   if (selected.betSize==null&&selected.openSize!=null){
     const avail=availableBetSizes("f4b",selected.stack,selected.hero,selected.villain,selected.openSize,null);
@@ -688,30 +687,112 @@ els.img.addEventListener("error",()=>showError("A kép nem tölthető be."));
 init();
 
 // ── Keyboard shortcuts ──────────────────────────────────────────────
-const KEY_MODE = {
-  q:"open", w:"raise", e:"3bet", r:"sqz", u:"fsqz", t:"c4b", p:"f4b", z:"limp"
-};
+// Mód-shortcutok nincsenek — módot csak kattintással vagy a számgombos shortcutokkal
+// Villain (általános): Q/W/E/R/T/Z
 const KEY_VILLAIN = {
+  q:"UTG", w:"HJ", e:"CO", r:"BU", t:"SB", z:"BB"
+};
+// Hero: A/S/D/F/G/H
+const KEY_HERO = {
   a:"UTG", s:"HJ", d:"CO", f:"BU", g:"SB", h:"BB"
 };
-// Í = key code varies by layout; we match by key value
-const KEY_HERO = {
-  "í":"UTG", y:"HJ", x:"CO", c:"BU", v:"SB", b:"BB"
+// Számgombok 1-6 → Facing Open mód + hero (7 nincs használva)
+const KEY_NUM_HERO = {
+  "1":"BB", "2":"SB", "3":"BU", "4":"CO", "5":"HJ", "6":"UTG"
+};
+// Facing 3bet villain shortcutok (hero = legkorábbi érvényes = UTG)
+const KEY_F3BET_VILLAIN = {
+  "8":"HJ", "9":"CO", "ö":"BU", "ü":"SB", "ó":"BB"
+};
+// Facing SQZ hero shortcutok (mi vagyunk az openraiser, 2 villaint Q-Z-vel adunk meg)
+const KEY_FSQZ_HERO = {
+  j:"UTG", k:"HJ", l:"CO", "é":"BU", "á":"SB", "ű":"BB"
+};
+// SQZ hero shortcutok (mi squeeze-elünk, 2 villaint Q-Z-vel adunk meg)
+const KEY_SQZ_HERO = {
+  i:"CO", o:"BU", p:"SB", "ő":"BB"
+};
+// Openraise size shortcutok
+const KEY_OPEN_SIZE = {
+  "í": 2, y: 2.5, x: 3
 };
 
 document.addEventListener("keydown", function(e){
   // ignore when typing in an input
   if (e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
+
+  // CapsLock → Open mód (hero-t A/S/D/F/G-vel választjuk, H=BB Open módban tiltott)
+  if (e.key === "CapsLock"){
+    if (selected.mode !== "open"){
+      selected.mode = "open";
+      applyModeDefaults("open"); // hero=UTG, villain=null
+    }
+    syncHash(); refreshAll();
+    return;
+  }
+
   const k = e.key.toLowerCase();
 
-  if (KEY_MODE[k]!==undefined){
-    const newMode = KEY_MODE[k];
-    if (selected.mode===newMode){ selected.mode=null; }
-    else {
-      selected.mode=newMode;
-      applyModeDefaults(newMode);
+  // Facing 3bet villain: átvált 3bet módba, villain = megadott, hero = UTG
+  if (KEY_F3BET_VILLAIN[k]!==undefined){
+    const v = KEY_F3BET_VILLAIN[k];
+    if (selected.mode !== "3bet"){
+      selected.mode = "3bet";
+      applyModeDefaults("3bet"); // hero=UTG, villain=BB defaultok
     }
-    syncHash(); refreshAll(); return;
+    selected.villain = v;
+    selected.hero = "UTG"; // legkorábbi érvényes opener 3bet módban
+    selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+    syncHash(); refreshAll();
+    return;
+  }
+
+  // Facing SQZ: átvált fsqz módba, hero = megadott (2 villaint Q-Z-vel)
+  if (KEY_FSQZ_HERO[k]!==undefined){
+    const h = KEY_FSQZ_HERO[k];
+    if (selected.mode !== "fsqz"){
+      selected.mode = "fsqz";
+      applyModeDefaults("fsqz"); // hero=UTG, villain=null, villain2=null
+    }
+    selected.hero = h;
+    selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+    syncHash(); refreshAll();
+    return;
+  }
+
+  // SQZ: átvált sqz módba, hero = megadott (2 villaint Q-Z-vel)
+  if (KEY_SQZ_HERO[k]!==undefined){
+    const h = KEY_SQZ_HERO[k];
+    if (selected.mode !== "sqz"){
+      selected.mode = "sqz";
+      applyModeDefaults("sqz"); // hero=BB, villain=null, villain2=null
+    }
+    selected.hero = h;
+    selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+    syncHash(); refreshAll();
+    return;
+  }
+
+  // Openraise size: openSize beállítása
+  if (KEY_OPEN_SIZE[k]!==undefined){
+    selected.openSize = KEY_OPEN_SIZE[k];
+    selected.betSize = null;
+    selected.threebetSize = null;
+    syncHash(); refreshAll();
+    return;
+  }
+
+  // Számgombok 1-6: Facing Open mód + hero (villain-t nem nyúljuk hozzá, ha már raise módban vagyunk)
+  if (KEY_NUM_HERO[k]!==undefined){
+    const h = KEY_NUM_HERO[k];
+    if (selected.mode !== "raise"){
+      selected.mode = "raise";
+      applyModeDefaults("raise"); // hero=BB, villain=UTG defaultok
+    }
+    selected.hero = h;
+    selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+    syncHash(); refreshAll();
+    return;
   }
 
   if (KEY_VILLAIN[k]!==undefined){
@@ -740,44 +821,5 @@ document.addEventListener("keydown", function(e){
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll(); return;
   }
-
-  // Number keys 1-9 → open size by index (sorted ascending)
-  const numMatch = k.match(/^([1-9])$/);
-  if (numMatch){
-    const idx = parseInt(numMatch[1]) - 1;
-    // collect current visible sizes same way renderSize does
-    let sizes = [];
-    if (selected.mode==="raise"){
-      sizes = (selected.stack && Object.keys(index["raise"]||{}).length>0)
-        ? allRaiseOpenSizesForStack(selected.stack)
-        : ALL_OPEN_SIZES;
-    } else if (selected.mode==="open"){
-      sizes = availableOpenSizes("open", selected.stack, selected.hero, "_");
-    } else if (selected.mode==="3bet"){
-      // bet sizes for 3bet
-      sizes = availableBetSizes("3bet", selected.stack, selected.hero, selected.villain, selected.openSize, null);
-    } else {
-      sizes = availableOpenSizes(selected.mode, selected.stack, selected.hero, selected.villain);
-    }
-    if (idx >= 0 && idx < sizes.length){
-      const v = sizes[idx];
-      if (selected.mode==="3bet"){
-        selected.betSize = (selected.betSize===v) ? null : v;
-      } else {
-        selected.openSize = (selected.openSize===v) ? null : v;
-        selected.betSize = null;
-      }
-      syncHash(); refreshAll();
-    }
-    return;
-  }
 });
 
-// ── Extra shortcuts ─────────────────────────────────────────────────
-document.addEventListener("keydown", function(e){
-  if (e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
-  const k = e.key.toLowerCase();
-  if (k==="ö"){ resetAll(); return; }
-  if (k==="ü"){ selected.stack=50;  selected.threebetSize=null; selected.betSize=null; syncHash(); refreshAll(); return; }
-  if (k==="ó"){ selected.stack=100; selected.threebetSize=null; selected.betSize=null; syncHash(); refreshAll(); return; }
-});
