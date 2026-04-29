@@ -1,4 +1,4 @@
-const CACHE = "pokerchart-v1";
+const CACHE = "pokerchart-v2";
 self.addEventListener("install", e => {
   self.skipWaiting();
 });

@@ -368,9 +368,17 @@ function renderSize(){
     }
   } else if (selected.mode==="fsqz"){
     // Facing SQZ: hero = opener, villain = caller, villain2 = squeezer
-    // Show sqz sizes only (no open size in filename)
-    if (selected.villain && selected.villain2){
-      const sqzAvail=availableBetSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
+    const openAvail=availableOpenSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.villain2);
+    for (const v of openAvail){
+      const btn=mkBtn("open "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize"+allinClass(v));
+      setBtnState(btn,{sel:selected.openSize===v,dis:false});
+      els.sizeGroup.appendChild(btn);
+    }
+    const sqzAvail=availableBetSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
+    if (sqzAvail.length>0){
+      const div=document.createElement("span");
+      div.className="divider"; div.textContent="|"; div.setAttribute("aria-hidden","true");
+      els.sizeGroup.appendChild(div);
       for (const v of sqzAvail){
         const btn=mkBtn("sqz "+sizeLabel(v)+"bb",()=>{ selected.betSize=v; syncHash(); refreshAll(); },"size"+allinClass(v));
         setBtnState(btn,{sel:selected.betSize===v,dis:false});
@@ -531,7 +539,8 @@ function applyDefaultsFsqz(){
   if (selected.mode!=="fsqz"||!selected.stack||!selected.hero||!selected.villain||!selected.villain2) return;
   if (selected.openSize==null){
     const avail=availableOpenSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.villain2);
-    if (avail.includes(3)) selected.openSize=3;
+    if (avail.includes(2.5)) selected.openSize=2.5;
+    else if (avail.includes(3)) selected.openSize=3;
     else if (avail.length>0) selected.openSize=avail[0];
   }
   if (selected.betSize==null){
@@ -732,6 +741,16 @@ document.addEventListener("keydown", function(e){
   }
 
   const k = e.key.toLowerCase();
+
+  // 'á' SQZ/Facing SQZ módban: villain pozíciók törlése
+  if (k === "á" && (selected.mode === "sqz" || selected.mode === "fsqz")){
+    selected.villain = null;
+    selected.villain2 = null;
+    selected.threebetSize = null;
+    selected.betSize = null;
+    syncHash(); refreshAll();
+    return;
+  }
 
   // Facing 3bet villain: átvált 3bet módba, villain = megadott, hero = UTG
   if (KEY_F3BET_VILLAIN[k]!==undefined){
