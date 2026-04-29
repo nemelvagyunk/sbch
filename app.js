@@ -220,7 +220,7 @@ function renderMode(){
     }
   } else {
     if (els.row0divider) els.row0divider.style.display="";
-    for (const m of [{key:"vsopenlimp",label:"Vs openlimp"},{key:"faceiso",label:"Open limp/vs iso"}]){
+    for (const m of [{key:"vsopenlimp",label:"Vs openL"},{key:"faceiso",label:"L v iso"}]){
       const btn=mkBtn(m.label,()=>{
         selected.mode=m.key;
         applyModeDefaults(m.key);
