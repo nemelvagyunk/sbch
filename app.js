@@ -48,6 +48,13 @@ function get3betDefault(threebettor, isHero){
   return null;
 }
 
+// Facing 3bet: default hero (opener) a 3bettor villain pozíciója alapján.
+// Villain HJ/CO/BU 3betel → hero default UTG. Villain SB/BB 3betel → hero default BU.
+function defaultHero3bet(villain){
+  if (villain==="SB"||villain==="BB") return "BU";
+  return "UTG";
+}
+
 const els = {
   miniHeader:  document.querySelector(".miniHeader"),
   status:      document.getElementById("status"),
@@ -201,7 +208,7 @@ function mkBtn(label,onClick,extraClass=""){
 }
 
 function renderMode(){
-  // ── vsoplGroup: Open + BvB + (ante: Vs openlimp + Open limp/vs iso) ──
+  // ── vsoplGroup: Open + BvB + (ante: Vs openL + L v iso) ──
   els.vsoplGroup.innerHTML="";
   // Open and BvB always appear first in row0
   for (const m of [{key:"open",label:"Open"},{key:"limp",label:"BvB"}]){
@@ -330,6 +337,10 @@ function renderVillain(){
     if (!btn||btn.disabled) return;
     const p=btn.dataset.pos;
     selected.villain = (selected.villain===p) ? null : p;
+    // Facing 3bet módban a hero pozíció a 3bettor villain alapján default
+    if (selected.mode==="3bet" && selected.villain){
+      selected.hero = defaultHero3bet(selected.villain);
+    }
     selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll();
   };
@@ -631,7 +642,9 @@ function applyModeDefaults(mode){
   } else if (mode==="open"){
     selected.hero="UTG"; selected.villain=null; selected.villain2=null;
   } else if (mode==="3bet"){
-    selected.hero="UTG"; selected.villain="BB"; selected.villain2=null;
+    // villain=BB (default), hero a defaultHero3bet alapján
+    selected.villain="BB"; selected.villain2=null;
+    selected.hero=defaultHero3bet(selected.villain);
   } else if (mode==="sqz"){
     selected.hero="BB"; selected.villain=null; selected.villain2=null;
   } else if (mode==="fsqz"){
@@ -709,17 +722,22 @@ const KEY_HERO = {
 const KEY_NUM_HERO = {
   "1":"BB", "2":"SB", "3":"BU", "4":"CO", "5":"HJ", "6":"UTG"
 };
-// Facing 3bet villain shortcutok (hero = legkorábbi érvényes = UTG)
+// Facing 3bet villain shortcutok (hero a defaultHero3bet alapján)
 const KEY_F3BET_VILLAIN = {
   "8":"HJ", "9":"CO", "ö":"BU", "ü":"SB", "ó":"BB"
 };
 // Facing SQZ hero shortcutok (mi vagyunk az openraiser, 2 villaint Q-Z-vel adunk meg)
 const KEY_FSQZ_HERO = {
-  j:"UTG", k:"HJ", l:"CO", "é":"BU", "á":"SB", "ű":"BB"
+  l:"UTG", "é":"HJ", "á":"CO", "ű":"BU"
 };
-// SQZ hero shortcutok (mi squeeze-elünk, 2 villaint Q-Z-vel adunk meg)
+// SQZ hero shortcutok + default villainek (mi squeeze-elünk)
+// 'p' (SB) esetén default villaineket nem állítunk be — kézzel kell megadni Q-Z-vel
 const KEY_SQZ_HERO = {
-  i:"CO", o:"BU", p:"SB", "ő":"BB"
+  i:  { hero:"CO", villain:"UTG", villain2:"HJ" },
+  o:  { hero:"BU", villain:"UTG", villain2:"CO" },
+  p:  { hero:"SB", villain:null,  villain2:null },
+  "ő":{ hero:"BB", villain:"UTG", villain2:"BU" },
+  "ú":{ hero:"BB", villain:"UTG", villain2:"SB" }
 };
 // Openraise size shortcutok
 const KEY_OPEN_SIZE = {
@@ -742,8 +760,19 @@ document.addEventListener("keydown", function(e){
 
   const k = e.key.toLowerCase();
 
-  // 'á' SQZ/Facing SQZ módban: villain pozíciók törlése
-  if (k === "á" && (selected.mode === "sqz" || selected.mode === "fsqz")){
+  // '7' → Open mód, hero=HJ, openSize=2.5
+  if (k === "7"){
+    selected.mode = "open";
+    applyModeDefaults("open");
+    selected.hero = "HJ";
+    selected.openSize = 2.5;
+    selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
+    syncHash(); refreshAll();
+    return;
+  }
+
+  // '6' SQZ/Facing SQZ módban: villain pozíciók törlése (felülírja a KEY_NUM_HERO['6']=UTG beállítást)
+  if (k === "6" && (selected.mode === "sqz" || selected.mode === "fsqz")){
     selected.villain = null;
     selected.villain2 = null;
     selected.threebetSize = null;
@@ -752,15 +781,15 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // Facing 3bet villain: átvált 3bet módba, villain = megadott, hero = UTG
+  // Facing 3bet villain: átvált 3bet módba, villain = megadott, hero a default szerint
   if (KEY_F3BET_VILLAIN[k]!==undefined){
     const v = KEY_F3BET_VILLAIN[k];
     if (selected.mode !== "3bet"){
       selected.mode = "3bet";
-      applyModeDefaults("3bet"); // hero=UTG, villain=BB defaultok
+      applyModeDefaults("3bet");
     }
     selected.villain = v;
-    selected.hero = "UTG"; // legkorábbi érvényes opener 3bet módban
+    selected.hero = defaultHero3bet(v);
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll();
     return;
@@ -779,14 +808,16 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // SQZ: átvált sqz módba, hero = megadott (2 villaint Q-Z-vel)
+  // SQZ: átvált sqz módba, hero = megadott (default villainekkel, ha vannak)
   if (KEY_SQZ_HERO[k]!==undefined){
-    const h = KEY_SQZ_HERO[k];
+    const cfg = KEY_SQZ_HERO[k];
     if (selected.mode !== "sqz"){
       selected.mode = "sqz";
       applyModeDefaults("sqz"); // hero=BB, villain=null, villain2=null
     }
-    selected.hero = h;
+    selected.hero = cfg.hero;
+    selected.villain = cfg.villain;
+    selected.villain2 = cfg.villain2;
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll();
     return;
@@ -828,6 +859,10 @@ document.addEventListener("keydown", function(e){
       selected.threebetSize=null; selected.betSize=null;
     } else {
       selected.villain=(selected.villain===p)?null:p;
+      // Facing 3bet módban a hero a default szerint
+      if (selected.mode==="3bet" && selected.villain){
+        selected.hero = defaultHero3bet(selected.villain);
+      }
       selected.betSize=null; selected.limpSeq=null;
     }
     syncHash(); refreshAll(); return;
@@ -839,6 +874,5 @@ document.addEventListener("keydown", function(e){
     selected.hero=(selected.hero===p)?null:p;
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
     syncHash(); refreshAll(); return;
-  }
+    }
 });
-
