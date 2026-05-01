@@ -4,7 +4,6 @@ const APP_MODE    = (window.__APP_MODE__    || "ante");   // "ante" | "noante"
 const HERO_ALL       = ["UTG","HJ","CO","BU","SB","BB"];
 const VILLAIN_ALL    = ["UTG","HJ","CO","BU","SB","BB"];
 const ALL_OPEN_SIZES = [2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7];
-// noante has no 75bb folder → strip 75 from stack list
 const ALL_STACKS     = APP_MODE === "noante" ? [50, 100] : [30, 50, 75, 100];
 
 const HERO_POS_BY_MODE = {
@@ -39,8 +38,6 @@ const DEFAULT_OPEN_SIZE_BY_HERO = {
   UTG: 4, HJ: 4, CO: 4, BU: 4, SB: 6,
 };
 
-// Default 3bet size a 3bettor pozíciója alapján.
-// IP (HJ/CO/BU) = 10bb; SB = 12bb; BB = 12bb (ha villain 3betel), 14bb (ha hero 3betel).
 function get3betDefault(threebettor, isHero){
   if (threebettor==="HJ"||threebettor==="CO"||threebettor==="BU"||threebettor==="UTG") return 10;
   if (threebettor==="SB") return 12;
@@ -48,8 +45,6 @@ function get3betDefault(threebettor, isHero){
   return null;
 }
 
-// Facing 3bet: default hero (opener) a 3bettor villain pozíciója alapján.
-// Villain HJ/CO/BU 3betel → hero default UTG. Villain SB/BB 3betel → hero default BU.
 function defaultHero3bet(villain){
   if (villain==="SB"||villain==="BB") return "BU";
   return "UTG";
@@ -69,7 +64,6 @@ const els = {
 };
 
 let manifest = [];
-// index[facing][stack][hero][villain_or__][openSizeStr][betSizeStr_or__] = chart
 let index = {};
 let selected = { mode:null, stack:100, hero:null, villain:null, villain2:null, openSize:null, threebetSize:null, betSize:null, limpSeq:null };
 
@@ -162,7 +156,6 @@ function allBetSizesEver(){
 }
 
 function allRaiseOpenSizesForStack(stack){
-  // collect all open sizes in raise mode regardless of hero/villain
   const all=new Set();
   for (const [h,villains] of Object.entries((index["raise"]||{})[String(stack)]||{}))
     for (const [v,sizes] of Object.entries(villains))
@@ -208,9 +201,7 @@ function mkBtn(label,onClick,extraClass=""){
 }
 
 function renderMode(){
-  // ── vsoplGroup: Open + BvB + (ante: Vs openL + L v iso) ──
   els.vsoplGroup.innerHTML="";
-  // Open and BvB always appear first in row0
   for (const m of [{key:"open",label:"Open"},{key:"limp",label:"BvB"}]){
     const btn=mkBtn(m.label,()=>{
       selected.mode=m.key;
@@ -337,7 +328,6 @@ function renderVillain(){
     if (!btn||btn.disabled) return;
     const p=btn.dataset.pos;
     selected.villain = (selected.villain===p) ? null : p;
-    // Facing 3bet módban a hero pozíció a 3bettor villain alapján default
     if (selected.mode==="3bet" && selected.villain){
       selected.hero = defaultHero3bet(selected.villain);
     }
@@ -357,7 +347,6 @@ function renderSize(){
       els.sizeGroup.appendChild(btn);
     }
   } else if (selected.mode==="faceiso"||selected.mode==="vsopenlimp"){
-    // villain or hero not yet selected — show nothing
   } else if (selected.mode==="limp"&&selected.hero&&selected.stack){
     for (const v of limpOpenSizes(selected.stack,selected.hero)){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size"+allinClass(v));
@@ -378,7 +367,6 @@ function renderSize(){
       els.sizeGroup.appendChild(btn);
     }
   } else if (selected.mode==="fsqz"){
-    // Facing SQZ: hero = opener, villain = caller, villain2 = squeezer
     const openAvail=availableOpenSizes("fsqz",selected.stack,selected.hero,selected.villain,selected.villain2);
     for (const v of openAvail){
       const btn=mkBtn("open "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize"+allinClass(v));
@@ -397,7 +385,6 @@ function renderSize(){
       }
     }
   } else if (selected.mode==="f4b"){
-    // open_size slot = 3bet size, threebet_size slot = 4bet size
     const threebetAvail = availableOpenSizes("f4b", selected.stack, selected.hero, selected.villain, null);
     for (const v of threebetAvail){
       const btn=mkBtn("3bet "+sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size opensize"+allinClass(v));
@@ -434,7 +421,6 @@ function renderSize(){
       }
     }
   } else if (selected.mode==="3bet"){
-    // Open size selector — 2.5bb, 3bb és 4bb jelenik meg (ante mode)
     const THREEBET_OPEN_SIZES = APP_MODE === "noante" ? [2.5] : [2.5, 3, 4];
     const allOpenAvail = availableOpenSizes("3bet", selected.stack, selected.hero, selected.villain, null);
     const openToShow = THREEBET_OPEN_SIZES.filter(v => allOpenAvail.includes(v));
@@ -444,7 +430,6 @@ function renderSize(){
       setBtnState(btn,{sel:selected.openSize===v,dis:false});
       els.sizeGroup.appendChild(btn);
     }
-    // Elválasztó + 3bet size gombok
     const betAvail=availableBetSizes("3bet",selected.stack,selected.hero,selected.villain,selected.openSize,null);
     if (betAvail.length>0){
       const div=document.createElement("span");
@@ -457,7 +442,6 @@ function renderSize(){
       }
     }
   } else if (selected.mode==="raise") {
-    // show all open sizes immediately — visible even before any selection
     const avail = (selected.stack && Object.keys(index["raise"]||{}).length>0) ? allRaiseOpenSizesForStack(selected.stack) : ALL_OPEN_SIZES;
     for (const v of avail){
       const btn=mkBtn(sizeLabel(v)+"bb",()=>{ selected.openSize=v; selected.betSize=null; syncHash(); refreshAll(); },"size"+allinClass(v));
@@ -489,7 +473,6 @@ function applyDefaultsRaise(){
     if (APP_MODE==="noante"){
       if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length>0) selected.openSize=avail[0];
     } else {
-      // villain opens → default 2.5bb
       if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(3)) selected.openSize=3; else if (avail.includes(4)) selected.openSize=4; else if (avail.length===1) selected.openSize=avail[0];
     }
   }
@@ -510,7 +493,6 @@ function applyDefaults3bet(){
         else if (avail.length>0) selected.openSize=avail[0];
       }
     } else {
-      // sqz: villain opens → default 2.5bb
       const avail=availableOpenSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.villain2);
       if (avail.includes(2.5)) selected.openSize=2.5;
       else if (avail.includes(3)) selected.openSize=3;
@@ -521,7 +503,6 @@ function applyDefaults3bet(){
   if (selected.betSize==null&&selected.openSize!=null){
     const avail=availableBetSizes(selected.mode,selected.stack,selected.hero,selected.villain,selected.openSize,selected.villain2);
     if (selected.mode==="3bet"){
-      // villain a 3bettor
       const def=get3betDefault(selected.villain, false);
       if (def!=null&&avail.includes(def)) selected.betSize=def;
       else if (avail.length>0) selected.betSize=avail[0];
@@ -562,7 +543,6 @@ function applyDefaultsFsqz(){
 function applyDefaultsF4b(){
   if (selected.mode!=="f4b"||!selected.stack||!selected.hero||!selected.villain) return;
   if (selected.openSize==null){
-    // openSize slot = hero 3bet mérete
     const avail=availableOpenSizes("f4b",selected.stack,selected.hero,selected.villain,null);
     const def=get3betDefault(selected.hero, true);
     if (def!=null&&avail.includes(def)) selected.openSize=def;
@@ -602,7 +582,6 @@ function renderChart(){
     noChartMsg.className="noChartMsg";
     frame.appendChild(noChartMsg);
   }
-  // only show "Nincs ilyen chart" if something meaningful is selected
   const hasSelection = selected.mode && (selected.hero||selected.villain||selected.openSize);
   if (chart){
     els.img.src=chart.file;
@@ -619,7 +598,6 @@ function renderChart(){
     noChartMsg.style.display="none";
   }
 }
-// Modes where villain row appears ABOVE hero row
 const VILLAIN_FIRST_MODES = ["raise","3bet","sqz","fsqz","c4b","f4b"];
 
 function applyLayout(){
@@ -636,13 +614,11 @@ function applyLayout(){
 }
 
 function applyModeDefaults(mode){
-  // Minden tabváltáskor felülírja a hero/villain értékeket a tab saját defaultjára
   if (mode==="raise"){
     selected.hero="BB"; selected.villain="UTG"; selected.villain2=null;
   } else if (mode==="open"){
     selected.hero="UTG"; selected.villain=null; selected.villain2=null;
   } else if (mode==="3bet"){
-    // villain=BB (default), hero a defaultHero3bet alapján
     selected.villain="BB"; selected.villain2=null;
     selected.hero=defaultHero3bet(selected.villain);
   } else if (mode==="sqz"){
@@ -658,7 +634,7 @@ function applyModeDefaults(mode){
 }
 
 function resetAll(){
-  selected={mode:"raise",stack:100,hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
+  selected={mode:"raise",stack:100,hero:"BB",villain:"UTG",villain2:null,openSize:2.5,threebetSize:null,betSize:null,limpSeq:null};
   syncHash(); refreshAll();
 }
 
@@ -689,8 +665,7 @@ async function init(){
     manifest=data.charts||[];
     buildIndex();
     if (!ALL_STACKS.includes(selected.stack)) selected.stack = ALL_STACKS[ALL_STACKS.length-1];
-    selected={...selected,mode:"raise",hero:null,villain:null,villain2:null,openSize:null,threebetSize:null,betSize:null,limpSeq:null};
-    // inject reset button into appNav once
+    selected={...selected,mode:"raise",hero:"BB",villain:"UTG",villain2:null,openSize:2.5,threebetSize:null,betSize:null,limpSeq:null};
     const nav = document.querySelector(".appNav");
     if (nav && !nav.querySelector(".resetBtn")){
       const rb = document.createElement("button");
@@ -708,30 +683,21 @@ async function init(){
 els.img.addEventListener("error",()=>showError("A kép nem tölthető be."));
 init();
 
-// ── Keyboard shortcuts ──────────────────────────────────────────────
-// Mód-shortcutok nincsenek — módot csak kattintással vagy a számgombos shortcutokkal
-// Villain (általános): Q/W/E/R/T/Z
 const KEY_VILLAIN = {
   q:"UTG", w:"HJ", e:"CO", r:"BU", t:"SB", z:"BB"
 };
-// Hero: A/S/D/F/G/H
 const KEY_HERO = {
   a:"UTG", s:"HJ", d:"CO", f:"BU", g:"SB", h:"BB"
 };
-// Számgombok 1-6 → Facing Open mód + hero (7 nincs használva)
 const KEY_NUM_HERO = {
   "1":"BB", "2":"SB", "3":"BU", "4":"CO", "5":"HJ", "6":"UTG"
 };
-// Facing 3bet villain shortcutok (hero a defaultHero3bet alapján)
 const KEY_F3BET_VILLAIN = {
   "8":"HJ", "9":"CO", "ö":"BU", "ü":"SB", "ó":"BB"
 };
-// Facing SQZ hero shortcutok (mi vagyunk az openraiser, 2 villaint Q-Z-vel adunk meg)
 const KEY_FSQZ_HERO = {
   l:"UTG", "é":"HJ", "á":"CO", "ű":"BU"
 };
-// SQZ hero shortcutok + default villainek (mi squeeze-elünk)
-// 'p' (SB) esetén default villaineket nem állítunk be — kézzel kell megadni Q-Z-vel
 const KEY_SQZ_HERO = {
   i:  { hero:"CO", villain:"UTG", villain2:"HJ" },
   o:  { hero:"BU", villain:"UTG", villain2:"CO" },
@@ -739,20 +705,17 @@ const KEY_SQZ_HERO = {
   "ő":{ hero:"BB", villain:"UTG", villain2:"BU" },
   "ú":{ hero:"BB", villain:"UTG", villain2:"SB" }
 };
-// Openraise size shortcutok
 const KEY_OPEN_SIZE = {
   "í": 2, y: 2.5, x: 3
 };
 
 document.addEventListener("keydown", function(e){
-  // ignore when typing in an input
   if (e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
 
-  // CapsLock → Open mód (hero-t A/S/D/F/G-vel választjuk, H=BB Open módban tiltott)
   if (e.key === "CapsLock"){
     if (selected.mode !== "open"){
       selected.mode = "open";
-      applyModeDefaults("open"); // hero=UTG, villain=null
+      applyModeDefaults("open");
     }
     syncHash(); refreshAll();
     return;
@@ -760,7 +723,6 @@ document.addEventListener("keydown", function(e){
 
   const k = e.key.toLowerCase();
 
-  // '7' → Open mód, hero=HJ, openSize=2.5
   if (k === "7"){
     selected.mode = "open";
     applyModeDefaults("open");
@@ -771,7 +733,6 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // '6' SQZ/Facing SQZ módban: villain pozíciók törlése (felülírja a KEY_NUM_HERO['6']=UTG beállítást)
   if (k === "6" && (selected.mode === "sqz" || selected.mode === "fsqz")){
     selected.villain = null;
     selected.villain2 = null;
@@ -781,7 +742,6 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // Facing 3bet villain: átvált 3bet módba, villain = megadott, hero a default szerint
   if (KEY_F3BET_VILLAIN[k]!==undefined){
     const v = KEY_F3BET_VILLAIN[k];
     if (selected.mode !== "3bet"){
@@ -795,12 +755,11 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // Facing SQZ: átvált fsqz módba, hero = megadott (2 villaint Q-Z-vel)
   if (KEY_FSQZ_HERO[k]!==undefined){
     const h = KEY_FSQZ_HERO[k];
     if (selected.mode !== "fsqz"){
       selected.mode = "fsqz";
-      applyModeDefaults("fsqz"); // hero=UTG, villain=null, villain2=null
+      applyModeDefaults("fsqz");
     }
     selected.hero = h;
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
@@ -808,12 +767,11 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // SQZ: átvált sqz módba, hero = megadott (default villainekkel, ha vannak)
   if (KEY_SQZ_HERO[k]!==undefined){
     const cfg = KEY_SQZ_HERO[k];
     if (selected.mode !== "sqz"){
       selected.mode = "sqz";
-      applyModeDefaults("sqz"); // hero=BB, villain=null, villain2=null
+      applyModeDefaults("sqz");
     }
     selected.hero = cfg.hero;
     selected.villain = cfg.villain;
@@ -823,7 +781,6 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // Openraise size: openSize beállítása
   if (KEY_OPEN_SIZE[k]!==undefined){
     selected.openSize = KEY_OPEN_SIZE[k];
     selected.betSize = null;
@@ -832,12 +789,11 @@ document.addEventListener("keydown", function(e){
     return;
   }
 
-  // Számgombok 1-6: Facing Open mód + hero (villain-t nem nyúljuk hozzá, ha már raise módban vagyunk)
   if (KEY_NUM_HERO[k]!==undefined){
     const h = KEY_NUM_HERO[k];
     if (selected.mode !== "raise"){
       selected.mode = "raise";
-      applyModeDefaults("raise"); // hero=BB, villain=UTG defaultok
+      applyModeDefaults("raise");
     }
     selected.hero = h;
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
@@ -859,13 +815,13 @@ document.addEventListener("keydown", function(e){
       selected.threebetSize=null; selected.betSize=null;
     } else {
       selected.villain=(selected.villain===p)?null:p;
-      // Facing 3bet módban a hero a default szerint
       if (selected.mode==="3bet" && selected.villain){
         selected.hero = defaultHero3bet(selected.villain);
       }
       selected.betSize=null; selected.limpSeq=null;
     }
-    syncHash(); refreshAll(); return;
+    syncHash(); refreshAll();
+    return;
   }
 
   if (KEY_HERO[k]!==undefined){
@@ -873,6 +829,7 @@ document.addEventListener("keydown", function(e){
     if (selected.mode==="open" && p==="BB") return;
     selected.hero=(selected.hero===p)?null:p;
     selected.threebetSize=null; selected.betSize=null; selected.limpSeq=null;
-    syncHash(); refreshAll(); return;
-    }
+    syncHash(); refreshAll();
+    return;
+  }
 });
