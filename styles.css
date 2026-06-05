@@ -82,6 +82,13 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
   box-shadow:0 0 0 3px rgba(59,130,246,0.12);
   background:linear-gradient(180deg,rgba(10,30,65,0.95) 0%,rgba(5,16,38,0.95) 100%);
 }
+/* HU active (amber accent) */
+.appNavBtn--hu.appNavBtn--active{
+  color:#fcd34d;
+  border-color:rgba(245,158,11,0.65);
+  box-shadow:0 0 0 3px rgba(245,158,11,0.12);
+  background:linear-gradient(180deg,rgba(60,45,10,0.95) 0%,rgba(35,26,5,0.95) 100%);
+}
 
 /* Reset button */
 .resetBtn{
@@ -108,3 +115,7 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
   letter-spacing:0.3px;
   background:#0b0f14;
 }
+
+/* Jatektipus-valaszto a felso sorban (kompakt) */
+.gameNav{ flex:0 0 auto; gap:4px; }
+.gameNav .appNavBtn{ min-width:0; height:30px; font-size:11px; padding:0 9px; display:inline-flex; align-items:center; justify-content:center; }

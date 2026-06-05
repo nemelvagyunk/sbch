@@ -23,6 +23,12 @@
         <div id="vsoplGroup" class="group"></div>
         <div class="divider row0divider" id="row0divider" aria-hidden="true">|</div>
         <div id="stackGroup" class="group"></div>
+        <div class="divider" aria-hidden="true">|</div>
+        <div class="group gameNav">
+          <a class="appNavBtn appNavBtn--active" href="index.html">SB Ante</a>
+          <a class="appNavBtn appNavBtn--noante" href="noante.html">No Ante</a>
+          <a class="appNavBtn appNavBtn--hu" href="headsup.html">HU</a>
+        </div>
       </div>
       <div class="row" id="row1">
         <div id="modeGroup" class="group"></div>
@@ -47,6 +53,7 @@
     window.__APP_MODE__    = "ante";
     if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
   </script>
+  <script src="manifest.js?v=2026-04-29-01"></script>
   <script src="app.js?v=2026-04-29-01"></script>
 </body>
 </html>

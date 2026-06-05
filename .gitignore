@@ -1,0 +1,5 @@
+# Backupok és temp — ezek NEM kellenek a repóba
+backups/
+__pycache__/
+*.pyc
+_*.png

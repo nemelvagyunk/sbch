@@ -1,230 +1,131 @@
+# build_manifest.py - uj-formatumu (buildNodeName) PNG nevekbol manifest.
+# A PNG nev a teljes akcio-szekvencia: "<poz>-<size>bb-raise" / "<poz>-limp" / "<poz>-call" / "<poz>-check",
+# a vegen a hos pozicioja. A facing-tipust a szekvenciabol vezetjuk le.
+# Mappa-strukturа: <game_folder>/<stack>/<size-mappa | bvb | limp>/<nev>.png
 import os, json, re
 from datetime import datetime, timezone
 
-BASE = os.path.dirname(__file__)
+BASE = os.path.dirname(os.path.abspath(__file__))
+POS = r'(?:utg|hj|co|bu|sb|bb)'
+SB_OPEN_BB = 4  # SB open default size (bvb-ben, ahol a nev nem kodolja a meretet) - sbante6max
 
-STACK_SIZES = [30, 50, 75, 100]
+def parse_new_name(base):
+    """A nevet (poz, type, size) lepesekre + hos pozaciora bontja. type: R/C/X."""
+    rest = base.lower(); steps = []
+    while rest:
+        m = re.match(rf'^({POS})-([0-9.]+)bb-raise(?:-(.*))?$', rest)
+        if m:
+            steps.append((m.group(1), 'R', float(m.group(2)))); rest = m.group(3) or ''; continue
+        m = re.match(rf'^({POS})-(limp|call|check)(?:-(.*))?$', rest)
+        if m:
+            act = m.group(2); t = 'X' if act == 'check' else 'C'
+            steps.append((m.group(1), t, 0.5 if act == 'limp' else None)); rest = m.group(3) or ''; continue
+        break
+    hero = rest if re.match(rf'^{POS}$', rest) else None
+    return steps, hero
 
-OPEN_SIZE_FOLDERS = {
-    "charts2bb":   2.0,
-    "charts2.5bb": 2.5,
-    "charts3bb":   3.0,
-    "charts3.5bb": 3.5,
-    "charts4bb":   4.0,
-    "charts4.5bb": 4.5,
-    "charts5bb":   5.0,
-    "charts6bb":   6.0,
-    "charts7bb":   7.0,
-}
+def _raw(v): return (f"{v}bb" if v is not None else None)
 
-def _parse_size(token):
-    if not token: return None
-    s = token.strip().lower().replace("bb","").replace("-",".")
-    try: return float(s)
-    except: return None
+def _entry(file_path, facing, hero, villain, stack, title,
+           villain2=None, open_size=None, threebet_size=None, iso_size=None, c4b_size=None, seq_key=None):
+    U = lambda p: (p.upper() if p else None)
+    return {
+        "file": file_path, "facing": facing,
+        "hero": U(hero), "villain": U(villain), "villain2": U(villain2),
+        "stack": stack, "title": title,
+        "open_size": open_size, "open_size_raw": _raw(open_size),
+        "threebet_size": threebet_size, "threebet_size_raw": _raw(threebet_size),
+        "iso_size": iso_size, "iso_size_raw": _raw(iso_size),
+        "c4b_size": c4b_size, "c4b_size_raw": _raw(c4b_size),
+        "seq_key": seq_key,
+    }
 
-def parse_chart_filename(filename, stack, folder_open_size, folder_name, stack_folder):
-    m = re.match(r"^(.*)\.(png|jpg|jpeg|webp)$", filename, re.IGNORECASE)
-    if not m: return None
-    base = m.group(1)
-    file_path = f"{stack_folder}/{folder_name}/{filename}"
+def parse_chart(base, stack, folder, folder_open, file_path):
+    steps, hero = parse_new_name(base)
+    if hero is None: return None
+    n = len(steps)
+    E = lambda **kw: _entry(file_path, hero=hero, stack=stack, title=base, **kw)
 
-    def entry(facing, hero, villain, open_size, bet_size, villain2=None, iso_size=None, c4b_size=None, seq_key=None):
-        return {
-            "file": file_path, "facing": facing,
-            "hero": hero, "villain": villain, "villain2": villain2,
-            "stack": stack, "title": base,
-            "open_size": open_size,
-            "open_size_raw": f"{open_size}bb" if open_size else None,
-            "threebet_size": bet_size,
-            "threebet_size_raw": f"{bet_size}bb" if bet_size else None,
-            "iso_size": iso_size,
-            "iso_size_raw": f"{iso_size}bb" if iso_size else None,
-            "c4b_size": c4b_size,
-            "c4b_size_raw": f"{c4b_size}bb" if c4b_size else None,
-            "seq_key": seq_key,
-        }
+    # --- BvB (blind-vs-blind, "limp" mode) ---
+    # BB szembe SB open/limp:
+    if hero == 'bb' and n == 1 and steps[0][0] == 'sb':
+        return E(facing='limp', villain='sb', open_size=(steps[0][2] if steps[0][1] == 'R' else 0.5))
+    # SB szembe BB iso (SB limp utan):
+    if hero == 'sb' and n == 2 and steps[0] == ('sb','C',0.5) and steps[1][0] == 'bb' and steps[1][1] == 'R':
+        return E(facing='limp', villain='bb', open_size=0.5, iso_size=steps[1][2])
 
-    # 1. Open RFI: UTG-OPEN.png or UTG-OPEN-2.5bb.png
-    rfi_m = re.match(r"^(UTG|HJ|CO|BU|SB|BB)-OPEN(?:-([0-9]+(?:[.\-][0-9]+)?)bb)?$", base, re.IGNORECASE)
-    if rfi_m:
-        hero      = rfi_m.group(1).upper()
-        open_size = _parse_size(rfi_m.group(2)+"bb") if rfi_m.group(2) else folder_open_size
-        return entry("open", hero, None, open_size, None)
+    # --- limp-pot tobbutas (faceiso / vsopenlimp) ---
+    if folder == 'limp':
+        first = steps[0][0] if steps else None
+        raisers = [s[0] for s in steps if s[1] == 'R']
+        if first and hero == first:
+            return E(facing='faceiso', villain=(raisers[-1] if raisers else None), seq_key=base)
+        return E(facing='vsopenlimp', villain=first, seq_key=base)
 
-    # 2. Facing 3bet: BU-OPEN-2.5bb-vs-BB-3BET-13bb.png or BU-vs-BB-3BET-13bb.png
-    f3b_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?-vs-(UTG|HJ|CO|BU|SB|BB)-3BET-([0-9]+(?:[.\-][0-9]+)?)bb$",
-        base, re.IGNORECASE)
-    if f3b_m:
-        hero      = f3b_m.group(1).upper()
-        open_size = _parse_size(f3b_m.group(2)+"bb") if f3b_m.group(2) else folder_open_size
-        villain   = f3b_m.group(3).upper()
-        bet_size  = _parse_size(f3b_m.group(4)+"bb")
-        return entry("3bet", hero, villain, open_size, bet_size)
-
-    # 3. SQZ
-    sqz_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-([0-9]+(?:[.][0-9]+)?)bb-(UTG|HJ|CO|BU|SB|BB)-CALL-SQZ-([0-9]+(?:[.][0-9]+)?)bb$",
-        base, re.IGNORECASE)
-    if sqz_m:
-        return entry("sqz", sqz_m.group(1).upper(), sqz_m.group(2).upper(),
-                     _parse_size(sqz_m.group(3)+"bb"), _parse_size(sqz_m.group(5)+"bb"),
-                     villain2=sqz_m.group(4).upper())
-
-    # 4. C4B — {hero}-vs-{villain}-OPEN-{villain2}-3BET-open{X}bb-3bet{Y}bb.png
-    c4b_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-(UTG|HJ|CO|BU|SB|BB)-3BET-open([0-9]+(?:[.][0-9]+)?)bb-3bet([0-9]+(?:[.][0-9]+)?)bb(?:-([0-9]+(?:[.][0-9]+)?)bb)?$",
-        base, re.IGNORECASE)
-    if c4b_m:
-        return entry("c4b", c4b_m.group(1).upper(), c4b_m.group(2).upper(),
-                     _parse_size(c4b_m.group(4)+"bb"), _parse_size(c4b_m.group(5)+"bb"),
-                     villain2=c4b_m.group(3).upper(),
-                     c4b_size=_parse_size(c4b_m.group(6)+"bb") if c4b_m.group(6) else None)
-
-    # 5. Facing limp BB with size — BB-vs-SB-OPEN-4bb.png
-    bvb_m = re.match(r"^BB-vs-SB-OPEN-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
-    if bvb_m:
-        return entry("limp", "BB", "SB", _parse_size(bvb_m.group(1)+"bb"), None)
-
-    # 6. Facing limp BB no size — SB-Complete-BB.png
-    if re.match(r"^SB-Complete-BB$", base, re.IGNORECASE):
-        return entry("limp", "BB", "SB", 0.5, None)
-
-    # 7. Facing limp SB — SB-LIMP-0.5bb-vs-BB-ISO-6bb.png
-    iso_m = re.match(r"^SB-LIMP-([0-9]+(?:[.][0-9]+)?)bb-vs-BB-ISO-([0-9]+(?:[.][0-9]+)?)bb$", base, re.IGNORECASE)
-    if iso_m:
-        return entry("limp", "SB", "BB", _parse_size(iso_m.group(1)+"bb"), None,
-                     iso_size=_parse_size(iso_m.group(2)+"bb"))
-
-    # 8. Limp decision files (limp folder)
-    if folder_name == "limp":
-        dec_m = re.match(r"^(.+)-(UTG|HJ|CO|BU|SB|BB)-decision$", base, re.IGNORECASE)
-        if dec_m:
-            seq = dec_m.group(1)
-            hero = dec_m.group(2).upper()
-            limper_m = re.match(r"^(UTG|HJ|CO|BU|SB|BB)-LIMP", seq, re.IGNORECASE)
-            if limper_m:
-                first_limper = limper_m.group(1).upper()
-                if hero == first_limper:
-                    raises = re.findall(r"-(UTG|HJ|CO|BU|SB|BB)-RAISE", seq, re.IGNORECASE)
-                    if not raises:
-                        return None
-                    villain = raises[-1].upper()
-                    return entry("faceiso", hero, villain, None, None, seq_key=seq)
-                else:
-                    return entry("vsopenlimp", hero, first_limper, None, None, seq_key=seq)
-
-    # Skip SB-LIMP and BB-vs-SB-LIMP in charts folders (belong in bvb folder only)
-    if re.search(r"SB-LIMP|BB-vs-SB-LIMP", base, re.IGNORECASE):
-        return None
-
-    # 8c. Facing 4bet — BB-vs-BU-OPEN-3BET-vs-4BET-3bet16bb-4bet32bb.png
-    f4b_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)-OPEN-3BET-vs-4BET-3bet([0-9]+(?:[.][0-9]+)?)bb-4bet([0-9]+(?:[.][0-9]+)?)bb$",
-        base, re.IGNORECASE)
-    if f4b_m:
-        # open_size = 3bet size, threebet_size = 4bet size (fits existing [os][bs] index slots)
-        return entry("f4b", f4b_m.group(1).upper(), f4b_m.group(2).upper(),
-                     _parse_size(f4b_m.group(3)+"bb"), _parse_size(f4b_m.group(4)+"bb"))
-
-    # 8. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
-    fsqz_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-OPEN-vs-(UTG|HJ|CO|BU|SB|BB)-CALL-(UTG|HJ|CO|BU|SB|BB)-SQZ-sqz-([0-9]+(?:[.][0-9]+)?)bb$",
-        base, re.IGNORECASE)
-    if fsqz_m:
-        return entry("fsqz", fsqz_m.group(1).upper(), fsqz_m.group(2).upper(),
-                     folder_open_size, _parse_size(fsqz_m.group(4)+"bb"),
-                     villain2=fsqz_m.group(3).upper())
-
-    # 8. Facing open: BB-vs-BU-OPEN-2.5bb.png or BB-vs-BU.png
-    fop_m = re.match(
-        r"^(UTG|HJ|CO|BU|SB|BB)-vs-(UTG|HJ|CO|BU|SB|BB)(?:-OPEN-([0-9]+(?:[.\-][0-9]+)?)bb)?$",
-        base, re.IGNORECASE)
-    if fop_m:
-        hero      = fop_m.group(1).upper()
-        villain   = fop_m.group(2).upper()
-        open_size = _parse_size(fop_m.group(3)+"bb") if fop_m.group(3) else folder_open_size
-        return entry("raise", hero, villain, open_size, None)
-
-    # Skip SB-LIMP and BB-ISO in charts folders (belong in bvb folder)
-    if re.search(r'(SB-LIMP|BB-ISO)', base, re.IGNORECASE):
-        return None
-
+    # --- meret-mappak (szekvencia szerinti facing) ---
+    if n == 0:
+        # open-decision node (pl. SB open a bvb mappaban): a nev nem kodolja a meretet.
+        osz = folder_open if folder_open is not None else SB_OPEN_BB
+        return E(facing='open', villain=None, open_size=osz)
+    if n == 1:
+        s = steps[0]
+        if s[1] == 'R':
+            return E(facing='raise', villain=s[0], open_size=s[2])
+        return E(facing='limp', villain=s[0], open_size=0.5)
+    if n == 2:
+        a, b = steps
+        if a[1] == 'R' and b[1] == 'R':
+            if hero == a[0]:
+                return E(facing='3bet', villain=b[0], open_size=a[2], threebet_size=b[2])
+            return E(facing='c4b', villain=a[0], villain2=b[0], open_size=a[2], threebet_size=b[2])
+        if a[1] == 'R' and b[1] in ('C','X'):
+            return E(facing='sqz', villain=a[0], villain2=b[0], open_size=a[2])
+    if n == 3:
+        a, b, c = steps
+        if a[1] == 'R' and b[1] in ('C','X') and c[1] == 'R':
+            return E(facing='fsqz', villain=b[0], villain2=c[0], open_size=a[2], threebet_size=c[2])
+        if a[1] == 'R' and b[1] == 'R' and c[1] == 'R':
+            return E(facing='f4b', villain=a[0], open_size=b[2], threebet_size=c[2])
     return None
 
-def main():
-    charts  = []
-    skipped = []
-
-    for stack in STACK_SIZES:
-        stack_folder = str(stack)
-        stack_path   = os.path.join(BASE, stack_folder)
-        if not os.path.isdir(stack_path):
-            print(f"Nem található: {stack_folder}/ (kihagyva)")
-            continue
-        limp_path = os.path.join(stack_path, "limp")
-        if os.path.isdir(limp_path):
-            for fn in sorted(os.listdir(limp_path)):
-                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
-                    continue
-                info = parse_chart_filename(fn, stack, None, "limp", stack_folder)
-                if info:
-                    charts.append(info)
-                else:
-                    skipped.append(f"{stack_folder}/limp/{fn}")
-        fsqz_path = os.path.join(stack_path, "facing-sqz")
-        if os.path.isdir(fsqz_path):
-            for fn in sorted(os.listdir(fsqz_path)):
-                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
-                    continue
-                info = parse_chart_filename(fn, stack, None, "facing-sqz", stack_folder)
-                if info:
-                    charts.append(info)
-                else:
-                    skipped.append(f"{stack_folder}/facing-sqz/{fn}")
-        f4b_path = os.path.join(stack_path, "facing-4bet")
-        if os.path.isdir(f4b_path):
-            for fn in sorted(os.listdir(f4b_path)):
-                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
-                    continue
-                info = parse_chart_filename(fn, stack, None, "facing-4bet", stack_folder)
-                if info:
-                    charts.append(info)
-                else:
-                    skipped.append(f"{stack_folder}/facing-4bet/{fn}")
-        bvb_path = os.path.join(stack_path, "bvb")
-        if os.path.isdir(bvb_path):
-            for fn in sorted(os.listdir(bvb_path)):
-                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
-                    continue
-                info = parse_chart_filename(fn, stack, None, "bvb", stack_folder)
-                if info:
-                    charts.append(info)
-                else:
-                    skipped.append(f"{stack_folder}/bvb/{fn}")
-        for folder_name, open_size in OPEN_SIZE_FOLDERS.items():
-            folder_path = os.path.join(stack_path, folder_name)
-            if not os.path.isdir(folder_path):
-                continue
-            for fn in sorted(os.listdir(folder_path)):
-                if not re.search(r"\.(png|jpg|jpeg|webp)$", fn, re.IGNORECASE):
-                    continue
-                info = parse_chart_filename(fn, stack, open_size, folder_name, stack_folder)
-                if info:
-                    charts.append(info)
-                else:
-                    skipped.append(f"{stack_folder}/{folder_name}/{fn}")
-
-    generated = datetime.now(timezone.utc).isoformat().replace("+00:00","Z")
-    out = {"generated": generated, "charts": charts}
-
-    with open(os.path.join(BASE, "manifest.json"), "w", encoding="utf-8") as f:
+def build(game_folder, out_file, stacks):
+    charts = []; skipped = []
+    for stack in stacks:
+        sp = os.path.join(BASE, game_folder, str(stack))
+        if not os.path.isdir(sp): continue
+        for sub in sorted(os.listdir(sp)):
+            subp = os.path.join(sp, sub)
+            if not os.path.isdir(subp): continue
+            mo = re.match(r'^([0-9.]+)bb$', sub)
+            if mo: folder = 'size'; folder_open = float(mo.group(1))
+            elif sub in ('bvb','limp'): folder = sub; folder_open = None
+            else: continue
+            for fn in sorted(os.listdir(subp)):
+                if not fn.lower().endswith('.png'): continue
+                base = fn[:-4]
+                fpath = f"{game_folder}/{stack}/{sub}/{fn}"
+                e = parse_chart(base, stack, folder, folder_open, fpath)
+                if e: charts.append(e)
+                else: skipped.append(fpath)
+    out = {"generated": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"), "charts": charts}
+    with open(os.path.join(BASE, out_file), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
+    # file:// (dupla katt) eseten a bongeszo nem fetch-eli a JSON-t -> JS-globalt is irunk.
+    js_file = (out_file[:-5] if out_file.endswith(".json") else out_file) + ".js"
+    with open(os.path.join(BASE, js_file), "w", encoding="utf-8") as f:
+        f.write("window.__MANIFEST__ = ")
+        json.dump(out, f, ensure_ascii=False)
+        f.write(";\n")
+    return charts, skipped
 
-    print(f"OK: {len(charts)} chart -> manifest.json")
+# Profil: game-folder -> manifest fajl + stackek
+PROFILE = {"game_folder": "0.5bbante-6max", "out_file": "manifest.json", "stacks": [50, 100]}
+
+def main():
+    charts, skipped = build(PROFILE["game_folder"], PROFILE["out_file"], PROFILE["stacks"])
+    print(f"OK: {len(charts)} chart -> {PROFILE['out_file']}")
     if skipped:
-        print(f"Kihagyva ({len(skipped)}): {skipped}")
+        print(f"Kihagyva ({len(skipped)}): {skipped[:20]}")
 
 if __name__ == "__main__":
     main()

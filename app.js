@@ -4,7 +4,7 @@ const APP_MODE    = (window.__APP_MODE__    || "ante");   // "ante" | "noante"
 const HERO_ALL       = ["UTG","HJ","CO","BU","SB","BB"];
 const VILLAIN_ALL    = ["UTG","HJ","CO","BU","SB","BB"];
 const ALL_OPEN_SIZES = [2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7];
-const ALL_STACKS     = APP_MODE === "noante" ? [50, 100] : [30, 50, 75, 100];
+const ALL_STACKS     = APP_MODE === "noante" ? [50, 100] : [50, 100];
 
 const HERO_POS_BY_MODE = {
   open:      ["UTG","HJ","CO","BU","SB"],
@@ -462,7 +462,7 @@ function applyDefaultsOpen(){
   if (selected.mode!=="open"||!selected.stack||!selected.hero) return;
   if (selected.openSize==null){
     const avail=availableOpenSizes("open",selected.stack,selected.hero,"_");
-    if (avail.includes(3)) selected.openSize=3; else if (avail.includes(4)) selected.openSize=4; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length===1) selected.openSize=avail[0];
+    if (APP_MODE==="ante" && avail.includes(2.5)) selected.openSize=2.5; else if (avail.includes(3)) selected.openSize=3; else if (avail.includes(4)) selected.openSize=4; else if (avail.includes(2.5)) selected.openSize=2.5; else if (avail.length===1) selected.openSize=avail[0];
   }
 }
 function applyDefaultsRaise(){
@@ -487,8 +487,8 @@ function applyDefaults3bet(){
         if (avail.includes(2.5)) selected.openSize=2.5;
         else if (avail.length>0) selected.openSize=avail[0];
       } else {
-        if (avail.includes(3)) selected.openSize=3;
-        else if (avail.includes(2.5)) selected.openSize=2.5;
+        if (avail.includes(2.5)) selected.openSize=2.5;
+        else if (avail.includes(3)) selected.openSize=3;
         else if (avail.includes(4)) selected.openSize=4;
         else if (avail.length>0) selected.openSize=avail[0];
       }
@@ -514,7 +514,8 @@ function applyDefaultsC4b(){
   if (selected.openSize==null){
     const avail=c4bOpenSizes(selected.stack,selected.hero,selected.villain,selected.villain2);
     const def=DEFAULT_OPEN_SIZE_BY_HERO[selected.villain];
-    if (def!=null&&avail.includes(def)) selected.openSize=def;
+    if (APP_MODE==="ante" && avail.includes(2.5)) selected.openSize=2.5;
+    else if (def!=null&&avail.includes(def)) selected.openSize=def;
     else if (avail.includes(4)) selected.openSize=4;
     else if (avail.length>0) selected.openSize=avail[0];
   }
@@ -658,10 +659,15 @@ function syncHash(){
 
 async function init(){
   try{
-    const manifestFile = APP_MODE === "noante" ? "manifest_noante.json" : "manifest.json";
-    const res=await fetch(`${manifestFile}?v=${encodeURIComponent(APP_VERSION)}`,{cache:"no-store"});
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data=await res.json();
+    let data;
+    if (window.__MANIFEST__) {
+      data = window.__MANIFEST__;
+    } else {
+      const manifestFile = APP_MODE === "noante" ? "manifest_noante.json" : "manifest.json";
+      const res=await fetch(`${manifestFile}?v=${encodeURIComponent(APP_VERSION)}`,{cache:"no-store"});
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      data=await res.json();
+    }
     manifest=data.charts||[];
     buildIndex();
     if (!ALL_STACKS.includes(selected.stack)) selected.stack = ALL_STACKS[ALL_STACKS.length-1];

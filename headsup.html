@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="manifest" href="app.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Poker chart – SB Ante HU</title>
+  <link rel="stylesheet" href="styles.css?v=2026-06-05-hu" />
+  <style>
+    #lineGroup .btn { min-width:96px; }
+  </style>
+</head>
+<body>
+  <header class="miniHeader">
+    <div id="status" class="status">Betöltés…</div>
+  </header>
+  <main class="main">
+    <div class="controls">
+      <div class="row" id="row0">
+        <div id="lineGroup" class="group"></div>
+        <div class="divider" aria-hidden="true">|</div>
+        <div id="stackGroup" class="group"></div>
+        <div class="divider" aria-hidden="true">|</div>
+        <div class="group gameNav">
+          <a class="appNavBtn" href="index.html">SB Ante</a>
+          <a class="appNavBtn appNavBtn--noante" href="noante.html">No Ante</a>
+          <a class="appNavBtn appNavBtn--hu appNavBtn--active" href="headsup.html">HU</a>
+        </div>
+      </div>
+      <div class="row" id="row1">
+        <div id="sizeGroup" class="group"></div>
+      </div>
+    </div>
+    <div class="frame">
+      <img id="chartImg" alt="poker chart" />
+    </div>
+    <div class="appNav"></div>
+  </main>
+  <script>
+    window.__APP_VERSION__ = "2026-06-05-hu";
+    if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
+  </script>
+  <script src="manifest_headsup.js?v=2026-06-05-hu"></script>
+  <script src="headsup.js?v=2026-06-05-hu"></script>
+</body>
+</html>
