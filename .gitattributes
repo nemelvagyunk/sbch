@@ -1,0 +1,6 @@
+# Szoveges fajlok sorveg-normalizalasa (LF a repoban)
+* text=auto
+
+# Binaris fajlok - a Git NE nyuljon hozzajuk (sorveg-konverzio nelkul)
+*.png binary
+*.ico binary
