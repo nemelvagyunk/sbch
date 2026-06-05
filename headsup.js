@@ -19,6 +19,7 @@ const els = {
   status:     document.getElementById("status"),
   miniHeader: document.querySelector(".miniHeader"),
   lineGroup:  document.getElementById("lineGroup"),
+  lineGroup2: document.getElementById("lineGroup2"),
   stackGroup: document.getElementById("stackGroup"),
   sizeGroup:  document.getElementById("sizeGroup"),
   img:        document.getElementById("chartImg"),
@@ -70,12 +71,13 @@ function mkBtn(label,onClick,cls=""){ const b=document.createElement("button"); 
 function divider(){ const d=document.createElement("span"); d.className="divider"; d.textContent="|"; d.setAttribute("aria-hidden","true"); return d; }
 
 function renderLines(){
-  els.lineGroup.innerHTML="";
-  for (const L of HU_LINES){
+  els.lineGroup.innerHTML=""; els.lineGroup2.innerHTML="";
+  HU_LINES.forEach((L, i)=>{
+    const g = i < 3 ? els.lineGroup : els.lineGroup2;
     const b=mkBtn(L.label,()=>{ sel.line=L.key; sel.openSize=null; sel.threebetSize=null; sel.fourbetSize=null; sel.isoSize=null; refresh(); }, L.hero==="SB"?"hero":"villain");
     b.classList.toggle("selected", sel.line===L.key);
-    els.lineGroup.appendChild(b);
-  }
+    g.appendChild(b);
+  });
 }
 function renderStack(){
   els.stackGroup.innerHTML="";

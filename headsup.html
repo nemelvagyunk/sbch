@@ -13,7 +13,7 @@
   <title>Poker chart – SB Ante HU</title>
   <link rel="stylesheet" href="styles.css?v=2026-06-05-hu" />
   <style>
-    #lineGroup .btn { min-width:96px; }
+    #lineGroup .btn, #lineGroup2 .btn { min-width:96px; }
   </style>
 </head>
 <body>
@@ -23,19 +23,16 @@
   <main class="main">
     <div class="controls">
       <div class="row" id="row0">
-        <div id="lineGroup" class="group"></div>
-        <div class="divider" aria-hidden="true">|</div>
         <div id="stackGroup" class="group"></div>
-        <div class="divider" aria-hidden="true">|</div>
         <div class="group gameNav">
           <a class="appNavBtn" href="index.html">SB Ante</a>
           <a class="appNavBtn appNavBtn--noante" href="noante.html">No Ante</a>
           <a class="appNavBtn appNavBtn--hu appNavBtn--active" href="headsup.html">HU</a>
         </div>
       </div>
-      <div class="row" id="row1">
-        <div id="sizeGroup" class="group"></div>
-      </div>
+      <div class="row"><div id="lineGroup" class="group"></div></div>
+      <div class="row"><div id="lineGroup2" class="group"></div></div>
+      <div class="row"><div id="sizeGroup" class="group"></div></div>
     </div>
     <div class="frame">
       <img id="chartImg" alt="poker chart" />
